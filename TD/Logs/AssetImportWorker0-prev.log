@@ -1,0 +1,186 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16347 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projekty/TowerDeffence3D/TD
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55011
+Successfully changed project path to: D:/Projekty/TowerDeffence3D/TD
+D:/Projekty/TowerDeffence3D/TD
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 23.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projekty/TowerDeffence3D/TD/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.6089
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001069 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.129 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000671 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.3 MB.
+System memory in use after: 57.4 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1544.
+Total: 1.652300 ms (FindLiveObjects: 0.116600 ms CreateObjectMapping: 0.035000 ms MarkObjects: 1.432200 ms  DeleteObjects: 0.067500 ms)
+
+========================================================================
+Received Import Request.
+  path: Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs
+  artifactKey: Guid(020ee4c1798a3d243a4b8cbfee6cac2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs using Guid(020ee4c1798a3d243a4b8cbfee6cac2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab653b20cf57dade370df51468c1d533') in 0.056653 seconds
+  Import took 0.058359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1542.132112 seconds.
+  path: Assets/Models/Laser Beamer
+  artifactKey: Guid(199382aaea5c50e4f984315252354efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Laser Beamer using Guid(199382aaea5c50e4f984315252354efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116dd4e1ac245f01565be89f3233340f') in 0.043899 seconds
+  Import took 0.045892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.338201 seconds.
+  path: Assets/Models/Missile Launcher
+  artifactKey: Guid(14682afd87eff344189b371c1c61f371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Missile Launcher using Guid(14682afd87eff344189b371c1c61f371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996e34a4045b81fc0d0a4a5749aa30dc') in 0.081514 seconds
+  Import took 0.083714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.330969 seconds.
+  path: Assets/Models/Standard Turret
+  artifactKey: Guid(7e1201bc47e027b409a6370657d7729d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret using Guid(7e1201bc47e027b409a6370657d7729d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fc99e584422cdfb39ae91f002d928d') in 0.008098 seconds
+  Import took 0.009897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3839.328146 seconds.
+  path: Assets/Models/Standard Turret/Turret.blend
+  artifactKey: Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret/Turret.blend using Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b76eec6d2851ef5e8828e1c51c31243') in 0.021963 seconds
+  Import took 0.024256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.883391 seconds.
+  path: Assets/Models/Standard Turret/Turret with panels.blend
+  artifactKey: Guid(9868d5ef48025ce4a8c460d1435f1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret/Turret with panels.blend using Guid(9868d5ef48025ce4a8c460d1435f1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f511d3c0237fa9ca08a1c12afdfa57') in 0.006999 seconds
+  Import took 0.009927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000683 seconds.
+  path: Assets/Models/Standard Turret/Turret with panels.blend
+  artifactKey: Guid(9868d5ef48025ce4a8c460d1435f1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret/Turret with panels.blend using Guid(9868d5ef48025ce4a8c460d1435f1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f511d3c0237fa9ca08a1c12afdfa57') in 0.003110 seconds
+  Import took 0.004861 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.740 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1092 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.6 MB.
+System memory in use after: 57.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1546.
+Total: 1.536900 ms (FindLiveObjects: 0.121300 ms CreateObjectMapping: 0.034400 ms MarkObjects: 1.335100 ms  DeleteObjects: 0.045000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1791.045093 seconds.
+  path: Assets/Models
+  artifactKey: Guid(d4628510b3e3a404f91aaf9cf7561607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(d4628510b3e3a404f91aaf9cf7561607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d983f25f6694b2553cf66cfa2a7487') in 0.012313 seconds
+  Import took 0.014353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.945751 seconds.
+  path: Assets/Models/Standard Turret/Turret.blend
+  artifactKey: Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret/Turret.blend using Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2385a2df9e715cff851dda80e2724733') in 0.303882 seconds
+  Import took 0.306891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.949832 seconds.
+  path: Assets/Models/Missile Launcher/Missile Launcher Texture.png
+  artifactKey: Guid(ce65d56d6c5714846a4586d99cb3082d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Missile Launcher/Missile Launcher Texture.png using Guid(ce65d56d6c5714846a4586d99cb3082d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9951f12f26e4b45d73b202e8f7bb6897') in 0.119939 seconds
+  Import took 0.122667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.833969 seconds.
+  path: Assets/Models/Standard Turret/Turret.blend
+  artifactKey: Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Standard Turret/Turret.blend using Guid(6440647a506b35841bd3539a115fac9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67933b6e4338fa2337c2d99e6baffedb') in 0.049578 seconds
+  Import took 0.051773 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

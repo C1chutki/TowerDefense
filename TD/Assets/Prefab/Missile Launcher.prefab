@@ -106,10 +106,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768361228888027860}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.05, y: 1.2036915, z: 0.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.3974535, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
-  - {fileID: 606686732375212355}
   - {fileID: 3269089369173823084}
   m_Father: {fileID: 4964436881909401336}
   m_RootOrder: 1
@@ -139,13 +138,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5646217056299058005}
-  m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
-  m_LocalPosition: {x: -0.05, y: 0.19376183, z: -0.02}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.49930134, y: 0.50069773, z: 0.49930134, w: 0.50069773}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7495491672645631694}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -89.84, y: 90, z: 0}
 --- !u!33 &7195010237975819339
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -205,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4964436881909401336}
-  - component: {fileID: 5741783474163850307}
+  - component: {fileID: 8589080103748930183}
   m_Layer: 0
   m_Name: Missile Launcher
   m_TagString: Untagged
@@ -221,15 +220,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5741783474163850306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.4651, y: 0.43, z: 70.09}
+  m_LocalPosition: {x: 71.1038, y: 0.5, z: 46.681023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2139888602813552842}
   - {fileID: 7495491672645631694}
+  - {fileID: 8593235572550159478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5741783474163850307
+--- !u!114 &8589080103748930183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,8 +247,8 @@ MonoBehaviour:
   partToRotate: {fileID: 7495491672645631694}
   turnSpeed: 3
   bulletPrefab: {fileID: 970781455459847134, guid: b729906f6571ab64f866814082c7ed2b, type: 3}
-  FirePoint: {fileID: 606686732375212355}
---- !u!1 &8590033647465565565
+  FirePoint: {fileID: 8593235572550159478}
+--- !u!1 &6119085572890436819
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,25 +256,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 606686732375212355}
+  - component: {fileID: 8593235572550159478}
   m_Layer: 0
-  m_Name: FirePoit
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &606686732375212355
+--- !u!4 &8593235572550159478
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8590033647465565565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.069999605, y: 0.659, z: 1.5}
+  m_GameObject: {fileID: 6119085572890436819}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.406, y: 1.881, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7495491672645631694}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 4964436881909401336}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}

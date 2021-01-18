@@ -109,6 +109,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.3974535, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
+  - {fileID: 8593235572550159478}
   - {fileID: 3269089369173823084}
   m_Father: {fileID: 4964436881909401336}
   m_RootOrder: 1
@@ -143,7 +144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7495491672645631694}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -89.84, y: 90, z: 0}
 --- !u!33 &7195010237975819339
 MeshFilter:
@@ -225,7 +226,6 @@ Transform:
   m_Children:
   - {fileID: 2139888602813552842}
   - {fileID: 7495491672645631694}
-  - {fileID: 8593235572550159478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -243,10 +243,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 30
   fireRate: 0.5
+  bulletPrefab: {fileID: 970781455459847134, guid: b729906f6571ab64f866814082c7ed2b, type: 3}
+  useLaser: 0
+  damageOverTime: 20
+  slowAmount: 0.2
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactEffect2: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 7495491672645631694}
   turnSpeed: 3
-  bulletPrefab: {fileID: 970781455459847134, guid: b729906f6571ab64f866814082c7ed2b, type: 3}
   FirePoint: {fileID: 8593235572550159478}
 --- !u!1 &6119085572890436819
 GameObject:
@@ -271,10 +278,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6119085572890436819}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.406, y: 1.881, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.9604643e-10, y: 0.004835465, z: 0.014059983}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
-  m_Father: {fileID: 4964436881909401336}
-  m_RootOrder: 2
+  m_Father: {fileID: 7495491672645631694}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}

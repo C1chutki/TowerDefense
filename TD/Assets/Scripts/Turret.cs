@@ -13,8 +13,11 @@ public class Turret : MonoBehaviour
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
+    public float fireRate2 = 1f;
     private float fireCountDown = 0f;
+    private float fireCountDown2 = 0f;
     public GameObject bulletPrefab;
+    public GameObject bullet2Prefab;
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -35,6 +38,8 @@ public class Turret : MonoBehaviour
 
     
     public Transform FirePoint;
+    public Transform FirePoint2;
+    public Transform FirePoint3;
 
     
 
@@ -99,9 +104,19 @@ public class Turret : MonoBehaviour
             {
                 Shoot();
                 fireCountDown = 1f / fireRate;
+                
+                
             }
-
+            if (fireCountDown2 <= 0f)
+            {
+                ShootSmall();
+                fireCountDown2 = 1f / fireRate2;
+                
+                
+            }
+            
             fireCountDown -= Time.deltaTime;
+            fireCountDown2 -= Time.deltaTime;
         } 
     }
     void LockOnTarget()
@@ -146,8 +161,30 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
+        
+
+
+
         if (bullet != null)
             bullet.Seek(target);
+        
+
+    }
+
+
+    void ShootSmall ()
+    {
+        GameObject bulletGO2 = (GameObject)Instantiate(bullet2Prefab, FirePoint2.position, FirePoint2.rotation);
+        Bullet bullet2 = bulletGO2.GetComponent<Bullet>();
+
+        GameObject bulletGO3 = (GameObject)Instantiate(bullet2Prefab, FirePoint3.position, FirePoint3.rotation);
+        Bullet bullet3 = bulletGO3.GetComponent<Bullet>();
+
+
+        if (bullet2 != null)
+            bullet2.Seek(target);
+        if (bullet3 != null)
+            bullet3.Seek(target);
     }
 
 

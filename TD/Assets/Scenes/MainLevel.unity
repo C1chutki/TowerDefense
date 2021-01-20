@@ -7348,9 +7348,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c9df42df17cc0648b101c5dab75363f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6779104409122390523, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+  waves:
+  - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+    count: 10
+    rate: 2
+  - enemy: {fileID: 6062777461994246182, guid: 4d9d5aa59aa8518439af8da0a6b36c11, type: 3}
+    count: 20
+    rate: 3
+  - enemy: {fileID: 6062777461994246182, guid: 2b1b1eb96c7d92b4c9becb30fbd06af1, type: 3}
+    count: 3
+    rate: 1
   spawnPoint: {fileID: 1644713054}
-  timeBetweenWaves: 7
+  timeBetweenWaves: 10
   WaveCoutndown: {fileID: 440036282}
 --- !u!4 &770030059
 Transform:
@@ -7393,7 +7402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469ba31fecd5e9c49ac90114ebcdfca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1000
+  startMoney: 200
   startLives: 15
 --- !u!114 &770030062
 MonoBehaviour:
@@ -10626,7 +10635,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 770030063}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Toggle
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18798,6 +18807,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1444764798789631897, guid: a54f8c2a12926434e8e51ec5b85aecaf, type: 3}
   m_PrefabInstance: {fileID: 1986467362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1989019340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1989019342}
+  - component: {fileID: 1989019341}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1989019341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989019340}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9df42df17cc0648b101c5dab75363f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+    count: 2
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+    count: 3
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+    count: 6
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
+    count: 10
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 4d9d5aa59aa8518439af8da0a6b36c11, type: 3}
+    count: 5
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 2b1b1eb96c7d92b4c9becb30fbd06af1, type: 3}
+    count: 2
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 2b1b1eb96c7d92b4c9becb30fbd06af1, type: 3}
+    count: 3
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 2b1b1eb96c7d92b4c9becb30fbd06af1, type: 3}
+    count: 6
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 4d9d5aa59aa8518439af8da0a6b36c11, type: 3}
+    count: 24
+    rate: 1
+  - enemy: {fileID: 6062777461994246182, guid: 2b1b1eb96c7d92b4c9becb30fbd06af1, type: 3}
+    count: 10
+    rate: 1
+  spawnPoint: {fileID: 1644713054}
+  timeBetweenWaves: 2
+  WaveCoutndown: {fileID: 440036282}
+--- !u!4 &1989019342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989019340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.2277, y: 34.839745, z: 31.872715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2001229305
 PrefabInstance:
   m_ObjectHideFlags: 0

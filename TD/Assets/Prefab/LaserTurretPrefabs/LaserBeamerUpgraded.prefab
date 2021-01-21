@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &72716589336431713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8237440877632301267}
+  m_Layer: 0
+  m_Name: FirePoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8237440877632301267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72716589336431713}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.00005996704, y: 0.004765464, z: 0.016640015}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 3660046588136515145}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &164803738730215730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4782703656757921306}
+  m_Layer: 0
+  m_Name: FirePoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4782703656757921306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164803738730215730}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.00005996704, y: 0.004765464, z: 0.016640015}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 3660046588136515145}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1348594500208588008
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,8 +141,8 @@ MonoBehaviour:
   range: 20
   fireRate: 1
   fireRate2: 1
-  bulletPrefab: {fileID: 0}
-  bullet2Prefab: {fileID: 0}
+  bulletPrefab: {fileID: 5750808914037204546, guid: 2ad47d865a6b6e84dbf5da6d2de0462c, type: 3}
+  bullet2Prefab: {fileID: 5750808914037204546, guid: 2ad47d865a6b6e84dbf5da6d2de0462c, type: 3}
   useLaser: 1
   damageOverTime: 25
   slowAmount: 0.6
@@ -94,8 +154,8 @@ MonoBehaviour:
   partToRotate: {fileID: 3660046588136515145}
   turnSpeed: 12
   FirePoint: {fileID: 5579339912760105841}
-  FirePoint2: {fileID: 0}
-  FirePoint3: {fileID: 0}
+  FirePoint2: {fileID: 4782703656757921306}
+  FirePoint3: {fileID: 8237440877632301267}
 --- !u!120 &185728339
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5121,6 +5181,8 @@ Transform:
   m_Children:
   - {fileID: 8835110005878927897}
   - {fileID: 5579339912760105841}
+  - {fileID: 4782703656757921306}
+  - {fileID: 8237440877632301267}
   m_Father: {fileID: 1380221078365534861}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

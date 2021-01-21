@@ -35,14 +35,6 @@ public class Enemy : MonoBehaviour
 
         HealthBar.fillAmount = health / StartHealth;
 
-        /* if (EnemyHealth <= 0)
-        {
-            if(IsDead)
-            { return; }
-            IsDead = true;
-            .........
-        } */
-
         if (health <= 0)
         {
             if (IsDead)

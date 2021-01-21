@@ -24,21 +24,26 @@ public class EnemyMovement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) <= 0.4f)
         {
-            GetNextWaypoint();
-            transform.LookAt(target);
+            GetNextWaypoint(); 
+            
+
         }
 
         enemy.speed = enemy.startSpeed;
 
         void GetNextWaypoint()
         {
+            
             if (WavePointIndex >= Waypoints.points.Length - 1)
             {
                 EndPath();
                 return;
             }
+            
             WavePointIndex++;
+            
             target = Waypoints.points[WavePointIndex];
+            transform.LookAt(target);
         }
 
     }

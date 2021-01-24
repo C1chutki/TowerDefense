@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CameraControler : MonoBehaviour
-{    
+{
     public float panSpeed = 30f;
     public float panBorderThickness = 20f;
 
@@ -13,9 +15,25 @@ public class CameraControler : MonoBehaviour
     public float maxtop = 130f;
     public float maxbottom = 80f;
 
-    
 
-    private void Update()
+    private bool top;
+
+    public void PointerDownTop()
+    {
+        top = true;
+    }
+    public void PointerUpTop()
+    {
+        top = false;
+    }
+
+
+    void Start()
+    {
+        top = false;
+    }
+
+    void Update()
     {
         if (GameManager.GameIsOver)
         {
@@ -23,22 +41,22 @@ public class CameraControler : MonoBehaviour
             return;
         }
 
-        if ((Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) && transform.position.z < maxtop ) 
+        if ((Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) && transform.position.z < maxtop)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
-        
-        if ((Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness) && transform.position.z >= maxbottom) 
+
+        if ((Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness) && transform.position.z >= maxbottom)
         {
             transform.Translate(Vector3.back * panSpeed * Time.deltaTime, Space.World);
         }
 
-        if ((Input.GetKey("d") || Input.mousePosition.x >= Screen.width - panBorderThickness) && transform.position.x < maxright) 
+        if ((Input.GetKey("d") || Input.mousePosition.x >= Screen.width - panBorderThickness) && transform.position.x < maxright)
         {
             transform.Translate(Vector3.right * panSpeed * Time.deltaTime, Space.World);
         }
 
-        if ((Input.GetKey("a") || Input.mousePosition.x <= panBorderThickness) && transform.position.x > maxleft) 
+        if ((Input.GetKey("a") || Input.mousePosition.x <= panBorderThickness) && transform.position.x > maxleft)
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
@@ -50,7 +68,22 @@ public class CameraControler : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         transform.position = pos;
 
-       /* if(Input.GetMouseButtonDown(0)){
+
+        MoveCamera();
+        
+        
+    }
+
+    public void MoveCamera()
+    {
+        if (top && transform.position.z < maxtop)
+        {
+            transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
+        }
+    }
+}
+
+/* if(Input.GetMouseButtonDown(0)){
             touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
         if(Input.touchCount == 2){
@@ -77,6 +110,4 @@ public class CameraControler : MonoBehaviour
         void zoom(float increment){
             Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, minY, maxY);
         }
-       */        
-    }    
-}
+       */    

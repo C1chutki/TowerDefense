@@ -16,7 +16,7 @@ public class WaveSpawner : MonoBehaviour
 
 	public Text waveCountdownText;
 
-	//public GameManager gameManager;
+	public GameManager gameManager;
 
 	private int waveIndex = 0;
 
@@ -27,11 +27,11 @@ public class WaveSpawner : MonoBehaviour
 			return;
 		}
 
-		/*if (waveIndex == waves.Length)
+		if (waveIndex == waves.Length)
 		{
 			gameManager.WinLevel();
 			this.enabled = false;
-		}*/
+		}
 
 		if (countdown <= 0f)
 		{

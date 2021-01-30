@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     [Header("Unity Stuff")]
     public Image HealthBar;
 
-    public bool IsDead = false;
+    public bool isDead = false;
 
 
     void Start()
@@ -35,11 +35,8 @@ public class Enemy : MonoBehaviour
 
         HealthBar.fillAmount = health / StartHealth;
 
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
-            if (IsDead)
-                return;
-            IsDead = true;
             Die();
         }
     }
@@ -51,6 +48,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
         PlayerStats.Money += worth;
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);

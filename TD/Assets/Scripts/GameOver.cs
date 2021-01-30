@@ -11,10 +11,7 @@ public class GameOver : MonoBehaviour
     public SceneFader sceneFader;
     public string menuSceneName = "MainMenu";
 
-    void OnEnable()
-    {
-        RoundsText.text = PlayerStats.Rounds.ToString();
-    }
+    
 
     public void Retry ()
     {

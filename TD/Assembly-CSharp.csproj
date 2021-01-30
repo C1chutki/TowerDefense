@@ -83,6 +83,8 @@
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Ads.cs" />
+    <Compile Include="Assets\RoundsSurvived.cs" />
+    <Compile Include="Assets\CompleteLevel.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -12,7 +12,9 @@ public class Enemy : MonoBehaviour
     public float speed;
 
     public float StartHealth = 100;
-    private float health;
+    public float health;
+    public float healthRegen = 0;
+    public float maxHP = 0;
 
     public int worth = 20;
     public GameObject deathEffect;
@@ -21,6 +23,8 @@ public class Enemy : MonoBehaviour
     public Image HealthBar;
 
     public bool isDead = false;
+
+
 
 
     void Start()

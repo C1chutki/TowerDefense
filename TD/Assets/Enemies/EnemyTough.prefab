@@ -250,11 +250,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 6
   speed: 10
-  StartHealth: 350
-  worth: 60
+  StartHealth: 400
+  health: 0
+  healthRegen: 0
+  period: 0.1
+  worth: 40
   deathEffect: {fileID: 2562002206038251043, guid: cbdbc12a0db3a4c4bac012290b52e298, type: 3}
   HealthBar: {fileID: 8721977899249335993}
-  IsDead: 0
+  isDead: 0
 --- !u!114 &-8914332979959048825
 MonoBehaviour:
   m_ObjectHideFlags: 0

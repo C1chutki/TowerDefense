@@ -10,6 +10,7 @@ public class Turret : MonoBehaviour
 
     [Header("General")]
     public float range = 15f;
+    public GameObject drawRange;
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
@@ -46,6 +47,7 @@ public class Turret : MonoBehaviour
     private void Start()
     {
         InvokeRepeating ("UpdateTarget", 0f, 0.2f);
+        
     }
 
     void UpdateTarget ()
@@ -161,16 +163,10 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        
-
-
-
         if (bullet != null)
             bullet.Seek(target);
-        
 
     }
-
 
     void ShootSmall ()
     {
@@ -186,7 +182,6 @@ public class Turret : MonoBehaviour
         if (bullet3 != null)
             bullet3.Seek(target);
     }
-
 
     private void OnDrawGizmosSelected()
     {

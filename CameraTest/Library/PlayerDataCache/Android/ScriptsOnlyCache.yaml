@@ -49,17 +49,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3324}
+      Script: {instanceID: 3010}
     - Class: 114
-      Script: {instanceID: 17512}
+      Script: {instanceID: 3320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -281,6 +281,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 67cdf4edb2a747646ca7425c9e489650
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrollAndPinch
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -495,12 +501,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 6fee15e7efd5c310ecc64c2bd3515e28
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScrollAndPinch
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

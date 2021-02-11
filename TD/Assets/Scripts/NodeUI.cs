@@ -10,7 +10,6 @@ public class NodeUI : MonoBehaviour
     public Text UpgradeCost;
     public Text SellAmount;
 
-
     public void SetTarget (Node _target)
     {
         target = _target;

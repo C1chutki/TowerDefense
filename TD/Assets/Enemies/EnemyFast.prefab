@@ -284,7 +284,7 @@ MonoBehaviour:
   worth: 10
   deathEffect: {fileID: 3779361507566115723, guid: a75cf07321c829642805d8986f17c0b7, type: 3}
   HealthBar: {fileID: 8782756994743946620}
-  IsDead: 0
+  isDead: 0
 --- !u!114 &333762417863943746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.24999997, y: 1.89}
+  m_AnchoredPosition: {x: 0.05, y: 1.89}
   m_SizeDelta: {x: 100, y: 36.1468}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2554801836163012097

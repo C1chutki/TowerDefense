@@ -1,55 +1,88 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ScrollAndPinch : MonoBehaviour
+class ScrollAndPinch : MonoBehaviour
 {
+    public Camera Camera;
+    public bool Rotate;
+    protected Plane Plane;
 
-	Camera mainCamera;
+    private void Awake()
+    {
+        if (Camera == null)
+            Camera = Camera.main;
+    }
 
-	float touchesPrevPosDifference, touchesCurPosDifference, zoomModifier;
+    private void Update()
+    {
 
-	Vector2 firstTouchPrevPos, secondTouchPrevPos;
+        //Update Plane
+        if (Input.touchCount >= 1)
+            Plane.SetNormalAndPosition(transform.up, transform.position);
 
-	[SerializeField]
-	float zoomModifierSpeed = 0.1f;
+        var Delta1 = Vector3.zero;
+        var Delta2 = Vector3.zero;
 
-	[SerializeField]
-	Text text;
+        //Scroll
+        if (Input.touchCount >= 1)
+        {
+            Delta1 = PlanePositionDelta(Input.GetTouch(0));
+            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+                Camera.transform.Translate(Delta1, Space.World);
+        }
 
-	// Use this for initialization
-	void Start()
-	{
-		mainCamera = GetComponent<Camera>();
-	}
+        //Pinch
+        if (Input.touchCount >= 2)
+        {
+            var pos1 = PlanePosition(Input.GetTouch(0).position);
+            var pos2 = PlanePosition(Input.GetTouch(1).position);
+            var pos1b = PlanePosition(Input.GetTouch(0).position - Input.GetTouch(0).deltaPosition);
+            var pos2b = PlanePosition(Input.GetTouch(1).position - Input.GetTouch(1).deltaPosition);
 
-	// Update is called once per frame
-	void Update()
-	{
+            //calc zoom
+            var zoom = Vector3.Distance(pos1, pos2) /
+                       Vector3.Distance(pos1b, pos2b);
 
-		if (Input.touchCount == 2)
-		{
-			Touch firstTouch = Input.GetTouch(0);
-			Touch secondTouch = Input.GetTouch(1);
+            //edge case
+            if (zoom == 0 || zoom > 10)
+                return;
 
-			firstTouchPrevPos = firstTouch.position - firstTouch.deltaPosition;
-			secondTouchPrevPos = secondTouch.position - secondTouch.deltaPosition;
+            //Move cam amount the mid ray
+            Camera.transform.position = Vector3.LerpUnclamped(pos1, Camera.transform.position, 1 / zoom);
 
-			touchesPrevPosDifference = (firstTouchPrevPos - secondTouchPrevPos).magnitude;
-			touchesCurPosDifference = (firstTouch.position - secondTouch.position).magnitude;
+            if (Rotate && pos2b != pos2)
+                Camera.transform.RotateAround(pos1, Plane.normal, Vector3.SignedAngle(pos2 - pos1, pos2b - pos1b, Plane.normal));
+        }
 
-			zoomModifier = (firstTouch.deltaPosition - secondTouch.deltaPosition).magnitude * zoomModifierSpeed;
+    }
 
-			if (touchesPrevPosDifference > touchesCurPosDifference)
-				mainCamera.orthographicSize += zoomModifier;
-			if (touchesPrevPosDifference < touchesCurPosDifference)
-				mainCamera.orthographicSize -= zoomModifier;
+    protected Vector3 PlanePositionDelta(Touch touch)
+    {
+        //not moved
+        if (touch.phase != TouchPhase.Moved)
+            return Vector3.zero;
 
-		}
+        //delta
+        var rayBefore = Camera.ScreenPointToRay(touch.position - touch.deltaPosition);
+        var rayNow = Camera.ScreenPointToRay(touch.position);
+        if (Plane.Raycast(rayBefore, out var enterBefore) && Plane.Raycast(rayNow, out var enterNow))
+            return rayBefore.GetPoint(enterBefore) - rayNow.GetPoint(enterNow);
 
-		mainCamera.orthographicSize = Mathf.Clamp(mainCamera.orthographicSize, 2f, 10f);
-		//text.text = "Camera size " + mainCamera.orthographicSize;
+        //not on plane
+        return Vector3.zero;
+    }
 
-	}
+    protected Vector3 PlanePosition(Vector2 screenPos)
+    {
+        //position
+        var rayNow = Camera.ScreenPointToRay(screenPos);
+        if (Plane.Raycast(rayNow, out var enterNow))
+            return rayNow.GetPoint(enterNow);
+
+        return Vector3.zero;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, transform.position + transform.up);
+    }
 }

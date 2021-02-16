@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     public float StartHealth = 100;
     public float health;
     public float healthRegen = 0;
-    public float maxHP = 0;
 
     public int worth = 20;
     public GameObject deathEffect;
@@ -31,6 +30,13 @@ public class Enemy : MonoBehaviour
     {
         speed = startSpeed;
         health = StartHealth;
+        InvokeRepeating("Regenerate", 0.0f, 1.0f);
+    }
+
+    void Regenerate()
+    {
+        if (health < StartHealth)
+            health += healthRegen;
     }
 
     public void TakeDamage(float amount)

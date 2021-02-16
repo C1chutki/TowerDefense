@@ -90,7 +90,7 @@ public class CameraControler : MonoBehaviour
 
 
 
-        /*if (GameManager.GameIsOver)
+        if (GameManager.GameIsOver)
         {
             this.enabled = false;
             return;
@@ -124,7 +124,7 @@ public class CameraControler : MonoBehaviour
         transform.position = pos;
 
 
-        MoveCamera();*/
+        MoveCamera();
         
         
     }
@@ -159,11 +159,11 @@ public class CameraControler : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + transform.up);
     }
 
-    /*public void MoveCamera()
+    public void MoveCamera()
     {
         if (top && transform.position.z < maxtop)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
-    }*/
+    }
 } 

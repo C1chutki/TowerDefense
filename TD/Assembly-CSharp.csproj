@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\TurretBlueprint.cs" />
+    <Compile Include="Assets\ShopSlide.cs" />
     <Compile Include="Assets\Scripts\Waypoints.cs" />
     <Compile Include="Assets\Scripts\LevelSelector.cs" />
     <Compile Include="Assets\RoundsSurvived.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Assets\Scripts\PurchaseFulfillment.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\ShopSlide.cs" />
+    <Compile Include="Assets\TowerInfoPanelSlide.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -46,8 +46,18 @@ public class Turret : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating ("UpdateTarget", 0f, 0.2f);
-        
+        InvokeRepeating ("UpdateTarget", 0f, 0.2f);               
+    }
+
+    public void ShowRange()
+    {
+        drawRange.SetActive(true);
+        Debug.Log("true");
+    }
+    public void HideRange()
+    {
+        drawRange.SetActive(false);
+        Debug.Log("false");
     }
 
     void UpdateTarget ()

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class NodeUI : MonoBehaviour
 {
     public GameObject ui;
+    Turret turret;
     private Node target;
     public Button upgradeButton;
     public Text UpgradeCost;
@@ -29,11 +30,14 @@ public class NodeUI : MonoBehaviour
         SellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
 
         ui.SetActive(true);
+        turret.ShowRange();
+        
     }
 
     public void Hide()
     {
         ui.SetActive(false);
+        turret.HideRange();
     }
 
     public void Upgrade()

@@ -37,27 +37,23 @@ public class Turret : MonoBehaviour
     public Transform partToRotate;
     public float turnSpeed = 6f;
 
-    
+    public bool barrel1;
+    public bool barrel2;
+    public bool barrel3;
+    public bool barrel4;
+    public bool barrel5;
+    public bool barrel6;
+
     public Transform FirePoint;
     public Transform FirePoint2;
     public Transform FirePoint3;
+    public Transform FirePoint6;
 
     
 
     private void Start()
     {
         InvokeRepeating ("UpdateTarget", 0f, 0.2f);               
-    }
-
-    public void ShowRange()
-    {
-        drawRange.SetActive(true);
-        Debug.Log("true");
-    }
-    public void HideRange()
-    {
-        drawRange.SetActive(false);
-        Debug.Log("false");
     }
 
     void UpdateTarget ()
@@ -110,26 +106,50 @@ public class Turret : MonoBehaviour
         {
             Laser();
         }
-        else
+        if (barrel1)
         {
             if (fireCountDown <= 0f)
             {
                 Shoot();
                 fireCountDown = 1f / fireRate;
-                
-                
+
+
             }
-            if (fireCountDown2 <= 0f)
+            fireCountDown -= Time.deltaTime;
+        }
+        if (barrel2)
+        {
+            if (fireCountDown <= 0f)
+            {
+                Shoot();
+                fireCountDown = 1f / fireRate;
+
+
+            }
+            fireCountDown -= Time.deltaTime;
+        }
+        if (barrel3)
+        {
+            if (fireCountDown <= 0f)
             {
                 ShootSmall();
-                fireCountDown2 = 1f / fireRate2;
-                
-                
+                fireCountDown = 1f / fireRate;
+
+
             }
-            
             fireCountDown -= Time.deltaTime;
-            fireCountDown2 -= Time.deltaTime;
-        } 
+        }
+        if (barrel6)
+        {
+            if (fireCountDown <= 0f)
+            {
+                ShootSmall();
+                fireCountDown = 1f / fireRate;
+
+
+            }
+            fireCountDown -= Time.deltaTime;
+        }
     }
     void LockOnTarget()
     {

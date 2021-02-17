@@ -92,9 +92,16 @@ MonoBehaviour:
   enemyTag: Enemy
   partToRotate: {fileID: 6360260473128603431}
   turnSpeed: 10
+  barrel1: 0
+  barrel2: 0
+  barrel3: 0
+  barrel4: 0
+  barrel5: 0
+  barrel6: 0
   FirePoint: {fileID: 6047803291170618366}
   FirePoint2: {fileID: 2085823403303688881}
   FirePoint3: {fileID: 7576837476531295053}
+  FirePoint6: {fileID: 0}
 --- !u!1 &2274998575118109280
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5110131521212160186
 Transform:
   m_ObjectHideFlags: 0

@@ -1,11 +1,13 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 
 public class NodeUI : MonoBehaviour
 {
     public GameObject ui;
-    Turret turret;
+    public GameObject circleRange;
     private Node target;
     public Button upgradeButton;
     public Text UpgradeCost;
@@ -30,14 +32,17 @@ public class NodeUI : MonoBehaviour
         SellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
 
         ui.SetActive(true);
-        turret.ShowRange();
         
+        circleRange.SetActive(true);
+        
+        circleRange.transform.localScale = new Vector3(target.turretBlueprint.turretRange, target.turretBlueprint.turretRange, 0f);
+
     }
 
     public void Hide()
     {
         ui.SetActive(false);
-        turret.HideRange();
+        circleRange.SetActive(false);
     }
 
     public void Upgrade()

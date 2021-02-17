@@ -9,7 +9,6 @@ public class Shop : MonoBehaviour
     public TurretBlueprint standardTurret;
     public TurretBlueprint missileLuncher;
     public TurretBlueprint laserBeamer;
-    Turret turret;
 
     public Text TurretName;
     public Text dmg;

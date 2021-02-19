@@ -96,22 +96,22 @@ public class CameraControler : MonoBehaviour
             return;
         }
 
-        if ((Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) && transform.position.z < maxtop)
+        if ((Input.GetKey("w") /*|| Input.mousePosition.y >= Screen.height - panBorderThickness*/) && transform.position.z < maxtop)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
 
-        if ((Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness) && transform.position.z >= maxbottom)
+        if ((Input.GetKey("s") /*|| Input.mousePosition.y <= panBorderThickness*/) && transform.position.z >= maxbottom)
         {
             transform.Translate(Vector3.back * panSpeed * Time.deltaTime, Space.World);
         }
 
-        if ((Input.GetKey("d") || Input.mousePosition.x >= Screen.width - panBorderThickness) && transform.position.x < maxright)
+        if ((Input.GetKey("d") /*|| Input.mousePosition.x >= Screen.width - panBorderThickness*/) && transform.position.x < maxright)
         {
             transform.Translate(Vector3.right * panSpeed * Time.deltaTime, Space.World);
         }
 
-        if ((Input.GetKey("a") || Input.mousePosition.x <= panBorderThickness) && transform.position.x > maxleft)
+        if ((Input.GetKey("a") /*|| Input.mousePosition.x <= panBorderThickness*/) && transform.position.x > maxleft)
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }

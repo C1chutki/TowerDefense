@@ -16,9 +16,7 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     public float fireRate2 = 1f;
     private float fireCountDown = 0f;
-    private float fireCountDown2 = 0f;
     public GameObject bulletPrefab;
-    public GameObject bullet2Prefab;
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -41,19 +39,25 @@ public class Turret : MonoBehaviour
     public bool barrel2;
     public bool barrel3;
     public bool barrel4;
-    public bool barrel5;
     public bool barrel6;
 
     public Transform FirePoint;
     public Transform FirePoint2;
     public Transform FirePoint3;
+    public Transform FirePoint4;
+    public Transform FirePoint5;
     public Transform FirePoint6;
 
-    
+
+    Animator anim;
+    bool didFunction = false;
+
+
 
     private void Start()
     {
-        InvokeRepeating ("UpdateTarget", 0f, 0.2f);               
+        anim = GetComponent<Animator>();
+        InvokeRepeating ("UpdateTarget", 0f, 0.001f);               
     }
 
     void UpdateTarget ()
@@ -86,7 +90,8 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
         {
-            if(useLaser)
+            anim.SetBool("IsActive", false);
+            if (useLaser)
             {
                 if (lineRenderer.enabled)
                 {
@@ -99,6 +104,7 @@ public class Turret : MonoBehaviour
             }
             return;
         }
+        
 
         LockOnTarget();
 
@@ -121,7 +127,7 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
-                Shoot();
+                RocketShoot();
                 fireCountDown = 1f / fireRate;
 
 
@@ -132,18 +138,28 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
-                ShootSmall();
+                StandardUpgradedShoot();
                 fireCountDown = 1f / fireRate;
 
 
             }
             fireCountDown -= Time.deltaTime;
         }
+        if (barrel4)
+        {
+            if (fireCountDown <= 0f)
+            {
+                MinigunShoot();
+                fireCountDown = 1f / fireRate;
+            }
+            fireCountDown -= Time.deltaTime;
+
+        }
         if (barrel6)
         {
             if (fireCountDown <= 0f)
             {
-                ShootSmall();
+                MinigunShoot2();
                 fireCountDown = 1f / fireRate;
 
 
@@ -153,11 +169,13 @@ public class Turret : MonoBehaviour
     }
     void LockOnTarget()
     {
+        anim.SetBool("IsActive", true);
         // Target Look on and follow the enemy
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+
     }
 
     void Laser()
@@ -198,12 +216,32 @@ public class Turret : MonoBehaviour
 
     }
 
-    void ShootSmall ()
+    void StandardUpgradedShoot ()
     {
-        GameObject bulletGO2 = (GameObject)Instantiate(bullet2Prefab, FirePoint2.position, FirePoint2.rotation);
+        GameObject bulletGO2 = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet2 = bulletGO2.GetComponent<Bullet>();
 
-        GameObject bulletGO3 = (GameObject)Instantiate(bullet2Prefab, FirePoint3.position, FirePoint3.rotation);
+        GameObject bulletGO3 = (GameObject)Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
+        Bullet bullet3 = bulletGO3.GetComponent<Bullet>();
+
+        GameObject bulletGO4 = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        Bullet bullet4 = bulletGO4.GetComponent<Bullet>();
+
+
+        if (bullet2 != null)
+            bullet2.Seek(target);
+        if (bullet3 != null)
+            bullet3.Seek(target);
+        if (bullet4 != null)
+            bullet4.Seek(target);
+    }
+    
+    void RocketShoot ()
+    {
+        GameObject bulletGO2 = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        Bullet bullet2 = bulletGO2.GetComponent<Bullet>();
+
+        GameObject bulletGO3 = (GameObject)Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
         Bullet bullet3 = bulletGO3.GetComponent<Bullet>();
 
 
@@ -211,6 +249,65 @@ public class Turret : MonoBehaviour
             bullet2.Seek(target);
         if (bullet3 != null)
             bullet3.Seek(target);
+    }
+
+    void MinigunShoot()
+    {
+        GameObject bulletGO2 = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        Bullet bullet2 = bulletGO2.GetComponent<Bullet>();
+
+        GameObject bulletGO3 = (GameObject)Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
+        Bullet bullet3 = bulletGO3.GetComponent<Bullet>();
+
+        GameObject bulletGO4 = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        Bullet bullet4 = bulletGO4.GetComponent<Bullet>();
+
+        GameObject bulletGO5 = (GameObject)Instantiate(bulletPrefab, FirePoint4.position, FirePoint4.rotation);
+        Bullet bullet5 = bulletGO5.GetComponent<Bullet>();
+
+
+        if (bullet2 != null)
+            bullet2.Seek(target);
+        if (bullet3 != null)
+            bullet3.Seek(target);
+        if (bullet4 != null)
+            bullet4.Seek(target);
+        if (bullet5 != null)
+            bullet5.Seek(target);
+    }
+    void MinigunShoot2()
+    {
+        GameObject bulletGO1 = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        Bullet bullet1 = bulletGO1.GetComponent<Bullet>();
+
+        GameObject bulletGO2 = (GameObject)Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
+        Bullet bullet2 = bulletGO2.GetComponent<Bullet>();
+
+        GameObject bulletGO3 = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        Bullet bullet3 = bulletGO3.GetComponent<Bullet>();
+
+        GameObject bulletGO4 = (GameObject)Instantiate(bulletPrefab, FirePoint4.position, FirePoint4.rotation);
+        Bullet bullet4 = bulletGO4.GetComponent<Bullet>();
+        
+        GameObject bulletGO5 = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        Bullet bullet5 = bulletGO5.GetComponent<Bullet>();
+
+        GameObject bulletGO6 = (GameObject)Instantiate(bulletPrefab, FirePoint4.position, FirePoint4.rotation);
+        Bullet bullet6 = bulletGO6.GetComponent<Bullet>();
+
+
+        if (bullet1 != null)
+            bullet1.Seek(target);
+        if (bullet2 != null)
+            bullet2.Seek(target);
+        if (bullet3 != null)
+            bullet3.Seek(target);
+        if (bullet4 != null)
+            bullet4.Seek(target);
+        if (bullet5 != null)
+            bullet5.Seek(target);
+        if (bullet6 != null)
+            bullet6.Seek(target);
     }
 
     private void OnDrawGizmosSelected()

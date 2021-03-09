@@ -49,14 +49,14 @@ public class Turret : MonoBehaviour
     public Transform FirePoint6;
 
 
-    Animator anim;
+    //Animator anim;
     bool didFunction = false;
 
 
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         InvokeRepeating ("UpdateTarget", 0f, 0.001f);               
     }
 
@@ -90,7 +90,7 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
         {
-            anim.SetBool("IsActive", false);
+            //anim.SetBool("IsActive", false);
             if (useLaser)
             {
                 if (lineRenderer.enabled)
@@ -169,7 +169,7 @@ public class Turret : MonoBehaviour
     }
     void LockOnTarget()
     {
-        anim.SetBool("IsActive", true);
+        //anim.SetBool("IsActive", true);
         // Target Look on and follow the enemy
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);

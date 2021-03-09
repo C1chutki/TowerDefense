@@ -521,8 +521,7 @@ MonoBehaviour:
   drawRange: {fileID: 0}
   fireRate: 0.5
   fireRate2: 1
-  bulletPrefab: {fileID: 0}
-  bullet2Prefab: {fileID: 0}
+  bulletPrefab: {fileID: 970781455459847134, guid: b729906f6571ab64f866814082c7ed2b, type: 3}
   useLaser: 0
   damageOverTime: 20
   slowAmount: 0.2
@@ -537,11 +536,12 @@ MonoBehaviour:
   barrel2: 0
   barrel3: 0
   barrel4: 0
-  barrel5: 0
   barrel6: 0
   FirePoint: {fileID: 3984824888686057999}
   FirePoint2: {fileID: 0}
   FirePoint3: {fileID: 0}
+  FirePoint4: {fileID: 0}
+  FirePoint5: {fileID: 0}
   FirePoint6: {fileID: 0}
 --- !u!1 &6227977145751679516
 GameObject:

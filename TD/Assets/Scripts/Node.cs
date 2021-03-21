@@ -16,6 +16,7 @@ public class Node : MonoBehaviour
     public bool isUpgraded = false;
 
     public Vector3 positionOffSet;
+    public GameObject circleRangeNode;
     BuildManager buildManager;
     
 
@@ -23,7 +24,7 @@ public class Node : MonoBehaviour
 
     void Start()
     {
-        
+        circleRangeNode.SetActive(false);
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
 
@@ -42,7 +43,9 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
+            Debug.Log("Najechane w SelectNode");
             buildManager.SelectNode(this);
+            
             return;
         }
 
@@ -115,10 +118,15 @@ public class Node : MonoBehaviour
 
         if (buildManager.HasMoney)
         {
+            circleRangeNode.transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 0f);
+            circleRangeNode.SetActive(true);
+            Debug.Log("Najechane w Has money");
             rend.material.color = HoverColor;
-        } else
+        }
+        else
         {
             rend.material.color = NotEnoughMoneyColor;
+            Debug.Log("Najechane w brak kasy");
         }
         
     }
@@ -126,6 +134,7 @@ public class Node : MonoBehaviour
     void OnMouseExit()
     {
         rend.material.color = startColor;
+        circleRangeNode.SetActive(false);
     }
 
 }

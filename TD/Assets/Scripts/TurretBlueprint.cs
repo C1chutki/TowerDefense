@@ -12,7 +12,7 @@ public class TurretBlueprint
 
     public GameObject UpgradedPrefab;
     public int UpgradeCost;
-    public int turretRangev2;
+    public int turretRange2;
 
     public int GetSellAmount()
     {

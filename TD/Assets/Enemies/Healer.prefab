@@ -101,10 +101,10 @@ MonoBehaviour:
   StartHealth: 400
   health: 0
   healthRegen: 25
-  period: 1
   worth: 50
   deathEffect: {fileID: 552567934431351708, guid: 95e2a1ae28a312e45be5963397d45b83, type: 3}
   HealthBar: {fileID: 1798792612412397443}
+  click: {fileID: 0}
   isDead: 0
 --- !u!114 &5694543280877353095
 MonoBehaviour:

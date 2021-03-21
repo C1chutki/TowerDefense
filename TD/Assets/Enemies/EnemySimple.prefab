@@ -181,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 6062777461994246182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 66.5, y: 1.5, z: 48}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 6041488739459339065}
   m_Father: {fileID: 0}
@@ -244,7 +244,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6062777461994246182}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -261,13 +261,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3e416afce3b946bcc5d180efdf5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 8
   speed: 10
-  StartHealth: 100
-  worth: 15
+  StartHealth: 5
+  health: 0
+  healthRegen: 0
+  worth: 5
   deathEffect: {fileID: 4494784225395777213, guid: 8bcfba4e3b0a22443a8b374f3569bf4f, type: 3}
   HealthBar: {fileID: 8721977899249335993}
-  IsDead: 0
+  click: {fileID: 0}
+  isDead: 0
 --- !u!114 &-8914332979959048825
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ public class Turret : MonoBehaviour
 
 
     //Animator anim;
-    bool didFunction = false;
+    //bool didFunction = false;
 
 
 

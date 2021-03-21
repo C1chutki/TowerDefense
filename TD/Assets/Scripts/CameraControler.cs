@@ -83,13 +83,6 @@ public class CameraControler : MonoBehaviour
                 Camera.transform.RotateAround(pos1, Plane.normal, Vector3.SignedAngle(pos2 - pos1, pos2b - pos1b, Plane.normal));
         }
 
-
-
-
-
-
-
-
         if (GameManager.GameIsOver)
         {
             this.enabled = false;
@@ -122,11 +115,7 @@ public class CameraControler : MonoBehaviour
         pos.y -= scroll * 1000 * scrollSpeed * Time.deltaTime;
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         transform.position = pos;
-
-
         MoveCamera();
-        
-        
     }
     protected Vector3 PlanePositionDelta(Touch touch)
     {

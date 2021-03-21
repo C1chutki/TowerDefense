@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,8 +6,9 @@ public class Enemy : MonoBehaviour
     [Header("EnemyStats")]
 
     public float startSpeed = 10f;
+    
     [HideInInspector]
-    public float speed;
+    public float speed;    
 
     public float StartHealth = 100;
     public float health;
@@ -20,23 +19,38 @@ public class Enemy : MonoBehaviour
 
     [Header("Unity Stuff")]
     public Image HealthBar;
+    //public static int ClickPWR;
+    public Clicking click;
 
     public bool isDead = false;
-
-
-
 
     void Start()
     {
         speed = startSpeed;
         health = StartHealth;
         InvokeRepeating("Regenerate", 0.0f, 1.0f);
+        click = FindObjectOfType<Clicking>();
+        //ClickPWR = Clicking.ClickPWR;
+        
     }
 
     void Regenerate()
     {
         if (health < StartHealth)
             health += healthRegen;
+    }
+    private void OnMouseDown()
+    {
+        Debug.Log("Clickdown!");
+        health -= click.ClickPWR;
+        //health -= ClickPWR;
+
+        HealthBar.fillAmount = health / StartHealth;
+
+        if (health <= 0 && !isDead)
+        {
+            Die();
+        }
     }
 
     public void TakeDamage(float amount)
@@ -67,6 +81,7 @@ public class Enemy : MonoBehaviour
         WaveSpawner.EnemiesAlive--;
 
         Destroy(gameObject);
+        //click.ClickPWR++;
     }
 
    

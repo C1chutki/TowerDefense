@@ -28,7 +28,7 @@ public class Shop : MonoBehaviour
 
     public void StandartTurretInfo ()
     {
-        TurretName.text = "Standard Turret";
+        TurretName.text = "Standard turret";
         dmg.text = "1";
         speed.text = "1";
         range.text = "10";

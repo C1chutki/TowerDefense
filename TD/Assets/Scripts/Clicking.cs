@@ -7,16 +7,16 @@ public class Clicking : MonoBehaviour
     public float ClickPWR = 1;
     //public static int ClickPWR = 1;
 
-    public Button upgrade;
+    //public Button upgrade;
 
-    void Start()
-    {
-        Button btn = upgrade.GetComponent<Button>();
-        btn.onClick.AddListener(Upgrade);
-    }
+    //void Start()
+    //{
+    //    Button btn = upgrade.GetComponent<Button>();
+    //    btn.onClick.AddListener(Upgrade);
+    //}
 
-    void Upgrade ()
-    {
-        ClickPWR++;
-    }
+    //void Upgrade ()
+    //{
+    //    ClickPWR++;
+    //}
 }

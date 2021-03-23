@@ -60,9 +60,11 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
+    <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
     <Compile Include="Assets\Scripts\Bilboard.cs" />
+    <Compile Include="Assets\Scripts\Clicking.cs" />
     <Compile Include="Assets\Scripts\HPTarget.cs" />
     <Compile Include="Assets\Scripts\CompleteLevel.cs" />
     <Compile Include="Assets\Scripts\LivesUI.cs" />
@@ -87,7 +89,7 @@
     <Compile Include="Assets\Scripts\PurchaseFulfillment.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Clicking.cs" />
+    <Compile Include="Assets\Scripts\DamagePopup.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

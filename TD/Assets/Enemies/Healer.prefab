@@ -98,10 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 10
   speed: 0
-  StartHealth: 400
+  StartHealth: 20
   health: 0
-  healthRegen: 25
-  worth: 50
+  healthRegen: 1
+  worth: 10
   deathEffect: {fileID: 552567934431351708, guid: 95e2a1ae28a312e45be5963397d45b83, type: 3}
   HealthBar: {fileID: 1798792612412397443}
   click: {fileID: 0}

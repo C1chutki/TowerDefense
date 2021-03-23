@@ -18,13 +18,15 @@ public class Node : MonoBehaviour
     public Vector3 positionOffSet;
     public GameObject circleRangeNode;
     BuildManager buildManager;
+    public Vector3 usun;
     
 
     private Renderer rend;
 
     void Start()
     {
-        circleRangeNode.SetActive(false);
+        circleRangeNode.SetActive(true);
+        circleRangeNode.GetComponent<SpriteRenderer>().color=new Color(255,255,255,0);
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
 
@@ -43,7 +45,7 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
-            Debug.Log("Najechane w SelectNode");
+            //Debug.Log("Najechane w SelectNode");
             buildManager.SelectNode(this);
             
             return;
@@ -118,15 +120,20 @@ public class Node : MonoBehaviour
 
         if (buildManager.HasMoney)
         {
-            circleRangeNode.transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 0f);
-            circleRangeNode.SetActive(true);
-            Debug.Log("Najechane w Has money");
+            //circleRangeNode.transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 0f);
+            //circleRangeNode.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
+            //this.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
+            //this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 1f);
+            //usun = this.gameObject.transform.GetChild(0).transform.localScale;
+            //Debug.Log(turretBlueprint.turretRange);
+            //circleRangeNode.SetActive(true);
+            //Debug.Log("Najechane w Has money");
             rend.material.color = HoverColor;
         }
         else
         {
             rend.material.color = NotEnoughMoneyColor;
-            Debug.Log("Najechane w brak kasy");
+            //Debug.Log("Najechane w brak kasy");
         }
         
     }
@@ -134,7 +141,8 @@ public class Node : MonoBehaviour
     void OnMouseExit()
     {
         rend.material.color = startColor;
-        circleRangeNode.SetActive(false);
+        circleRangeNode.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0);
+        //circleRangeNode.SetActive(false);
     }
 
 }

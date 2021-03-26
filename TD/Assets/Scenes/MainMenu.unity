@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: LevelSelector
+  Upgrade: UpgradeScene
+  LoadMenu: MainMenu
   sceneFader: {fileID: 1098071446}
 --- !u!1001 &593455438
 PrefabInstance:
@@ -185,7 +187,7 @@ PrefabInstance:
       objectReference: {fileID: 213323679}
     - target: {fileID: 722130306965857328, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
+      value: LevelToLoad
       objectReference: {fileID: 0}
     - target: {fileID: 722130306965857328, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -213,11 +215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.388
+      value: 3.347
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5239859
+      value: 0.6487843
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.x
@@ -225,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.85172695
+      value: 0.7609724
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.z
@@ -233,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.1
+      value: -0.107
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -241,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104293772225350326, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 116.8
+      value: 99.1
       objectReference: {fileID: 0}
     - target: {fileID: 4111196156390867830, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.w
@@ -258,6 +260,14 @@ PrefabInstance:
     - target: {fileID: 4111196156390867830, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -84.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644059799880678610, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644059799880678610, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -104
       objectReference: {fileID: 0}
     - target: {fileID: 5292434001937232129, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalScale.x
@@ -307,6 +317,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5320054633872889775, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 213323679}
+    - target: {fileID: 5320054633872889775, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Upgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445761932098759873, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_Name
+      value: UpgradeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856956612318638636, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 391.4123
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856956612318638636, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0246
+      objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -325,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9910998
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.x
@@ -333,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.1331213
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalRotation.z
@@ -345,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 15.3
       objectReference: {fileID: 0}
     - target: {fileID: 5932300399341525982, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -354,6 +384,18 @@ PrefabInstance:
     - target: {fileID: 6419902592408125796, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
       propertyPath: m_Name
       value: Laser 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780956599304682082, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_Name
+      value: UpgradeCanva
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534143978308351392, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_Text
+      value: Upgrades
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534143978308351392, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
@@ -488,7 +530,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.20000002, g: 0.20000002, b: 0.29411766, a: 1}
+  m_BackGroundColor: {r: 0.18903525, g: 0.18903525, b: 0.2264151, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -528,13 +570,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.18897955, y: 0.36758432, z: -0.07655804, w: 0.90736294}
-  m_LocalPosition: {x: 22.71, y: 3.05, z: 56.06}
+  m_LocalRotation: {x: 0.2535256, y: 0.36115196, z: -0.10270647, w: 0.891485}
+  m_LocalPosition: {x: 23.01, y: 4.05, z: 56.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 23.53, y: 44.107, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.75, y: 44.107, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     [Header("Unity Stuff")]
     public Image HealthBar;
     //public static int ClickPWR;
-    public Clicking click;
+    private Clicking click;
 
     public bool isDead = false;
 

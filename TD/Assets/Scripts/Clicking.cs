@@ -4,19 +4,59 @@ using System.Collections;
 
 public class Clicking : MonoBehaviour
 {
-    public float ClickPWR = 1;
-    //public static int ClickPWR = 1;
+    public Upgrades upgrades;
+    public int clickpwr = 1;
 
-    //public Button upgrade;
 
-    //void Start()
+    public void Start()
+    {
+        upgrades = FindObjectOfType<Upgrades>();
+        clickpwr = PlayerPrefs.GetInt("Click");
+    }
+
+
+    //public Upgrades upgrades;
+
+    //public int ClickPWR = 1;
+
+    //public void Start()
     //{
-    //    Button btn = upgrade.GetComponent<Button>();
-    //    btn.onClick.AddListener(Upgrade);
+    //    upgrades = FindObjectOfType<Upgrades>();
     //}
 
-    //void Upgrade ()
+    //public void Update()
     //{
-    //    ClickPWR++;
+    //    PlayerPrefs.GetInt("click", upgrades.clickpower);
     //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ////void Upgrade ()
+    ////{
+    ////    ClickPWR++;
+    ////}
+
+    ////public static int ClickPWR = 1;
+
+    ////public Button upgrade;
+
+    ////void Start()
+    ////{
+    ////    Button btn = upgrade.GetComponent<Button>();
+    ////    btn.onClick.AddListener(Upgrade);
+    ////}
 }

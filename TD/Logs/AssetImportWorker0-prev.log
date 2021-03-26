@@ -15,11 +15,11 @@ D:/Projekty/TowerDeffence3D/TD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52587
+62778
 Successfully changed project path to: D:/Projekty/TowerDeffence3D/TD
 D:/Projekty/TowerDeffence3D/TD
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 76.89 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 70.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -36,25 +36,25 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001234 seconds.
+Registered in 0.001089 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.70 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 60.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.835 seconds
+- Completed reload, in  2.319 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007942 seconds.
+Registered in 0.007390 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 65.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -64,32 +64,296 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.262 seconds
+- Completed reload, in  1.136 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3319 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 220.0 MB.
-System memory in use after: 220.2 MB.
+System memory in use after: 220.3 MB.
 
 Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3747.
-Total: 6.337900 ms (FindLiveObjects: 0.338600 ms CreateObjectMapping: 0.168500 ms MarkObjects: 5.626000 ms  DeleteObjects: 0.203300 ms)
+Total: 5.753100 ms (FindLiveObjects: 0.452600 ms CreateObjectMapping: 0.351800 ms MarkObjects: 4.850200 ms  DeleteObjects: 0.097500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Level01.unity
-  artifactKey: Guid(e188047710bb90d408ab005227990ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level01.unity using Guid(e188047710bb90d408ab005227990ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4946cb74b91684127e57a5faf60bdf') in 0.232316 seconds
-  Import took 0.299704 seconds .
+  path: Assets/Prefab/LevelButton.prefab
+  artifactKey: Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/LevelButton.prefab using Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a066ce1048584cb4fbebd3d63c8fdf0') in 0.145364 seconds
+  Import took 0.206184 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007352 seconds.
+Registered in 0.006750 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.0 MB.
+System memory in use after: 209.2 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3749.
+Total: 6.466500 ms (FindLiveObjects: 0.351200 ms CreateObjectMapping: 0.187100 ms MarkObjects: 5.891800 ms  DeleteObjects: 0.035300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.175325 seconds.
+  path: Assets/Prefab/LevelButton.prefab
+  artifactKey: Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/LevelButton.prefab using Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbace3996d21c7d182d79fd9b35e0e5') in 0.037180 seconds
+  Import took 0.059000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.189914 seconds.
+  path: Assets/Scenes/LevelSelector.unity
+  artifactKey: Guid(b0b7747e1ff326448a43fbef7704ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LevelSelector.unity using Guid(b0b7747e1ff326448a43fbef7704ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945f413b63779183e57963dda847e831') in 0.030121 seconds
+  Import took 0.057405 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.470 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.2 MB.
+System memory in use after: 209.5 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3751.
+Total: 6.955800 ms (FindLiveObjects: 0.311800 ms CreateObjectMapping: 0.188600 ms MarkObjects: 6.415800 ms  DeleteObjects: 0.038100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2729.560339 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e47fc03a61ad049850f9b9200fcf2a5') in 0.053763 seconds
+  Import took 0.086069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001566 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e47fc03a61ad049850f9b9200fcf2a5') in 0.005467 seconds
+  Import took 0.011176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.592070 seconds.
+  path: Assets/Prefab/Main Camera.prefab
+  artifactKey: Guid(9fd6fd8cb58597f4a8a8dff16d6f1fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Main Camera.prefab using Guid(9fd6fd8cb58597f4a8a8dff16d6f1fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629fa2a9451e065455ca3e3ab083edda') in 0.012230 seconds
+  Import took 0.040068 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.281 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.3 MB.
+System memory in use after: 209.5 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3753.
+Total: 7.104600 ms (FindLiveObjects: 0.300700 ms CreateObjectMapping: 0.177000 ms MarkObjects: 6.588800 ms  DeleteObjects: 0.036100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.412738 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad61cc5ae0e5e7ccb05cb57ce9d9cc54') in 0.056115 seconds
+  Import took 0.184984 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.243 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.1 MB.
+System memory in use after: 209.3 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3755.
+Total: 7.674200 ms (FindLiveObjects: 0.506500 ms CreateObjectMapping: 0.262200 ms MarkObjects: 6.869700 ms  DeleteObjects: 0.034100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.154858 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8223412894a7137dfa48dbaf7bdab90') in 0.044550 seconds
+  Import took 0.077369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.318713 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af49e8543c982af09d22b2083541a1c0') in 0.009866 seconds
+  Import took 0.035504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.958129 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba9ef7f697fdbba73609930c8612a7a') in 0.007743 seconds
+  Import took 0.014814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013959 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba9ef7f697fdbba73609930c8612a7a') in 0.005007 seconds
+  Import took 0.016414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.773375 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb1b5a29e95059a1d7e4f4e5ff5f730') in 0.014611 seconds
+  Import took 0.053482 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008243 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.119 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.3 MB.
+System memory in use after: 209.5 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3757.
+Total: 5.931400 ms (FindLiveObjects: 0.305500 ms CreateObjectMapping: 0.186900 ms MarkObjects: 5.352900 ms  DeleteObjects: 0.084900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1245.593554 seconds.
+  path: Assets/Scenes/UpgradeScene.unity
+  artifactKey: Guid(db586b10f4bd338459bd137b544c288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/UpgradeScene.unity using Guid(db586b10f4bd338459bd137b544c288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e749ce0522c2d44053ddf22b8fd95887') in 0.022833 seconds
+  Import took 0.052973 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008613 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.3 MB.
+System memory in use after: 209.6 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 6.584800 ms (FindLiveObjects: 0.482300 ms CreateObjectMapping: 0.209900 ms MarkObjects: 5.830200 ms  DeleteObjects: 0.060800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008749 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
@@ -102,145 +366,53 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.175 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 208.9 MB.
-System memory in use after: 209.2 MB.
-
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3749.
-Total: 8.274000 ms (FindLiveObjects: 0.316300 ms CreateObjectMapping: 0.183000 ms MarkObjects: 7.728800 ms  DeleteObjects: 0.043900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010340 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.310 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.2 MB.
-System memory in use after: 209.4 MB.
-
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3751.
-Total: 10.105500 ms (FindLiveObjects: 0.531600 ms CreateObjectMapping: 0.268400 ms MarkObjects: 9.247600 ms  DeleteObjects: 0.030700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 275.785435 seconds.
-  path: Assets/Prefab/Button.prefab
-  artifactKey: Guid(5367e551557292a46989c43b49ac3b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Button.prefab using Guid(5367e551557292a46989c43b49ac3b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a82d701d66e4ec5d205f3f798c6fabe') in 0.087864 seconds
-  Import took 0.130338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 50.018445 seconds.
-  path: Assets/Scripts/Enemy.cs
-  artifactKey: Guid(76e3e416afce3b946bcc5d180efdf5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Enemy.cs using Guid(76e3e416afce3b946bcc5d180efdf5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf00aa477481a126b74703b8f5db0734') in 0.036572 seconds
-  Import took 0.087482 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009449 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.285 seconds
+- Completed reload, in  1.208 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.1 MB.
+System memory in use after: 209.4 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3761.
+Total: 7.731900 ms (FindLiveObjects: 0.635900 ms CreateObjectMapping: 0.337300 ms MarkObjects: 6.728000 ms  DeleteObjects: 0.029400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009064 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.742 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 209.3 MB.
-System memory in use after: 209.5 MB.
+System memory in use after: 209.6 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3753.
-Total: 6.859900 ms (FindLiveObjects: 0.313300 ms CreateObjectMapping: 0.186200 ms MarkObjects: 6.325400 ms  DeleteObjects: 0.033800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 631.837151 seconds.
-  path: Assets/Enemies/EnemySimple.prefab
-  artifactKey: Guid(4f2ba92579bdda04a8c537d986a542cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemySimple.prefab using Guid(4f2ba92579bdda04a8c537d986a542cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560ec2bd42fbe92ab97af40a9d8a46ef') in 0.281216 seconds
-  Import took 0.288030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Enemies/EnemyFastest.prefab
-  artifactKey: Guid(4d9d5aa59aa8518439af8da0a6b36c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemyFastest.prefab using Guid(4d9d5aa59aa8518439af8da0a6b36c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246d4c61924f55450849b5161c5b7af4') in 0.088470 seconds
-  Import took 0.094357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Enemies/Healer.prefab
-  artifactKey: Guid(38667bf6f435460419e34d7cbdc953b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/Healer.prefab using Guid(38667bf6f435460419e34d7cbdc953b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6285114e5c6542e520427d9469cc21') in 0.058083 seconds
-  Import took 0.064116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Enemies/Tank.prefab
-  artifactKey: Guid(7823404bc49c8104bb6b4c1c6d69a4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/Tank.prefab using Guid(7823404bc49c8104bb6b4c1c6d69a4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36160da4ca8c1da7a5a23092efd9b3e') in 0.057613 seconds
-  Import took 0.063721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Enemies/EnemyTough.prefab
-  artifactKey: Guid(2b1b1eb96c7d92b4c9becb30fbd06af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemyTough.prefab using Guid(2b1b1eb96c7d92b4c9becb30fbd06af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f825764a37f12a38845c5f781e8590e5') in 0.030279 seconds
-  Import took 0.039071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 254.399811 seconds.
-  path: Assets/Turrets/Laser.prefab
-  artifactKey: Guid(af7b9d4db2afe1d408be398661260bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Laser.prefab using Guid(af7b9d4db2afe1d408be398661260bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb29226f6974c79a069ea87d9ed2ef2b') in 0.189480 seconds
-  Import took 0.197167 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3763.
+Total: 6.768000 ms (FindLiveObjects: 0.314000 ms CreateObjectMapping: 0.187600 ms MarkObjects: 6.233100 ms  DeleteObjects: 0.032000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008976 seconds.
+Registered in 0.008300 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -250,40 +422,156 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.489 seconds
+- Completed reload, in  1.136 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 214.5 MB.
-System memory in use after: 214.7 MB.
+System memory in use before: 209.3 MB.
+System memory in use after: 209.6 MB.
 
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3802.
-Total: 7.566500 ms (FindLiveObjects: 0.316900 ms CreateObjectMapping: 0.200200 ms MarkObjects: 7.011200 ms  DeleteObjects: 0.036800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.835105 seconds.
-  path: Assets/Turrets/Minigun.prefab
-  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ba33ae8a9b014ebf2571ef32d55dfc') in 0.285505 seconds
-  Import took 0.293484 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3765.
+Total: 5.708200 ms (FindLiveObjects: 0.361600 ms CreateObjectMapping: 0.202800 ms MarkObjects: 5.101900 ms  DeleteObjects: 0.040700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.339127 seconds.
-  path: Assets/Turrets/Minigun.prefab
-  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa99f53b9d639b795595c33511eb8826') in 0.021986 seconds
-  Import took 0.028976 seconds .
+  Time since last request: 3915.403949 seconds.
+  path: Assets/Scripts/Playerprefs.cs
+  artifactKey: Guid(78858d792bd0cff47bd722a9da2c7d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Playerprefs.cs using Guid(78858d792bd0cff47bd722a9da2c7d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4754999191f1d251561eb55fe21b4289') in 0.024441 seconds
+  Import took 0.272793 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007690 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.223 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.2 MB.
+System memory in use after: 209.4 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3768.
+Total: 5.878400 ms (FindLiveObjects: 0.322300 ms CreateObjectMapping: 0.220200 ms MarkObjects: 5.295400 ms  DeleteObjects: 0.038200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008350 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.4 MB.
+System memory in use after: 209.6 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3770.
+Total: 6.160400 ms (FindLiveObjects: 0.431600 ms CreateObjectMapping: 0.288200 ms MarkObjects: 5.407400 ms  DeleteObjects: 0.031500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009266 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.4 MB.
+System memory in use after: 209.6 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3772.
+Total: 7.658700 ms (FindLiveObjects: 1.008700 ms CreateObjectMapping: 0.259800 ms MarkObjects: 6.199500 ms  DeleteObjects: 0.188900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.320390 seconds.
-  path: Assets/Turrets/Minigun.prefab
-  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe97cde725e07d4890ff523e9f2cff3') in 0.025555 seconds
-  Import took 0.032759 seconds .
+  Time since last request: 2054.731254 seconds.
+  path: Assets/Prefab/UpgradeButton.prefab
+  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e2ea77cd3178ccd18d3e10548bacb7') in 0.114042 seconds
+  Import took 0.136629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.196628 seconds.
+  path: Assets/Prefab/LaserTurretPrefabs/Laser Beamer.prefab
+  artifactKey: Guid(095d498de3f6b1c4c8ebdf6e86bbc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/LaserTurretPrefabs/Laser Beamer.prefab using Guid(095d498de3f6b1c4c8ebdf6e86bbc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba845ded9ab311996860c8279cc04a2e') in 0.154829 seconds
+  Import took 0.209436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.813097 seconds.
+  path: Assets/Turrets/Laser/LaserImpactEffect (2).prefab
+  artifactKey: Guid(995828dcd1965e6429e7b0c3022f3f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Laser/LaserImpactEffect (2).prefab using Guid(995828dcd1965e6429e7b0c3022f3f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119be5716caa56c8a5d87ddcc6306685') in 0.120878 seconds
+  Import took 0.199764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Turrets/Laser/LaserImpactEffect.prefab
+  artifactKey: Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Laser/LaserImpactEffect.prefab using Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf902c99812d6eb8c62986c5eb21cad') in 0.011716 seconds
+  Import took 0.066997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Turrets/Laser/Point Light.prefab
+  artifactKey: Guid(a05084b8666a0b7449c4674bdf37e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Laser/Point Light.prefab using Guid(a05084b8666a0b7449c4674bdf37e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030facc4b58b03b3a92436b7d9d981cf') in 0.110612 seconds
+  Import took 0.137953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Turrets/Laser/LaserImpactEffect.prefab
+  artifactKey: Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Laser/LaserImpactEffect.prefab using Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf902c99812d6eb8c62986c5eb21cad') in 0.022389 seconds
+  Import took 0.029356 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

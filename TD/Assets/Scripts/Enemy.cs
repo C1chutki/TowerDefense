@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Clickdown!");
-        health -= click.ClickPWR;
+        health -= click.clickpwr;
         //health -= ClickPWR;
 
         HealthBar.fillAmount = health / StartHealth;

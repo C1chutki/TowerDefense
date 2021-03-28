@@ -14,6 +14,8 @@ public class Upgrades : MonoBehaviour
 
     public void Start()
     {
+        clickamount.text = ClickPWR.ToString();
+        GemsAmount.text = Gems.ToString();
         UpgradeClickPWRButton.interactable = false;
         Gems = PlayerPrefs.GetInt("Gems");
         ClickPWR = PlayerPrefs.GetInt("Click");
@@ -24,8 +26,6 @@ public class Upgrades : MonoBehaviour
 
     public void Update()
     {
-        clickamount.text = ClickPWR.ToString();
-        GemsAmount.text = Gems.ToString();
         if (Gems >= 1)
         {
             UpgradeClickPWRButton.interactable = true;
@@ -45,6 +45,8 @@ public class Upgrades : MonoBehaviour
             PlayerPrefs.SetInt("Click", ClickPWR);
             Gems--;
             PlayerPrefs.SetInt("Gems", Gems);
+            clickamount.text = ClickPWR.ToString();
+            GemsAmount.text = Gems.ToString();
         }
         
     }
@@ -54,5 +56,8 @@ public class Upgrades : MonoBehaviour
         Gems++;
         Debug.Log(Gems);
         PlayerPrefs.SetInt("Gems", Gems);
+
+        clickamount.text = ClickPWR.ToString();
+        GemsAmount.text = Gems.ToString();
     }
 }

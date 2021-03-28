@@ -96,5 +96,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 60
   impactEffect: {fileID: 7079460995781441753, guid: 61811ef227f15f1438f46ce0fde6f05d, type: 3}
+  RocketTrails: {fileID: 0}
   explosionRadius: 0
   damage: 1

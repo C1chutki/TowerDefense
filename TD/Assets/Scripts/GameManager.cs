@@ -8,10 +8,15 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverUI;
     public GameObject completeLevelUI;
+    public int gems;
+    public Upgrades upgrades;
+    
 
     void Start ()
     {
         GameIsOver = false;
+        upgrades = FindObjectOfType<Upgrades>();
+        
     }
 
     void Update()
@@ -33,6 +38,11 @@ public class GameManager : MonoBehaviour
 
     public void WinLevel()
     {
+        gems = PlayerPrefs.GetInt("Gems");
+        gems++;
+        Debug.Log("You got one Gem!");
+        Debug.Log(gems);
+        PlayerPrefs.SetInt("Gems", gems);
         GameIsOver = true;
         completeLevelUI.SetActive(true);
     }

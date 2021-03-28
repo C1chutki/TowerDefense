@@ -13,10 +13,21 @@ public class NodeUI : MonoBehaviour
     public Text UpgradeCost;
     public Text SellAmount;
 
+    public Shop shop;
+
     public void SetTarget (Node _target)
     {
         target = _target;
         transform.position = target.GetBuildPosition();
+
+
+        //shop = GetComponent<Shop>();
+        //shop.TurretName.text = target.name;
+        //shop.dmg.text = target.bulletPrefab.GetComponent<Bullet>().damage.ToString();
+        //shop.speed.text = "1";
+        //shop.range.text = target.range.ToString();
+        //shop.slow.text = "0";
+        //shop.AOE.text = "0";
 
         if (!target.isUpgraded)
         {
@@ -47,12 +58,14 @@ public class NodeUI : MonoBehaviour
 
     public void Upgrade()
     {
+        Debug.Log("Upgrade");
         target.UpgradeTurret();
         BuildManager.instance.DeselectNode();
     }
 
     public void Sell ()
     {
+        Debug.Log("sell");
         target.SellTurret();
         BuildManager.instance.DeselectNode();
     }

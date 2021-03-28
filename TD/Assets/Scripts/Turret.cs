@@ -11,15 +11,20 @@ public class Turret : MonoBehaviour
 
     [Header("General")]
     public float range = 15f;
+    public float Speed;
+    public float AttackSpeed;
+
+    //firecountdown = 1f / 3 * Random.Rand(2, 4);
+
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
-    private float fireCountDown = 0f;
-    private float fireCountDown2 = 0f;
-    private float fireCountDown3 = 0f;
-    private float fireCountDown4 = 0f;
-    private float fireCountDown5 = 0f;
-    private float fireCountDown6 = 0f;
+    public float fireCountDown = 0f;
+    public float fireCountDown2 = 0f;
+    public float fireCountDown3 = 0f;
+    public float fireCountDown4 = 0f;
+    public float fireCountDown5 = 0f;
+    public float fireCountDown6 = 0f;
     public GameObject bulletPrefab;
 
     [Header("Use Laser")]
@@ -30,6 +35,7 @@ public class Turret : MonoBehaviour
     public ParticleSystem impactEffect;
     public ParticleSystem impactEffect2;
     public Light impactLight;
+
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
@@ -53,15 +59,21 @@ public class Turret : MonoBehaviour
     public Transform FirePoint5;
     public Transform FirePoint6;
 
-    //Animator anim;
+
+
+
+
+    Animator MiniGun;
+    Animator MiniGunv2;
     //bool didFunction = false;
 
 
 
     private void Start()
     {
-        //anim = GetComponent<Animator>();
-        InvokeRepeating ("UpdateTarget", 0f, 0.001f);               
+        MiniGun = GetComponent<Animator>();
+        MiniGunv2 = GetComponent<Animator>();
+        InvokeRepeating ("UpdateTarget", 0f, 0.001f);
     }
 
     public void UpdateTarget ()
@@ -94,7 +106,9 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
         {
-            //anim.SetBool("IsActive", false);
+            if (barrel4 == true) { MiniGun.SetBool("IsActive", false); }
+            if (barrel6 == true) { MiniGunv2.SetBool("IsActivev2", false); }
+            
             if (useLaser)
             {
                 if (lineRenderer.enabled)
@@ -153,33 +167,42 @@ public class Turret : MonoBehaviour
 
         //Standard Upgraded
         if (barrel3)
-        {
+        { 
+
+            //if (fireCountDown <= 0)
+            //{
+            //    ShootOne();
+            //}
+
+            //if (fireCountDown <= 0f)
+            //{
+            //    ShootOne();
+            //    fireCountDown = 1f / AttackSpeed;
+
+            //    Debug.Log(fireCountDown);
+            //    Debug.Log("Barrel1");
+
+            //}
+            //fireCountDown -= Time.deltaTime;
+
             if (fireCountDown <= 0f)
             {
-                ShootOne();
-                fireCountDown = 1f / Random.Range(2, 4);
-
+                ShootThree();
+                fireCountDown = 1f / AttackSpeed;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel2");
 
             }
             fireCountDown -= Time.deltaTime;
 
-            if (fireCountDown2 <= 0f)
-            {
-                ShootThree();
-                fireCountDown2 = 1f / Random.Range(2, 4);
-
-
-            }
-            fireCountDown2 -= Time.deltaTime;
-
-            if (fireCountDown3 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootFour();
-                fireCountDown3 = 1f / Random.Range(2, 4);
-
-
+                fireCountDown = 1f / AttackSpeed;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel3");
             }
-            fireCountDown3 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
         }
 
 
@@ -278,10 +301,10 @@ public class Turret : MonoBehaviour
     public void LockOnTarget()
     {
         if(barrel4 == true) {
-            //anim.SetBool("IsActive", true);
+            MiniGun.SetBool("IsActive", true);
         }
         if(barrel6 == true) {
-            //anim.SetBool("IsActive", true);
+            MiniGunv2.SetBool("IsActivev2", true);
         }
 
         //Target Look on and follow the enemy

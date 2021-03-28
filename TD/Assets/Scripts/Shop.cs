@@ -5,19 +5,24 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-
+    [Header("BluePrints")]
     public TurretBlueprint standardTurret;
     public TurretBlueprint missileLuncher;
     public TurretBlueprint laserBeamer;
     public TurretBlueprint MiniGun;
     public TurretBlueprint Sniper;
 
+    [Header("TurretInfo")]
     public Text TurretName;
     public Text dmg;
     public Text speed;
     public Text range;
     public Text slow;
     public Text AOE;
+
+    public Turret TurretScript;
+    //public GameObject SimpleTurret;
+    //public GameObject RocketLuncher;
 
     BuildManager buildManager;
 
@@ -26,133 +31,56 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    public void StandartTurretInfo ()
+    public void TurretInfo (TurretBlueprint TurretBlueprint )
     {
-        TurretName.text = "Standard turret";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
 
-    public void UpgradedStandartTurretInfo ()
-    {
-        TurretName.text = "Standard Turret v2";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
+        GameObject Turret = TurretBlueprint.prefab;
+        TurretScript = Turret.GetComponent<Turret>();
+        TurretName.text = Turret.name;
 
-    public void RocketTurretInfo ()
-    {
-        TurretName.text = "Rocket Luncher";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
+        if(TurretScript.useLaser == true)
+        {
+            dmg.text = TurretScript.damageOverTime.ToString();
+        }
+        else
+        {
+            dmg.text = TurretScript.bulletPrefab.GetComponent<Bullet>().damage.ToString();
+        }
 
-    public void UpgradedRocketTurretInfo ()
-    {
-        TurretName.text = "Rocket Luncher v2";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
+        speed.text = "0";
+        range.text = TurretScript.range.ToString();
+        slow.text = TurretScript.slowAmount.ToString();
+        AOE.text = TurretScript.bulletPrefab.GetComponent<Bullet>().explosionRadius.ToString();
     }
-
-    public void LaserTurretInfo ()
-    {
-        TurretName.text = "Laser";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-    public void UpgradedLaserTurretInfo ()
-    {
-        TurretName.text = "Laser v2";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-
-    public void SnipertTurretInfo ()
-    {
-        TurretName.text = "Sniper Turret";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-    public void UpgradedSnipertTurretInfo ()
-    {
-        TurretName.text = "Sniper Turret v2";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-
-    public void MiniGunTurretInfo ()
-    {
-        TurretName.text = "MiniGun";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-    public void UpgradedMiniGunTurretInfo ()
-    {
-        TurretName.text = "MiniGun v2";
-        dmg.text = "1";
-        speed.text = "1";
-        range.text = "10";
-        slow.text = "0";
-        AOE.text = "0";
-    }
-
-
 
     public void SelectStandardTurret ()
     {
         Debug.Log("Standard Turret Selected");
         buildManager.SelectTurretToBuild(standardTurret);
-        StandartTurretInfo();
+        TurretInfo(standardTurret);
     }
     public void SelectMissleLuncher ()
     {
         Debug.Log("MissleLuncher Turret Selected");
         buildManager.SelectTurretToBuild(missileLuncher);
-        RocketTurretInfo();
+        TurretInfo(missileLuncher);
     }
     public void SelectLaserBeamer ()
     {
         Debug.Log("LaserBeamer Turret Selected");
         buildManager.SelectTurretToBuild(laserBeamer);
-        LaserTurretInfo();
+        TurretInfo(laserBeamer);
     }
     public void SelectMiniGun ()
     {
         Debug.Log("LaserBeamer Turret Selected");
         buildManager.SelectTurretToBuild(MiniGun);
-        MiniGunTurretInfo();
+        TurretInfo(MiniGun);
     }
     public void SelectSniper ()
     {
         Debug.Log("LaserBeamer Turret Selected");
         buildManager.SelectTurretToBuild(Sniper);
-        SnipertTurretInfo();
+        TurretInfo(Sniper);
     }
 }

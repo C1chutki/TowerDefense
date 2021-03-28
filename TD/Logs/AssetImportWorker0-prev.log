@@ -15,11 +15,11 @@ D:/Projekty/TowerDeffence3D/TD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62778
+62819
 Successfully changed project path to: D:/Projekty/TowerDeffence3D/TD
 D:/Projekty/TowerDeffence3D/TD
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 70.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 77.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -36,25 +36,25 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001089 seconds.
+Registered in 0.001186 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.65 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 69.85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.319 seconds
+- Completed reload, in  2.578 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007390 seconds.
+Registered in 0.007503 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 65.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 70.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -64,35 +64,43 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.136 seconds
+- Completed reload, in  1.306 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3319 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 220.0 MB.
-System memory in use after: 220.3 MB.
+Unloading 3321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 220.3 MB.
+System memory in use after: 220.5 MB.
 
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3747.
-Total: 5.753100 ms (FindLiveObjects: 0.452600 ms CreateObjectMapping: 0.351800 ms MarkObjects: 4.850200 ms  DeleteObjects: 0.097500 ms)
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3749.
+Total: 6.120900 ms (FindLiveObjects: 0.565800 ms CreateObjectMapping: 0.220700 ms MarkObjects: 5.233100 ms  DeleteObjects: 0.099000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefab/LevelButton.prefab
-  artifactKey: Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/LevelButton.prefab using Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a066ce1048584cb4fbebd3d63c8fdf0') in 0.145364 seconds
-  Import took 0.206184 seconds .
+  path: Assets/Prefab/Node.prefab
+  artifactKey: Guid(a54f8c2a12926434e8e51ec5b85aecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Node.prefab using Guid(a54f8c2a12926434e8e51ec5b85aecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7b961aeeae4eb5849ba603c74dd48d') in 0.399904 seconds
+  Import took 0.405748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.934519 seconds.
+  path: Assets/Prefab/Node.prefab
+  artifactKey: Guid(a54f8c2a12926434e8e51ec5b85aecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Node.prefab using Guid(a54f8c2a12926434e8e51ec5b85aecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09289c40d1caf47b318e2b7eb5325e3c') in 0.015215 seconds
+  Import took 0.020797 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006750 seconds.
+Registered in 0.007374 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -102,41 +110,109 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.073 seconds
+- Completed reload, in  1.693 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.5 MB.
+System memory in use after: 214.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3797.
+Total: 6.150300 ms (FindLiveObjects: 0.380600 ms CreateObjectMapping: 0.227600 ms MarkObjects: 5.475700 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2148.113600 seconds.
+  path: Assets/Materials/Node.mat
+  artifactKey: Guid(7571452be9fcadc40aebd59444598892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Node.mat using Guid(7571452be9fcadc40aebd59444598892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976c87caaea7c18901b4225cf2c337b9') in 0.245479 seconds
+  Import took 0.263856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.440534 seconds.
+  path: Assets/Scenes/Level01
+  artifactKey: Guid(12287399f518f4c4cbc90376d1978639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level01 using Guid(12287399f518f4c4cbc90376d1978639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f955b01bfb5f915635189a715129ace') in 0.024424 seconds
+  Import took 0.040342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038345 seconds.
+  path: Assets/Scenes/Level01/Global Volume Profile.asset
+  artifactKey: Guid(aeead94f5d504a646865f245d139b7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level01/Global Volume Profile.asset using Guid(aeead94f5d504a646865f245d139b7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7000a336f40aa12fbdfdb7e8b7843b85') in 0.011900 seconds
+  Import took 0.036910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 218.544956 seconds.
+  path: Assets/Scripts/Turret.cs
+  artifactKey: Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Turret.cs using Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac3b8e0f13701d50b08f64826100600') in 0.017068 seconds
+  Import took 0.046799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018687 seconds.
+  path: Assets/Scripts/Turret.cs
+  artifactKey: Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Turret.cs using Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac3b8e0f13701d50b08f64826100600') in 0.004059 seconds
+  Import took 0.009599 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008126 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.0 MB.
-System memory in use after: 209.2 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.9 MB.
+System memory in use after: 215.2 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3749.
-Total: 6.466500 ms (FindLiveObjects: 0.351200 ms CreateObjectMapping: 0.187100 ms MarkObjects: 5.891800 ms  DeleteObjects: 0.035300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 84.175325 seconds.
-  path: Assets/Prefab/LevelButton.prefab
-  artifactKey: Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/LevelButton.prefab using Guid(2d3d230ccdc502c469221ae4e3114fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbace3996d21c7d182d79fd9b35e0e5') in 0.037180 seconds
-  Import took 0.059000 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3868.
+Total: 5.674400 ms (FindLiveObjects: 0.284800 ms CreateObjectMapping: 0.183800 ms MarkObjects: 5.138800 ms  DeleteObjects: 0.065800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.189914 seconds.
-  path: Assets/Scenes/LevelSelector.unity
-  artifactKey: Guid(b0b7747e1ff326448a43fbef7704ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LevelSelector.unity using Guid(b0b7747e1ff326448a43fbef7704ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945f413b63779183e57963dda847e831') in 0.030121 seconds
-  Import took 0.057405 seconds .
+  Time since last request: 117.179317 seconds.
+  path: Assets/Scripts/Turret.cs
+  artifactKey: Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Turret.cs using Guid(b5c3af94fdd6e17468c078604662ae80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0652c17f1d8204e6070c73207901126') in 0.008409 seconds
+  Import took 0.015092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.602022 seconds.
+  path: Assets/Scripts/ScrollAndPinch.cs
+  artifactKey: Guid(8484db926c31f88408c0476efae9f2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScrollAndPinch.cs using Guid(8484db926c31f88408c0476efae9f2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2468157a796980b65b0f4bade4e8d03d') in 0.023533 seconds
+  Import took 0.030168 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007518 seconds.
+Registered in 0.013621 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -146,49 +222,249 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.470 seconds
+- Completed reload, in  2.894 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.2 MB.
-System memory in use after: 209.5 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.9 MB.
+System memory in use after: 215.2 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3751.
-Total: 6.955800 ms (FindLiveObjects: 0.311800 ms CreateObjectMapping: 0.188600 ms MarkObjects: 6.415800 ms  DeleteObjects: 0.038100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2729.560339 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e47fc03a61ad049850f9b9200fcf2a5') in 0.053763 seconds
-  Import took 0.086069 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3870.
+Total: 9.329600 ms (FindLiveObjects: 0.495200 ms CreateObjectMapping: 0.257900 ms MarkObjects: 8.546700 ms  DeleteObjects: 0.028400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001566 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e47fc03a61ad049850f9b9200fcf2a5') in 0.005467 seconds
-  Import took 0.011176 seconds .
+  Time since last request: 447.985341 seconds.
+  path: Assets/Scripts/NodeUI.cs
+  artifactKey: Guid(8724a81c6177f24419427f28573f3696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeUI.cs using Guid(8724a81c6177f24419427f28573f3696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dc4c30e0319893e6cca9c9ff6ac6d0') in 0.043559 seconds
+  Import took 0.051625 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.592070 seconds.
-  path: Assets/Prefab/Main Camera.prefab
-  artifactKey: Guid(9fd6fd8cb58597f4a8a8dff16d6f1fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Main Camera.prefab using Guid(9fd6fd8cb58597f4a8a8dff16d6f1fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629fa2a9451e065455ca3e3ab083edda') in 0.012230 seconds
-  Import took 0.040068 seconds .
+  Time since last request: 19.737367 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'febf9db9f0c72f7f5de1e1b99889c2c9') in 0.239839 seconds
+  Import took 0.250431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.181047 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a30a49bc5236bf43ff0c099c5b6cee3') in 0.060637 seconds
+  Import took 0.070015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.954287 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ada2bc8182137c69ab7b984fc8742d8') in 0.025279 seconds
+  Import took 0.031543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.693391 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee02d5790c588f09cf125e5342ee81d') in 0.042510 seconds
+  Import took 0.052108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.106029 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda3591bae4dce3c1ec91f276ae2aadb') in 0.032557 seconds
+  Import took 0.039354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.554850 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82971f7a463a740b5b1f73fc7f55488') in 0.038252 seconds
+  Import took 0.054237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.253973 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f030522112098c951e6a6f45189653eb') in 0.047165 seconds
+  Import took 0.056484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.252296 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1766af4ec41e67112e80991a0363b0ff') in 0.025547 seconds
+  Import took 0.032631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.662695 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751a42be8d02e799f04f2fedd1084a45') in 0.063802 seconds
+  Import took 0.101096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.883620 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f3cbdb7da1aca92a4deed3878902c5') in 0.090264 seconds
+  Import took 0.101132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.892395 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c35503bdacff87c6f265f7063bef44') in 0.035616 seconds
+  Import took 0.045574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.475167 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6cb76335b46b982bbb1485c8fb144e') in 0.020352 seconds
+  Import took 0.030066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.630220 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4beda353741b1d44ba74830990f0d6b') in 0.022274 seconds
+  Import took 0.032102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.938073 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f61f3116176bf605eb0ff903296ef99') in 0.042251 seconds
+  Import took 0.053619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.145875 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426f7406660cacc71e2af871b9e936e6') in 0.024108 seconds
+  Import took 0.031334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.093574 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f282be7ab7872f53c84fc41c75430c') in 0.030534 seconds
+  Import took 0.040818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.514542 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f24b7cd31a611e41b46a854e666417') in 0.062271 seconds
+  Import took 0.072667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.944642 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d97e33258b7f53a9d7811ca5247ba44') in 0.042460 seconds
+  Import took 0.050266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.795290 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe1be3c37de47062391441d7605bd41') in 0.026072 seconds
+  Import took 0.032619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.909018 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3d4475acfb2c63e092db40123a9ee9') in 0.069922 seconds
+  Import took 0.085536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.520634 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee7504c9cbe16cac4962324180f9b08') in 0.026410 seconds
+  Import took 0.033229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.009300 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a911828a23ef21db58d050f3faa5e804') in 0.021723 seconds
+  Import took 0.028734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.413979 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0521c577333577904149205eafffd9') in 0.019517 seconds
+  Import took 0.026397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.821187 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d9790a7d5f003141fba9df8356bf38') in 0.022962 seconds
+  Import took 0.030461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.008707 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e6aeb8a6bd10819efbf6f841cd98a2') in 0.026603 seconds
+  Import took 0.034787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.071938 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d3853e99818e54d8935bad76b75a006') in 0.047818 seconds
+  Import took 0.054978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.211398 seconds.
+  path: Assets/Turrets/Minigun.prefab
+  artifactKey: Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun.prefab using Guid(876d59bd276c03a4f839c2e5b08ba548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9724db9953eae92fdebd713de9d26ab7') in 0.023553 seconds
+  Import took 0.029938 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007095 seconds.
+Registered in 0.011251 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -198,33 +474,25 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.281 seconds
+- Completed reload, in  1.556 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.3 MB.
-System memory in use after: 209.5 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.5 MB.
+System memory in use after: 215.7 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3753.
-Total: 7.104600 ms (FindLiveObjects: 0.300700 ms CreateObjectMapping: 0.177000 ms MarkObjects: 6.588800 ms  DeleteObjects: 0.036100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.412738 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad61cc5ae0e5e7ccb05cb57ce9d9cc54') in 0.056115 seconds
-  Import took 0.184984 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3909.
+Total: 8.563900 ms (FindLiveObjects: 0.530200 ms CreateObjectMapping: 0.462600 ms MarkObjects: 7.541400 ms  DeleteObjects: 0.028400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007300 seconds.
+Registered in 0.008919 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -234,101 +502,25 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.243 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.1 MB.
-System memory in use after: 209.3 MB.
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3755.
-Total: 7.674200 ms (FindLiveObjects: 0.506500 ms CreateObjectMapping: 0.262200 ms MarkObjects: 6.869700 ms  DeleteObjects: 0.034100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 118.154858 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8223412894a7137dfa48dbaf7bdab90') in 0.044550 seconds
-  Import took 0.077369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.318713 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af49e8543c982af09d22b2083541a1c0') in 0.009866 seconds
-  Import took 0.035504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.958129 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba9ef7f697fdbba73609930c8612a7a') in 0.007743 seconds
-  Import took 0.014814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013959 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba9ef7f697fdbba73609930c8612a7a') in 0.005007 seconds
-  Import took 0.016414 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.773375 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb1b5a29e95059a1d7e4f4e5ff5f730') in 0.014611 seconds
-  Import took 0.053482 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008243 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.119 seconds
+- Completed reload, in  1.393 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.3 MB.
-System memory in use after: 209.5 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.4 MB.
+System memory in use after: 215.6 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3757.
-Total: 5.931400 ms (FindLiveObjects: 0.305500 ms CreateObjectMapping: 0.186900 ms MarkObjects: 5.352900 ms  DeleteObjects: 0.084900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1245.593554 seconds.
-  path: Assets/Scenes/UpgradeScene.unity
-  artifactKey: Guid(db586b10f4bd338459bd137b544c288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/UpgradeScene.unity using Guid(db586b10f4bd338459bd137b544c288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e749ce0522c2d44053ddf22b8fd95887') in 0.022833 seconds
-  Import took 0.052973 seconds .
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3911.
+Total: 5.935700 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.170000 ms MarkObjects: 5.330100 ms  DeleteObjects: 0.040500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008613 seconds.
+Registered in 0.008130 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -338,25 +530,233 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.132 seconds
+- Completed reload, in  1.435 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.5 MB.
+System memory in use after: 215.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3913.
+Total: 7.179900 ms (FindLiveObjects: 0.341100 ms CreateObjectMapping: 0.711500 ms MarkObjects: 6.098300 ms  DeleteObjects: 0.027400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010152 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.496 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.5 MB.
+System memory in use after: 215.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3915.
+Total: 6.758200 ms (FindLiveObjects: 0.442300 ms CreateObjectMapping: 0.287400 ms MarkObjects: 5.937400 ms  DeleteObjects: 0.089300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.235 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.3 MB.
-System memory in use after: 209.6 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.5 MB.
+System memory in use after: 215.8 MB.
 
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3759.
-Total: 6.584800 ms (FindLiveObjects: 0.482300 ms CreateObjectMapping: 0.209900 ms MarkObjects: 5.830200 ms  DeleteObjects: 0.060800 ms)
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3917.
+Total: 6.723400 ms (FindLiveObjects: 0.404400 ms CreateObjectMapping: 0.161400 ms MarkObjects: 6.103800 ms  DeleteObjects: 0.052100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3429.358304 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c69cfb2a8294d11bd5cc5a17f2ac46') in 0.195885 seconds
+  Import took 0.202956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.833119 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013de453eb2e9e8744d2774aec0ca81e') in 0.017053 seconds
+  Import took 0.022696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.825940 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47e7826e0b4496aef653cf2db0a8eae') in 0.077914 seconds
+  Import took 0.083708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.758291 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5c418d709fac04fec10eb2818e0d04') in 0.019045 seconds
+  Import took 0.025208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.823462 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d7eb89dab28ae8636456266be07fdb') in 0.021550 seconds
+  Import took 0.028351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.824836 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ca41befedc637c7e0808d9be1f2917') in 0.018733 seconds
+  Import took 0.023954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.123500 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c3ac1eb39f23104ced73963b59ebab') in 0.024558 seconds
+  Import took 0.030678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.202536 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6717ade5aaa8fb1c4d3049fd90433c') in 0.029701 seconds
+  Import took 0.037498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.714013 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3effb411707e64c3d30fa5bc9f1f6265') in 0.020923 seconds
+  Import took 0.027967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.505917 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390df86a2cc63d227f4905f0951fdd87') in 0.024224 seconds
+  Import took 0.033448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.476603 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5d791a3e34853ef5417206a5c3adc0') in 0.016744 seconds
+  Import took 0.023194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.127094 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68b8c71bc94c50ed45535c17c99323e') in 0.017998 seconds
+  Import took 0.026613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.984977 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac84975aebf33717df4635650e1560c7') in 0.018897 seconds
+  Import took 0.024336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.274088 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb49a8fd3ad042bd5077082b1042b143') in 0.024032 seconds
+  Import took 0.030566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.223013 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41caec8c6d6712df1150f22dcfa7c46f') in 0.041732 seconds
+  Import took 0.047378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.408057 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bfaf0fc95d875bee7675f760455790') in 0.022705 seconds
+  Import took 0.029666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.021426 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108838a580b7f77981c6e1f144ad78f1') in 0.058021 seconds
+  Import took 0.064210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.796550 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48639faf4d1e79e1dc7fd6b48d61e787') in 0.016634 seconds
+  Import took 0.022630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.620589 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25dc9ae46d06da3f978711041976f7b8') in 0.045719 seconds
+  Import took 0.051702 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008749 seconds.
+Registered in 0.008582 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -366,25 +766,33 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.208 seconds
+- Completed reload, in  1.284 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.1 MB.
-System memory in use after: 209.4 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.5 MB.
+System memory in use after: 215.8 MB.
 
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3761.
-Total: 7.731900 ms (FindLiveObjects: 0.635900 ms CreateObjectMapping: 0.337300 ms MarkObjects: 6.728000 ms  DeleteObjects: 0.029400 ms)
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3955.
+Total: 5.935600 ms (FindLiveObjects: 0.384000 ms CreateObjectMapping: 0.212300 ms MarkObjects: 5.304000 ms  DeleteObjects: 0.033800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3988.154926 seconds.
+  path: Assets/Turrets/Minigun_2.prefab
+  artifactKey: Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Minigun_2.prefab using Guid(4bbc7f681f0135f40ad7079458896d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee96cb30ce941baa244467fd039ad5d') in 0.199309 seconds
+  Import took 0.206978 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009064 seconds.
+Registered in 0.007440 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -394,25 +802,125 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.742 seconds
+- Completed reload, in  1.257 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.8 MB.
+System memory in use after: 216.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 9.700200 ms (FindLiveObjects: 0.366400 ms CreateObjectMapping: 0.200600 ms MarkObjects: 9.103500 ms  DeleteObjects: 0.028100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.692225 seconds.
+  path: Assets/Animations/Minigun_2.controller
+  artifactKey: Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Minigun_2.controller using Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1922627c5db720355b9b23f04da79bb') in 0.019688 seconds
+  Import took 0.028285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017712 seconds.
+  path: Assets/Animations/Minigun_2.controller
+  artifactKey: Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Minigun_2.controller using Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1922627c5db720355b9b23f04da79bb') in 0.053750 seconds
+  Import took 0.062059 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.335 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.3 MB.
-System memory in use after: 209.6 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.8 MB.
+System memory in use after: 216.0 MB.
 
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3763.
-Total: 6.768000 ms (FindLiveObjects: 0.314000 ms CreateObjectMapping: 0.187600 ms MarkObjects: 6.233100 ms  DeleteObjects: 0.032000 ms)
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3995.
+Total: 6.527400 ms (FindLiveObjects: 0.338000 ms CreateObjectMapping: 0.175800 ms MarkObjects: 5.981200 ms  DeleteObjects: 0.031400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.504272 seconds.
+  path: Assets/Turrets/MiniGun/MiniGunBulletImpact 1.prefab
+  artifactKey: Guid(349aceef54c6a1c4e863db6e90180347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun/MiniGunBulletImpact 1.prefab using Guid(349aceef54c6a1c4e863db6e90180347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260c9184573d384807a1b94efe5bf4ad') in 0.035293 seconds
+  Import took 0.041017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.830590 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab
+  artifactKey: Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab using Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e968724f41b10b43fa3b582c645e6564') in 0.015413 seconds
+  Import took 0.021411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.556883 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab
+  artifactKey: Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab using Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8194226328f8c650c97e4129ce4ef4') in 0.013438 seconds
+  Import took 0.028566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060407 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab
+  artifactKey: Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab using Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8194226328f8c650c97e4129ce4ef4') in 0.011893 seconds
+  Import took 0.020388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.543978 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/Bullet0DMG 1.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/Bullet0DMG 1.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46117150dd1c791eace422bac06b9195') in 0.161563 seconds
+  Import took 0.167497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.840504 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/Bullet0DMG 1.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/Bullet0DMG 1.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b966910b91acad5d254aef7fc99cdb') in 0.031452 seconds
+  Import took 0.042496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.457662 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab
+  artifactKey: Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBulletImpact.prefab using Guid(7a9146cfb85a6444dbd022f2bc4bd002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47d81a95e04eb281132dc6e584f060d') in 0.011232 seconds
+  Import took 0.017288 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008300 seconds.
+Registered in 0.010998 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 UnityIAP: [InitializeOnLoad] Facebook Check
 UnityIAP: Runtime [2020.2.1f1]
@@ -422,156 +930,1004 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.136 seconds
+- Completed reload, in  1.175 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.9 MB.
+System memory in use after: 216.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4033.
+Total: 6.152500 ms (FindLiveObjects: 0.413300 ms CreateObjectMapping: 0.182400 ms MarkObjects: 5.515100 ms  DeleteObjects: 0.040300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.042060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 215.7 MB.
+System memory in use after: 216.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4035.
+Total: 8.760200 ms (FindLiveObjects: 0.478600 ms CreateObjectMapping: 0.265200 ms MarkObjects: 7.985600 ms  DeleteObjects: 0.029200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.443781 seconds.
+  path: Assets/Turrets/MiniGun/MinigunBullet.prefab
+  artifactKey: Guid(22cc22e0c4327524982a6a7e27961015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun/MinigunBullet.prefab using Guid(22cc22e0c4327524982a6a7e27961015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb61cece76653d182743eeadb4fb118') in 0.186057 seconds
+  Import took 0.193129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.965967 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6f0c82731b3878a56d205d4904c0ba') in 0.021849 seconds
+  Import took 0.028293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.133167 seconds.
+  path: Assets/Animations/Minigun_2.controller
+  artifactKey: Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Minigun_2.controller using Guid(b47e88cdfc5160c43a7ebe4655279fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943e40321da12e6cea455a33da76a6b7') in 0.015862 seconds
+  Import took 0.022584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.157662 seconds.
+  path: Assets/Animations/MiniGunv2.anim
+  artifactKey: Guid(f2a808790ea09ff4dbb4853f913e155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/MiniGunv2.anim using Guid(f2a808790ea09ff4dbb4853f913e155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930d64d29444b0f22a804b5b7abc9057') in 0.015570 seconds
+  Import took 0.022957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079836 seconds.
+  path: Assets/Animations/MiniGunv2.anim
+  artifactKey: Guid(f2a808790ea09ff4dbb4853f913e155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/MiniGunv2.anim using Guid(f2a808790ea09ff4dbb4853f913e155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930d64d29444b0f22a804b5b7abc9057') in 0.021705 seconds
+  Import took 0.026912 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013280 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.786 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.0 MB.
+System memory in use after: 216.3 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4073.
+Total: 7.770600 ms (FindLiveObjects: 0.378800 ms CreateObjectMapping: 0.532000 ms MarkObjects: 6.827200 ms  DeleteObjects: 0.030800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.077095 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb30b5586b198458d3cd6293cde1a8e') in 0.254650 seconds
+  Import took 0.262606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.137382 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d979d5610e27cb320bd66c758c0d39') in 0.019353 seconds
+  Import took 0.025509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.013987 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693b830c84117917194771882de3e66c') in 0.048125 seconds
+  Import took 0.056272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002148 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693b830c84117917194771882de3e66c') in 0.025964 seconds
+  Import took 0.032943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.438907 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab
+  artifactKey: Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/UpgradedMiniGunBullet.prefab using Guid(8e3bcd437a29f4644932f549ef9e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3d57bf6f949c56bca993b5e6a6f3f2') in 0.016289 seconds
+  Import took 0.023107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.968740 seconds.
+  path: Assets/Turrets/MiniGun Upgraded/Bullet.mat
+  artifactKey: Guid(8aed2c09c7291604d837c58fbec5a954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/MiniGun Upgraded/Bullet.mat using Guid(8aed2c09c7291604d837c58fbec5a954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57ff989f442ea5ee521fd89a394b388') in 0.038007 seconds
+  Import took 0.045221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.503555 seconds.
+  path: Assets/Turrets/Rocket Luncher/Rocket.blend
+  artifactKey: Guid(48ddb39181074d340b6e97ae8d8fa8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Rocket.blend using Guid(48ddb39181074d340b6e97ae8d8fa8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd5b309e78364c12875f59b8e15a9db') in 0.068843 seconds
+  Import took 0.075716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.524792 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missile Launcher Texture.png
+  artifactKey: Guid(2ba58ade3d72a9244ab5abe9f925491d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missile Launcher Texture.png using Guid(2ba58ade3d72a9244ab5abe9f925491d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b13449d02d7f56861a9997825d9e41') in 0.123734 seconds
+  Import took 0.131620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.721388 seconds.
+  path: Assets/Turrets/Rocket Luncher/Materials
+  artifactKey: Guid(325dae1cfe023444e8af2c662f22a1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Materials using Guid(325dae1cfe023444e8af2c662f22a1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d65cfd8bf62798f3b32c1de7b9a294c') in 0.015844 seconds
+  Import took 0.023002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131243 seconds.
+  path: Assets/Turrets/Rocket Luncher/Materials/Missile Launcher Texture.mat
+  artifactKey: Guid(793573e939d9f3549a780cdf6c2edd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Materials/Missile Launcher Texture.mat using Guid(793573e939d9f3549a780cdf6c2edd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e3746fcc37f2147be8e76a9b73ed82') in 0.021574 seconds
+  Import took 0.027782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.784170 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd69e0ee00dbe1862c02da29d3b44619') in 0.057998 seconds
+  Import took 0.064033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002296 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd69e0ee00dbe1862c02da29d3b44619') in 0.034299 seconds
+  Import took 0.042806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.034472 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f034f33488dd3b351cbbfc24d1212aef') in 0.040033 seconds
+  Import took 0.046030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.953040 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b148c6c94c16d4f3c288d202f4e4b659') in 0.030069 seconds
+  Import took 0.036840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.772529 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22471a8d3222fc80601df0281d565c55') in 0.028331 seconds
+  Import took 0.034923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.914758 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd81c54451a67fde504f828cfa1878e') in 0.023665 seconds
+  Import took 0.028935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.985030 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0de25414180de874e2e7c5a811859d') in 0.038964 seconds
+  Import took 0.047873 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007768 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+UnityIAP: [InitializeOnLoad] Facebook Check
+UnityIAP: Runtime [2020.2.1f1]
+UnityIAP: Current Build is Android:Android
+UnityIAP: stub FacebookStore.dll disabled
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.362 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.3 MB.
-System memory in use after: 209.6 MB.
+Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.5 MB.
+System memory in use after: 216.8 MB.
 
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3765.
-Total: 5.708200 ms (FindLiveObjects: 0.361600 ms CreateObjectMapping: 0.202800 ms MarkObjects: 5.101900 ms  DeleteObjects: 0.040700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 3915.403949 seconds.
-  path: Assets/Scripts/Playerprefs.cs
-  artifactKey: Guid(78858d792bd0cff47bd722a9da2c7d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Playerprefs.cs using Guid(78858d792bd0cff47bd722a9da2c7d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4754999191f1d251561eb55fe21b4289') in 0.024441 seconds
-  Import took 0.272793 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007690 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.223 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.2 MB.
-System memory in use after: 209.4 MB.
-
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3768.
-Total: 5.878400 ms (FindLiveObjects: 0.322300 ms CreateObjectMapping: 0.220200 ms MarkObjects: 5.295400 ms  DeleteObjects: 0.038200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008350 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.283 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.4 MB.
-System memory in use after: 209.6 MB.
-
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3770.
-Total: 6.160400 ms (FindLiveObjects: 0.431600 ms CreateObjectMapping: 0.288200 ms MarkObjects: 5.407400 ms  DeleteObjects: 0.031500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009266 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnityIAP: [InitializeOnLoad] Facebook Check
-UnityIAP: Runtime [2020.2.1f1]
-UnityIAP: Current Build is Android:Android
-UnityIAP: stub FacebookStore.dll disabled
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.4 MB.
-System memory in use after: 209.6 MB.
-
-Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3772.
-Total: 7.658700 ms (FindLiveObjects: 1.008700 ms CreateObjectMapping: 0.259800 ms MarkObjects: 6.199500 ms  DeleteObjects: 0.188900 ms)
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4116.
+Total: 5.816600 ms (FindLiveObjects: 0.386100 ms CreateObjectMapping: 0.179300 ms MarkObjects: 5.208400 ms  DeleteObjects: 0.041200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2054.731254 seconds.
-  path: Assets/Prefab/UpgradeButton.prefab
-  artifactKey: Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/UpgradeButton.prefab using Guid(f8eba7ad205c81449bf8aba218c3d931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e2ea77cd3178ccd18d3e10548bacb7') in 0.114042 seconds
-  Import took 0.136629 seconds .
+  Time since last request: 49.555297 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missile.prefab
+  artifactKey: Guid(b729906f6571ab64f866814082c7ed2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missile.prefab using Guid(b729906f6571ab64f866814082c7ed2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32685211188c1ff5b3cd39fad6a6d49') in 0.117186 seconds
+  Import took 0.123552 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 84.196628 seconds.
-  path: Assets/Prefab/LaserTurretPrefabs/Laser Beamer.prefab
-  artifactKey: Guid(095d498de3f6b1c4c8ebdf6e86bbc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/LaserTurretPrefabs/Laser Beamer.prefab using Guid(095d498de3f6b1c4c8ebdf6e86bbc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba845ded9ab311996860c8279cc04a2e') in 0.154829 seconds
-  Import took 0.209436 seconds .
+  Time since last request: 0.000180 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e18d59be47f701f87e094eb2b6b8cb2') in 0.194754 seconds
+  Import took 0.200610 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 178.813097 seconds.
-  path: Assets/Turrets/Laser/LaserImpactEffect (2).prefab
-  artifactKey: Guid(995828dcd1965e6429e7b0c3022f3f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Laser/LaserImpactEffect (2).prefab using Guid(995828dcd1965e6429e7b0c3022f3f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119be5716caa56c8a5d87ddcc6306685') in 0.120878 seconds
-  Import took 0.199764 seconds .
+  Time since last request: 20.562713 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1030f90dd63288ef61804445dd85ca') in 0.094875 seconds
+  Import took 0.105124 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Turrets/Laser/LaserImpactEffect.prefab
-  artifactKey: Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Laser/LaserImpactEffect.prefab using Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf902c99812d6eb8c62986c5eb21cad') in 0.011716 seconds
-  Import took 0.066997 seconds .
+  Time since last request: 6.628252 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7310c631c6b1b241e4e4fefd30b46f3') in 0.032566 seconds
+  Import took 0.041153 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Turrets/Laser/Point Light.prefab
-  artifactKey: Guid(a05084b8666a0b7449c4674bdf37e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Laser/Point Light.prefab using Guid(a05084b8666a0b7449c4674bdf37e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030facc4b58b03b3a92436b7d9d981cf') in 0.110612 seconds
-  Import took 0.137953 seconds .
+  Time since last request: 4.840381 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696bf601031debcbf206491ebb00122c') in 0.035019 seconds
+  Import took 0.043466 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Turrets/Laser/LaserImpactEffect.prefab
-  artifactKey: Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Laser/LaserImpactEffect.prefab using Guid(9a1dedbb863ccd346801b44cffa1d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf902c99812d6eb8c62986c5eb21cad') in 0.022389 seconds
-  Import took 0.029356 seconds .
+  Time since last request: 19.273051 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6cce1e2e2273b1760424e2542ac836d') in 0.033217 seconds
+  Import took 0.041272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.702684 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8653d85ce9857b8e06384446344522') in 0.074241 seconds
+  Import took 0.081375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.157186 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8073b0e855d5da5e372c44a335938424') in 0.036193 seconds
+  Import took 0.045889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.710488 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3158e8c839fad630dab3ac03aac0e05') in 0.059305 seconds
+  Import took 0.078685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.400106 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2939664652846e117e07fac24d565fe1') in 0.045403 seconds
+  Import took 0.053551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.517367 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ce523a20cf6b39ec2751f4f3e79215') in 0.045250 seconds
+  Import took 0.057796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.255887 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43abc91f07bb4cc2cd06d7f4f2a80985') in 0.034213 seconds
+  Import took 0.040791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.364046 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e1e3f4c0569b3d2f8ed59ce38cfd30') in 0.031046 seconds
+  Import took 0.039655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.471722 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a44d58a2379f14574cfb33a3b3d5dc8') in 0.032060 seconds
+  Import took 0.037827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.278337 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0fa7d9268c98a4a999312b6acdb5be') in 0.035393 seconds
+  Import took 0.042059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.039015 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32fe717583303984ceabf1114e63905') in 0.045491 seconds
+  Import took 0.052338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.809296 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44b2a7dd0fdc1c39b7fba8be44fbba0') in 0.046672 seconds
+  Import took 0.054665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.237349 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbf1970feee5f9a59f7b91b649b93c9') in 0.044527 seconds
+  Import took 0.051399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.224289 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd955af9d1b76327ebe2887650c5f7370') in 0.051127 seconds
+  Import took 0.062811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.939940 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761bf69a4de5596a8a5b56f761d777cf') in 0.038931 seconds
+  Import took 0.049002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.496434 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2378fba141b78ea015dfbec6fb1d699d') in 0.035231 seconds
+  Import took 0.043372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.540908 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3993099f0abafc35162edefd08e45949') in 0.031948 seconds
+  Import took 0.042216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.435163 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e48f95fe06a9411eba1ebec5bd6fb1e') in 0.032417 seconds
+  Import took 0.039497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.464862 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f2141e69765311daf73a17fe07ba34') in 0.161961 seconds
+  Import took 0.167931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062307 seconds.
+  path: Assets/Plugins/UnityPurchasing/Icons/LinkBlack.png
+  artifactKey: Guid(33d3dd2c39dfd49a3b2d36b20225624a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/UnityPurchasing/Icons/LinkBlack.png using Guid(33d3dd2c39dfd49a3b2d36b20225624a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dc1cac275e4637c78f44b9573d2d8b') in 0.079770 seconds
+  Import took 0.089178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Plugins/UnityPurchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png
+  artifactKey: Guid(55e457740fe60405dac77af143e1a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/UnityPurchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png using Guid(55e457740fe60405dac77af143e1a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b0c610489b31d207aa16201980b137') in 0.045207 seconds
+  Import took 0.054252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Plugins/UnityPurchasing/Icons/LinkWhite.png
+  artifactKey: Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/UnityPurchasing/Icons/LinkWhite.png using Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ed8d850a60430d4453412fd00ce1ef') in 0.043463 seconds
+  Import took 0.052218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013371 seconds.
+  path: Assets/Plugins/UnityPurchasing/Icons/LinkWhite.png
+  artifactKey: Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/UnityPurchasing/Icons/LinkWhite.png using Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ed8d850a60430d4453412fd00ce1ef') in 0.025632 seconds
+  Import took 0.034546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.925832 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3413b7bd16bd2723d4a9dc826f1d7a67') in 0.025657 seconds
+  Import took 0.032747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.798991 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201e2b2d9ac9422593a8f77c41fa8319') in 0.030968 seconds
+  Import took 0.036836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.226872 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f085a38ef2695912729a06ec47bd741') in 0.025008 seconds
+  Import took 0.031568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.770250 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71628fc042cc8fa37f18845c0b3aea11') in 0.045263 seconds
+  Import took 0.052884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.586365 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f0aeedaaaf3c308e147449231bd9a5') in 0.035872 seconds
+  Import took 0.048702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.352305 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e593b44c3f2596f0159f519bd4ae89') in 0.031391 seconds
+  Import took 0.039383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.817580 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8079e1510c56b461e740a7f2de0bc26a') in 0.057438 seconds
+  Import took 0.067769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.361740 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3394d489b5c0cf3a2742a800f1a62cff') in 0.045907 seconds
+  Import took 0.053324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.546328 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25495bb2f5c0cbbb726c0995cf95d862') in 0.033216 seconds
+  Import took 0.040903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.116622 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce47e064ea1462a52ef21fb7565d0549') in 0.033230 seconds
+  Import took 0.039402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.362363 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb3565b85e96e25102ae4672b6b1188') in 0.023879 seconds
+  Import took 0.030753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.159779 seconds.
+  path: Assets/Turrets/Rocket Luncher/New Material.mat
+  artifactKey: Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/New Material.mat using Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b02ed3267c21e7ec97cb5d77d08768') in 0.054779 seconds
+  Import took 0.061088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.279421 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d963848e99457160fc96a96245dd35') in 0.047820 seconds
+  Import took 0.060666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.485077 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c97c52b5c1513d375514ef529d35507') in 0.031629 seconds
+  Import took 0.037237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.797325 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22451b978500e91cff0c975752c3626') in 0.036857 seconds
+  Import took 0.119040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.417994 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5d509123281744991c148e08522364') in 0.037956 seconds
+  Import took 0.052808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.985131 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8799529c340c585fafc40d26eaa00882') in 0.037933 seconds
+  Import took 0.050450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.806172 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0db5202aa241f4d72bd55f1e7ea6cf') in 0.025437 seconds
+  Import took 0.043673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.326579 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7aaa5be4dd880b9109fe6bbe40e1e0') in 0.044579 seconds
+  Import took 0.053818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.267190 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d56514387b120f8ff45e70972193538') in 0.031685 seconds
+  Import took 0.038275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.471030 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b27c6f66a3e737070ae36e95ee0cc4') in 0.120558 seconds
+  Import took 0.133569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.086724 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64af860d7c479b3154ac3d1d50ee0e5') in 0.049821 seconds
+  Import took 0.060595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.953397 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e21f36d83576d37f5bfc209fa0dd9a1') in 0.028647 seconds
+  Import took 0.036215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.454882 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4f8856aee37fc378de9521f3747bba') in 0.031312 seconds
+  Import took 0.038585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.025101 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be720cd4d51a5aa3476750226335f100') in 0.038483 seconds
+  Import took 0.045889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.307299 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8049f60db851d8d21778e1da6ec38073') in 0.043635 seconds
+  Import took 0.051849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.906480 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a1ea636deb80a75a9d1c6914180af8') in 0.041942 seconds
+  Import took 0.052906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.484376 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858ec00f6dda37b076883936eb428990') in 0.058274 seconds
+  Import took 0.070383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.882167 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990def28cb87deaa4d7db85a8b29cad3') in 0.044273 seconds
+  Import took 0.053720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.214830 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00de5706477ccc5b40d46a7f75858605') in 0.047095 seconds
+  Import took 0.056933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.652150 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fd6a2e456a74711a4ced8a65a360d2a') in 0.024355 seconds
+  Import took 0.032128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.478636 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba0d04d0d21c672158f2201f6711293') in 0.037546 seconds
+  Import took 0.053120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.483718 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2693558c392aea2f2fa41b43686082d') in 0.042239 seconds
+  Import took 0.051500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.178180 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed6ae711923f3df1647b466d396fb0b') in 0.039841 seconds
+  Import took 0.047201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.095047 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327a55d611dc24a63ab04e938ddfb182') in 0.040877 seconds
+  Import took 0.051195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.545942 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b57f4a9b1eaea019cfc124b8e7f25e1') in 0.051044 seconds
+  Import took 0.062714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.055961 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d5148bb94ee8269ed64622fcf4f620') in 0.043604 seconds
+  Import took 0.053816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.866558 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06998a62484df4936358156ce04d81e4') in 0.052660 seconds
+  Import took 0.066343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.832031 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88e6500974c22f6a8e7747fdf4e8946') in 0.059538 seconds
+  Import took 0.076801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.666455 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbaee7e80ad115877ba0e852c76f2b5') in 0.042835 seconds
+  Import took 0.054737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.187753 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bade971c981cc73890fbadfb36950ea') in 0.049482 seconds
+  Import took 0.059438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.836532 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322795b4fa51a0c5971586d6c8e3c94a') in 0.049949 seconds
+  Import took 0.059313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.543899 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3382306326726f3d1d2acadcb85c0762') in 0.041966 seconds
+  Import took 0.050637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.081830 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c14c8282de30fffbd728ace5e1f12d8') in 0.046634 seconds
+  Import took 0.057742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.570616 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937f8957ff05a81ad0b3902a5b4a3696') in 0.029922 seconds
+  Import took 0.038167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.784773 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c03f635a547674bc63a522cdbbab2e') in 0.047536 seconds
+  Import took 0.059953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.427664 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcace2ca6dc1274d17db94f25f2f62e') in 0.039109 seconds
+  Import took 0.048046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.831285 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3007920281b01428dc191ac80547e5d5') in 0.067229 seconds
+  Import took 0.107510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.682948 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4598946e117027b617c6bb7d49ca12d5') in 0.172546 seconds
+  Import took 0.181264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.785773 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead8bd45b84af10d89cfb0b87be259ee') in 0.066799 seconds
+  Import took 0.079039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.698216 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b9f540d08e2edf3e111bd215d1dd86') in 0.096230 seconds
+  Import took 0.104644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.351564 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dba8756ab2d79bbe83bae45fe853142') in 0.061434 seconds
+  Import took 0.071903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.340673 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cb9006359ef73770a771fbcbb085d7') in 0.052547 seconds
+  Import took 0.072591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.118699 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc3a00c90df8c5531f9a11e494021e4') in 0.068524 seconds
+  Import took 0.080623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.350737 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a378e4524889e830d4bde5cf73836ced') in 0.028966 seconds
+  Import took 0.035997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.522297 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecaf38d04d41c2ac152c7d05ff104f97') in 0.033831 seconds
+  Import took 0.039959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.627723 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ddf9f82e2b67507117a0c7098188b1') in 0.031223 seconds
+  Import took 0.042543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.832770 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25528d38f6fed158a0013a96ecbadc46') in 0.039712 seconds
+  Import took 0.050166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.438084 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec19b1f6db17635365744fc0fea8c8ee') in 0.027862 seconds
+  Import took 0.042564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.116105 seconds.
+  path: Assets/Turrets/Rocket Luncher/Missle.prefab
+  artifactKey: Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/Missle.prefab using Guid(ac913de2225125646a59a268776b31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3046e1647b93a96cbb2551dba48f16') in 0.031069 seconds
+  Import took 0.038823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.021218 seconds.
+  path: Assets/Turrets/Rocket Luncher/New Material.mat
+  artifactKey: Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/New Material.mat using Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e359e918076c90b11a56f51f811bbb') in 0.034637 seconds
+  Import took 0.041182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.608079 seconds.
+  path: Assets/Turrets/Rocket Luncher/New Material.mat
+  artifactKey: Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/New Material.mat using Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1ebc05bc1d94691f557fbc4df13c42') in 0.024093 seconds
+  Import took 0.030724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.195806 seconds.
+  path: Assets/Turrets/Rocket Luncher/New Material.mat
+  artifactKey: Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Turrets/Rocket Luncher/New Material.mat using Guid(9b4b59f7dad8d2b4997a0e456c7058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba203c57c8378654cee7261ce14290cb') in 0.022586 seconds
+  Import took 0.031679 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

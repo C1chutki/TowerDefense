@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
-  fireRate: 10
+  TurretName: Upgraded MiniGun
+  fireRate: 5
   bulletPrefab: {fileID: 5750808914037204546, guid: 8e3bcd437a29f4644932f549ef9e787d, type: 3}
   useLaser: 0
   damageOverTime: 20

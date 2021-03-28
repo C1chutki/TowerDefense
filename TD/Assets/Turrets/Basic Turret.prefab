@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 10
+  TurretName: Basic
   fireRate: 1
   bulletPrefab: {fileID: 5750808914037204546, guid: 9a2eceea1758fea449a9efa6fc03bdbc, type: 3}
   useLaser: 0

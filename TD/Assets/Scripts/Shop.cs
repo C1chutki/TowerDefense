@@ -21,8 +21,6 @@ public class Shop : MonoBehaviour
     public Text AOE;
 
     public Turret TurretScript;
-    //public GameObject SimpleTurret;
-    //public GameObject RocketLuncher;
 
     BuildManager buildManager;
 
@@ -36,7 +34,8 @@ public class Shop : MonoBehaviour
 
         GameObject Turret = TurretBlueprint.prefab;
         TurretScript = Turret.GetComponent<Turret>();
-        TurretName.text = Turret.name;
+
+        TurretName.text = TurretScript.TurretName;
 
         if(TurretScript.useLaser == true)
         {
@@ -47,7 +46,7 @@ public class Shop : MonoBehaviour
             dmg.text = TurretScript.bulletPrefab.GetComponent<Bullet>().damage.ToString();
         }
 
-        speed.text = "0";
+        speed.text = TurretScript.fireRate.ToString();
         range.text = TurretScript.range.ToString();
         slow.text = TurretScript.slowAmount.ToString();
         AOE.text = TurretScript.bulletPrefab.GetComponent<Bullet>().explosionRadius.ToString();

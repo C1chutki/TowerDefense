@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8274016859315648220, guid: fdedafd9e5c62b84691b54f27742824e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8274016859315648220, guid: fdedafd9e5c62b84691b54f27742824e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 2012119236}
   UpgradeCost: {fileID: 162496847}
   SellAmount: {fileID: 2053774829}
-  shop: {fileID: 0}
+  ShopManager: {fileID: 1902271004}
 --- !u!1 &320318442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2023,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440036279
 GameObject:
@@ -2783,7 +2783,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 02a18b46f3aa0074e93986b2906b505a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3777,7 +3777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
-    count: 100
+    count: 1
     rate: 1
     enemy2: {fileID: 6062777461994246182, guid: 4f2ba92579bdda04a8c537d986a542cf, type: 3}
     count2: 1
@@ -3827,7 +3827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469ba31fecd5e9c49ac90114ebcdfca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 100
+  startMoney: 1000
   startLives: 10
 --- !u!114 &770030062
 MonoBehaviour:
@@ -5026,8 +5026,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 770030063}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1702348911}
+        m_TargetAssemblyTypeName: CompleteLevel, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -5784,7 +5784,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 02a18b46f3aa0074e93986b2906b505a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8554,28 +8554,28 @@ MonoBehaviour:
     turretRange: 20
     UpgradedPrefab: {fileID: 1157274215827625453, guid: 02b20f76c3c59ec4c8ac85732149ce1b, type: 3}
     UpgradeCost: 20
-    turretRange2: 13
+    turretRange2: 26
   missileLuncher:
     prefab: {fileID: 5127027596391697312, guid: d6c11eacdd1523d4fad9e8aebf698038, type: 3}
     cost: 15
-    turretRange: 15
+    turretRange: 30
     UpgradedPrefab: {fileID: 3043359343149399691, guid: 32a6dfc1e4b43144fa56a5969fc2e82e, type: 3}
     UpgradeCost: 30
-    turretRange2: 20
+    turretRange2: 40
   laserBeamer:
     prefab: {fileID: 5075325649513938975, guid: af7b9d4db2afe1d408be398661260bfd, type: 3}
     cost: 30
-    turretRange: 10
+    turretRange: 20
     UpgradedPrefab: {fileID: 6419902592408125796, guid: 29ed16ca140ee2a4b9b5f71e4092ff98, type: 3}
     UpgradeCost: 60
-    turretRange2: 10
+    turretRange2: 20
   MiniGun:
     prefab: {fileID: 5617179277758228431, guid: 876d59bd276c03a4f839c2e5b08ba548, type: 3}
     cost: 40
-    turretRange: 10
+    turretRange: 20
     UpgradedPrefab: {fileID: 791275784581320195, guid: 4bbc7f681f0135f40ad7079458896d54, type: 3}
     UpgradeCost: 50
-    turretRange2: 15
+    turretRange2: 30
   Sniper:
     prefab: {fileID: 4530690094442270937, guid: 5a3c69490e07c2e4abf2b74e2ff479f5, type: 3}
     cost: 40
@@ -8590,8 +8590,6 @@ MonoBehaviour:
   slow: {fileID: 461183163}
   AOE: {fileID: 1477707150}
   TurretScript: {fileID: 0}
-  RocketLuncher: {fileID: 5127027596391697312, guid: d6c11eacdd1523d4fad9e8aebf698038, type: 3}
-  dsa: 0
 --- !u!1 &1920631913
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,7 +9744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136863932}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 303581068}
@@ -9793,7 +9791,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8177471321811730583, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.078431375}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
 
     [Header("Unity Stuff")]
     public Image HealthBar;
-    //public static int ClickPWR;
     private Clicking click;
 
     public bool isDead = false;
@@ -30,7 +29,6 @@ public class Enemy : MonoBehaviour
         health = StartHealth;
         InvokeRepeating("Regenerate", 0.0f, 1.0f);
         click = FindObjectOfType<Clicking>();
-        //ClickPWR = Clicking.ClickPWR;
         
     }
 
@@ -43,7 +41,6 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Clickdown!");
         health -= click.clickpwr;
-        //health -= ClickPWR;
 
         HealthBar.fillAmount = health / StartHealth;
 
@@ -75,14 +72,11 @@ public class Enemy : MonoBehaviour
         isDead = true;
         PlayerStats.Money += worth;
 
-        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
 
         WaveSpawner.EnemiesAlive--;
 
         Destroy(gameObject);
-        //click.ClickPWR++;
     }
-
-   
 }

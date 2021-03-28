@@ -211,7 +211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 13
-  fireRate: 10
+  TurretName: Upgraded Basic
+  fireRate: 1
   bulletPrefab: {fileID: 5750808914037204546, guid: bb567e74631b2d04a9651ffb3625d948, type: 3}
   useLaser: 0
   damageOverTime: 20

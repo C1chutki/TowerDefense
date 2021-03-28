@@ -13,21 +13,23 @@ public class NodeUI : MonoBehaviour
     public Text UpgradeCost;
     public Text SellAmount;
 
-    public Shop shop;
+    Shop shop;
+    public GameObject ShopManager;
 
     public void SetTarget (Node _target)
     {
         target = _target;
         transform.position = target.GetBuildPosition();
 
+        shop = ShopManager.GetComponent<Shop>();
+        Turret tower = target.turret.GetComponent<Turret>();
 
-        //shop = GetComponent<Shop>();
-        //shop.TurretName.text = target.name;
-        //shop.dmg.text = target.bulletPrefab.GetComponent<Bullet>().damage.ToString();
-        //shop.speed.text = "1";
-        //shop.range.text = target.range.ToString();
-        //shop.slow.text = "0";
-        //shop.AOE.text = "0";
+        shop.TurretName.text = tower.TurretName;
+        shop.dmg.text = tower.bulletPrefab.GetComponent<Bullet>().damage.ToString();
+        shop.speed.text = tower.fireRate.ToString();
+        shop.range.text = tower.range.ToString();
+        shop.slow.text = tower.slowAmount.ToString();
+        shop.AOE.text = tower.bulletPrefab.GetComponent<Bullet>().explosionRadius.ToString();;
 
         if (!target.isUpgraded)
         {

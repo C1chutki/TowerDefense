@@ -11,21 +11,14 @@ public class Turret : MonoBehaviour
 
     [Header("General")]
     public float range = 15f;
-    public float Speed;
-    public float AttackSpeed;
-
-    //firecountdown = 1f / 3 * Random.Rand(2, 4);
-
+    public string TurretName;
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
-    public float fireCountDown = 0f;
-    public float fireCountDown2 = 0f;
-    public float fireCountDown3 = 0f;
-    public float fireCountDown4 = 0f;
-    public float fireCountDown5 = 0f;
-    public float fireCountDown6 = 0f;
+    private float fireCountDown = 0f;
     public GameObject bulletPrefab;
+
+    
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -33,7 +26,8 @@ public class Turret : MonoBehaviour
     public float slowAmount = .2f;
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
-    public ParticleSystem impactEffect2;
+    public ParticleSystem ImpactBarrelEffect;
+    public ParticleSystem GlowEffect;
     public Light impactLight;
 
 
@@ -59,13 +53,9 @@ public class Turret : MonoBehaviour
     public Transform FirePoint5;
     public Transform FirePoint6;
 
-
-
-
-
+    [Header("Animations")]
     Animator MiniGun;
     Animator MiniGunv2;
-    //bool didFunction = false;
 
 
 
@@ -115,7 +105,8 @@ public class Turret : MonoBehaviour
                 {
                     lineRenderer.enabled = false;
                     impactEffect.Stop();
-                    impactEffect2.Stop();
+                    ImpactBarrelEffect.Stop();
+                    GlowEffect.Stop();
                     impactLight.enabled = false;
                 }
                     
@@ -143,52 +134,43 @@ public class Turret : MonoBehaviour
             fireCountDown -= Time.deltaTime;
         }
 
-
         //Double barrel turret
         if (barrel2)
         {
             if (fireCountDown <= 0f)
             {
                 ShootOne();
-                fireCountDown = 1f / Random.Range(0.5f, 1);
+                fireCountDown = 1f / fireRate;
             }
             
             fireCountDown -= Time.deltaTime;
             
-            if (fireCountDown2 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootTwo();
-                fireCountDown2 = 1f / Random.Range(0.5f, 1);
+                fireCountDown = 1f / fireRate;
             }
-            fireCountDown2 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
         }
-
-
 
         //Standard Upgraded
         if (barrel3)
-        { 
+        {
+            if (fireCountDown <= 0f)
+            {
+                ShootOne();
+                fireCountDown = 1f / fireRate;
 
-            //if (fireCountDown <= 0)
-            //{
-            //    ShootOne();
-            //}
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel1");
 
-            //if (fireCountDown <= 0f)
-            //{
-            //    ShootOne();
-            //    fireCountDown = 1f / AttackSpeed;
-
-            //    Debug.Log(fireCountDown);
-            //    Debug.Log("Barrel1");
-
-            //}
-            //fireCountDown -= Time.deltaTime;
+            }
+            fireCountDown -= Time.deltaTime;
 
             if (fireCountDown <= 0f)
             {
-                ShootThree();
-                fireCountDown = 1f / AttackSpeed;
+                ShootTwo();
+                fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
                 Debug.Log("Barrel2");
 
@@ -197,53 +179,59 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
-                ShootFour();
-                fireCountDown = 1f / AttackSpeed;
+                ShootThree();
+                fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
                 Debug.Log("Barrel3");
             }
             fireCountDown -= Time.deltaTime;
         }
 
-
-
-
         // Minigun
-
         if (barrel4)
         {
 
             if (fireCountDown <= 0f)
             {
                 ShootOne();
-                fireCountDown = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel1");
+
             }
             fireCountDown -= Time.deltaTime;
 
-            if (fireCountDown2 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootTwo();
-                fireCountDown2 = 1f / Random.Range(6, 10);
-            }
-            fireCountDown2 -= Time.deltaTime;
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel2");
 
-            if (fireCountDown3 <= 0f)
+            }
+            fireCountDown -= Time.deltaTime;
+
+            if (fireCountDown <= 0f)
             {
                 ShootThree();
-                fireCountDown3 = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel3");
             }
-            fireCountDown3 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
+            
 
-            if (fireCountDown4 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootFour();
-                fireCountDown4 = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel4");
             }
-            fireCountDown4 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
 
         }
-
-
 
         //Minigun Upgraded Version
         if (barrel6)
@@ -251,49 +239,60 @@ public class Turret : MonoBehaviour
             if (fireCountDown <= 0f)
             {
                 ShootOne();
-                fireCountDown = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel1");
+
+            }
+            fireCountDown -= Time.deltaTime;
+
+            if (fireCountDown <= 0f)
+            {
+                ShootTwo();
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel2");
+
+            }
+            fireCountDown -= Time.deltaTime;
+
+            if (fireCountDown <= 0f)
+            {
+                ShootThree();
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel3");
             }
             fireCountDown -= Time.deltaTime;
 
 
-            if (fireCountDown2 <= 0f)
-            {
-                ShootTwo();
-                fireCountDown2 = 1f / Random.Range(6, 10);
-            }
-            fireCountDown2 -= Time.deltaTime;
-
-
-            if (fireCountDown3 <= 0f)
-            {
-                ShootThree();
-                fireCountDown3 = 1f / Random.Range(6, 10);
-            }
-            fireCountDown3 -= Time.deltaTime;
-
-
-            if (fireCountDown4 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootFour();
-                fireCountDown4 = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel4");
             }
-            fireCountDown4 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
 
-
-            if (fireCountDown5 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootFive();
-                fireCountDown5 = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel5");
             }
-            fireCountDown5 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
 
-
-            if (fireCountDown6 <= 0f)
+            if (fireCountDown <= 0f)
             {
                 ShootSix();
-                fireCountDown6 = 1f / Random.Range(6, 10);
+                fireCountDown = 1f / fireRate;
+                Debug.Log(fireCountDown);
+                Debug.Log("Barrel6");
             }
-            fireCountDown6 -= Time.deltaTime;
+            fireCountDown -= Time.deltaTime;
         }
     }
 
@@ -318,17 +317,17 @@ public class Turret : MonoBehaviour
     // laser function
     void Laser()
     {
-       targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
         targetEnemy.Slow(slowAmount);
 
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
             impactEffect.Play();
-            impactEffect2.Play();
+            ImpactBarrelEffect.Play();
+            GlowEffect.Play();
             impactLight.enabled = true;
         }
-            
 
         lineRenderer.SetPosition(0, FirePoint.position);
         lineRenderer.SetPosition(1, target.position);
@@ -336,15 +335,14 @@ public class Turret : MonoBehaviour
         Vector3 dir = FirePoint.position - target.position;
 
         impactEffect.transform.position = target.position + dir.normalized;
+        GlowEffect.transform.position = target.position + dir.normalized;
+        impactLight.transform.position = target.position + dir.normalized;
 
-        impactEffect2.transform.position = FirePoint.position;
+        ImpactBarrelEffect.transform.position = FirePoint.position;
 
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
-
-        
     }
 
-   
     // all the shoot function for different barrels
     void ShootOne()
     {
@@ -378,7 +376,6 @@ public class Turret : MonoBehaviour
         if (bullet != null)
             bullet.Seek(target);
     }
-
     void ShootFive()
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
@@ -387,7 +384,6 @@ public class Turret : MonoBehaviour
         if (bullet != null)
             bullet.Seek(target);
     }
-    
     void ShootSix()
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
@@ -402,6 +398,4 @@ public class Turret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
-
-
 }

@@ -8,11 +8,11 @@ public class Node : MonoBehaviour
     public Color NotEnoughMoneyColor;
     private Color startColor;
 
-    [HideInInspector]
+
     public GameObject turret;
-    [HideInInspector]
+
     public TurretBlueprint turretBlueprint;
-    [HideInInspector]
+
     public bool isUpgraded = false;
 
     public Vector3 positionOffSet;
@@ -45,7 +45,6 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
-            //Debug.Log("Najechane w SelectNode");
             buildManager.SelectNode(this);
             
             return;
@@ -120,20 +119,15 @@ public class Node : MonoBehaviour
 
         if (buildManager.HasMoney)
         {
-            //circleRangeNode.transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 0f);
-            //circleRangeNode.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
-            //this.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
-            //this.gameObject.transform.GetChild(0).transform.localScale = new Vector3(turretBlueprint.turretRange, turretBlueprint.turretRange, 1f);
-            //usun = this.gameObject.transform.GetChild(0).transform.localScale;
-            //Debug.Log(turretBlueprint.turretRange);
-            //circleRangeNode.SetActive(true);
-            //Debug.Log("Najechane w Has money");
+            circleRangeNode.transform.localScale = new Vector3((buildManager.GetTurretToBuild().turretRange)/4, (buildManager.GetTurretToBuild().turretRange) / 4, 0f);
+            circleRangeNode.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.05f);
+            this.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.05f);
+            circleRangeNode.SetActive(true);
             rend.material.color = HoverColor;
         }
         else
         {
             rend.material.color = NotEnoughMoneyColor;
-            //Debug.Log("Najechane w brak kasy");
         }
         
     }
@@ -142,7 +136,7 @@ public class Node : MonoBehaviour
     {
         rend.material.color = startColor;
         circleRangeNode.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0);
-        //circleRangeNode.SetActive(false);
+        circleRangeNode.SetActive(false);
     }
 
 }

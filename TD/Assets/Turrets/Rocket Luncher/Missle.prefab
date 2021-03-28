@@ -46,8 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   impactEffect: {fileID: 8262493280122073664, guid: c20abd7bfc6505e4ab9baea247b896af, type: 3}
-  RocketTrails: {fileID: 0}
-  explosionRadius: 10
+  explosionRadius: 5
   damage: 1
 --- !u!1 &3247810146927641517
 GameObject:

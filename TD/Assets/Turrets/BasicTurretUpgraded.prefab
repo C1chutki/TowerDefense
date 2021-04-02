@@ -140,7 +140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da63742974ceaa14097442a35b1d39a7, type: 2}
+  - {fileID: 2100000, guid: a01e363e15f8adf418aaba0388b2c71e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -219,7 +219,8 @@ MonoBehaviour:
   slowAmount: 0
   lineRenderer: {fileID: 0}
   impactEffect: {fileID: 0}
-  impactEffect2: {fileID: 0}
+  ImpactBarrelEffect: {fileID: 0}
+  GlowEffect: {fileID: 0}
   impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 2076748364161336057}
@@ -324,7 +325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da63742974ceaa14097442a35b1d39a7, type: 2}
+  - {fileID: 2100000, guid: a01e363e15f8adf418aaba0388b2c71e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -666,7 +667,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da63742974ceaa14097442a35b1d39a7, type: 2}
+  - {fileID: 2100000, guid: a01e363e15f8adf418aaba0388b2c71e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -828,7 +829,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da63742974ceaa14097442a35b1d39a7, type: 2}
+  - {fileID: 2100000, guid: a01e363e15f8adf418aaba0388b2c71e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -990,7 +991,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da63742974ceaa14097442a35b1d39a7, type: 2}
+  - {fileID: 2100000, guid: a01e363e15f8adf418aaba0388b2c71e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

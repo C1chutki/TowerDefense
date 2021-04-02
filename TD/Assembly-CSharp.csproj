@@ -92,6 +92,8 @@
     <Compile Include="Assets\Scripts\PurchaseFulfillment.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\BGMusic.cs" />
+    <Compile Include="Assets\Scripts\PauseAudio.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

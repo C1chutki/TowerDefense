@@ -16,9 +16,9 @@ public class Turret : MonoBehaviour
     [Header("Use Bullets")]
     public float fireRate = 1f;
     private float fireCountDown = 0f;
-    public GameObject bulletPrefab;
-
-    
+    public GameObject bulletPrefab; 
+    public ParticleSystem ShootEffect;
+    public bool SHOOT = false;
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -29,7 +29,6 @@ public class Turret : MonoBehaviour
     public ParticleSystem ImpactBarrelEffect;
     public ParticleSystem GlowEffect;
     public Light impactLight;
-
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
@@ -56,13 +55,14 @@ public class Turret : MonoBehaviour
     [Header("Animations")]
     Animator MiniGun;
     Animator MiniGunv2;
-
-
+    Animator BarrelAnimation;
 
     private void Start()
     {
+        ShootEffect.Stop();
         MiniGun = GetComponent<Animator>();
         MiniGunv2 = GetComponent<Animator>();
+        BarrelAnimation = GetComponent<Animator>();
         InvokeRepeating ("UpdateTarget", 0f, 0.001f);
     }
 
@@ -129,6 +129,14 @@ public class Turret : MonoBehaviour
             if (fireCountDown <= 0f)
             {
                 ShootOne();
+
+                if (SHOOT == true)
+                {
+                    BarrelAnimation.SetBool("SetActive", true);
+                }
+
+                SHOOT = false;
+                if (SHOOT == false) { BarrelAnimation.SetBool("SetActive", false); }
                 fireCountDown = 1f / fireRate;
             }
             fireCountDown -= Time.deltaTime;
@@ -160,7 +168,6 @@ public class Turret : MonoBehaviour
             {
                 ShootOne();
                 fireCountDown = 1f / fireRate;
-
                 Debug.Log(fireCountDown);
                 Debug.Log("Barrel1");
 
@@ -346,6 +353,8 @@ public class Turret : MonoBehaviour
     // all the shoot function for different barrels
     void ShootOne()
     {
+        SHOOT = true;
+        ShootEffect.Play();
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
@@ -397,5 +406,11 @@ public class Turret : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+
+    public void Clicked()
+    {
+        Debug.Log("Clicked");
     }
 }

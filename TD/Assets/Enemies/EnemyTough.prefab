@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3e416afce3b946bcc5d180efdf5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 6
+  startSpeed: 1
   speed: 10
   StartHealth: 20
   health: 0
@@ -256,7 +256,6 @@ MonoBehaviour:
   worth: 5
   deathEffect: {fileID: 2562002206038251043, guid: cbdbc12a0db3a4c4bac012290b52e298, type: 3}
   HealthBar: {fileID: 8721977899249335993}
-  click: {fileID: 0}
   isDead: 0
 --- !u!114 &-8914332979959048825
 MonoBehaviour:

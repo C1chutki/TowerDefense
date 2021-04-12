@@ -268,8 +268,8 @@ MonoBehaviour:
   healthRegen: 0
   worth: 1
   deathEffect: {fileID: 4494784225395777213, guid: 8bcfba4e3b0a22443a8b374f3569bf4f, type: 3}
+  pfDamagePopup: {fileID: 6244035946683279244, guid: 1b9ea86eaabb538419a047bff7c2ce48, type: 3}
   HealthBar: {fileID: 8721977899249335993}
-  click: {fileID: 0}
   isDead: 0
 --- !u!114 &-8914332979959048825
 MonoBehaviour:

@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System;
 using TMPro;
+
 
 public class DamagePopup : MonoBehaviour
 {
-    private TextMeshPro textMesh;
 
-    private void Awake()
-    {
-        textMesh = transform.GetComponent<TextMeshPro>();
-    }
+    float time = 0;
 
-    public void Setup(int damageAmount)
+    void Update ()
     {
-        textMesh.SetText(damageAmount.ToString());
+        if (time >= 0.4f) {
+            Destroy(gameObject);
+        }
+
+        time += Time.deltaTime;
     }
 }

@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637528103629914265
+      ticks: 637529956558655787
     m_Hash: 3790528847
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -705,6 +705,7 @@ m_PackageAssets:
         - 3.0.0-pre.5
         - 3.0.0-pre.6
         - 3.0.1
+        - 3.0.2
         compatible:
         - 0.0.3
         - 0.0.4
@@ -738,6 +739,7 @@ m_PackageAssets:
         - 3.0.0-pre.5
         - 3.0.0-pre.6
         - 3.0.1
+        - 3.0.2
         verified: 2.1.1
       dependencies:
       - name: com.unity.ugui
@@ -3537,6 +3539,7 @@ m_PackageAssets:
         - 7.5.1
         - 7.5.2
         - 7.5.3
+        - 7.6.0
         - 8.0.1
         - 8.1.0
         - 8.2.0
@@ -3552,6 +3555,8 @@ m_PackageAssets:
         - 10.2.1
         - 10.2.2
         - 10.3.1
+        - 10.3.2
+        - 10.4.0
         compatible:
         - 10.2.2
         verified: 10.2.2
@@ -3618,6 +3623,7 @@ m_PackageAssets:
         - 4.2.0
         - 4.3.0
         - 4.3.1
+        - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
         compatible:
@@ -3632,9 +3638,10 @@ m_PackageAssets:
         - 4.2.0
         - 4.3.0
         - 4.3.1
+        - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
-        verified: 4.3.1
+        verified: 4.3.2
       dependencies: []
       resolvedDependencies: []
       keywords:

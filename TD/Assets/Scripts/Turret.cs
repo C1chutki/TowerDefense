@@ -17,7 +17,6 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountDown = 0f;
     public GameObject bulletPrefab; 
-    public ParticleSystem ShootEffect;
     public bool SHOOT = false;
 
     [Header("Use Laser")]
@@ -51,11 +50,20 @@ public class Turret : MonoBehaviour
     public Transform FirePoint4;
     public Transform FirePoint5;
     public Transform FirePoint6;
+                                      
+    [Header("ShootEffect")]           
+    public ParticleSystem ShootEffect;
+    public ParticleSystem ShootEffect2;
+    public ParticleSystem ShootEffect3;
+    public ParticleSystem ShootEffect4;
+    public ParticleSystem ShootEffect5;
+    public ParticleSystem ShootEffect6;
 
     [Header("Animations")]
     Animator MiniGun;
     Animator MiniGunv2;
     Animator BarrelAnimation;
+    Animation anim;
 
     private void Start()
     {
@@ -63,6 +71,7 @@ public class Turret : MonoBehaviour
         MiniGun = GetComponent<Animator>();
         MiniGunv2 = GetComponent<Animator>();
         BarrelAnimation = GetComponent<Animator>();
+        anim = GetComponent<Animation>();
         InvokeRepeating ("UpdateTarget", 0f, 0.001f);
     }
 
@@ -128,15 +137,9 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
+                BarrelAnimation.SetBool("SetActive", true);
+                ShootEffect.Play();
                 ShootOne();
-
-                if (SHOOT == true)
-                {
-                    BarrelAnimation.SetBool("SetActive", true);
-                }
-
-                SHOOT = false;
-                if (SHOOT == false) { BarrelAnimation.SetBool("SetActive", false); }
                 fireCountDown = 1f / fireRate;
             }
             fireCountDown -= Time.deltaTime;
@@ -147,6 +150,8 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
+
+                ShootEffect.Play();
                 ShootOne();
                 fireCountDown = 1f / fireRate;
             }
@@ -155,6 +160,7 @@ public class Turret : MonoBehaviour
             
             if (fireCountDown <= 0f)
             {
+                ShootEffect2.Play();
                 ShootTwo();
                 fireCountDown = 1f / fireRate;
             }
@@ -166,6 +172,7 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
+                ShootEffect.Play();
                 ShootOne();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -176,6 +183,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect2.Play();
                 ShootTwo();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -186,6 +194,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect3.Play();
                 ShootThree();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -200,6 +209,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect.Play();
                 ShootOne();
                 fireCountDown = 1f / fireRate;
 
@@ -211,6 +221,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect2.Play();
                 ShootTwo();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -221,6 +232,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect3.Play();
                 ShootThree();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -231,6 +243,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect4.Play();
                 ShootFour();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -245,6 +258,7 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
+                ShootEffect.Play();
                 ShootOne();
                 fireCountDown = 1f / fireRate;
 
@@ -256,6 +270,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect2.Play();
                 ShootTwo();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -266,6 +281,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect3.Play();
                 ShootThree();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -276,6 +292,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect4.Play();
                 ShootFour();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -285,6 +302,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect5.Play();
                 ShootFive();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -294,6 +312,7 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
+                ShootEffect6.Play();
                 ShootSix();
                 fireCountDown = 1f / fireRate;
                 Debug.Log(fireCountDown);
@@ -353,8 +372,6 @@ public class Turret : MonoBehaviour
     // all the shoot function for different barrels
     void ShootOne()
     {
-        SHOOT = true;
-        ShootEffect.Play();
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
@@ -379,7 +396,7 @@ public class Turret : MonoBehaviour
     }
     void ShootFour()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint4.position, FirePoint4.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)
@@ -387,7 +404,7 @@ public class Turret : MonoBehaviour
     }
     void ShootFive()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint5.position, FirePoint5.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)
@@ -395,7 +412,7 @@ public class Turret : MonoBehaviour
     }
     void ShootSix()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint6.position, FirePoint6.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)

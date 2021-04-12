@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     public int worth = 20;
     public GameObject deathEffect;
+    public GameObject pfDamagePopup;
 
     [Header("Unity Stuff")]
     public Image HealthBar;
@@ -40,7 +42,11 @@ public class Enemy : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Clickdown!");
+        GameObject temp = Instantiate(pfDamagePopup, transform.position, Quaternion.identity);
+        temp.GetComponent<TextMeshPro>().text = click.clickpwr.ToString();
+
         health -= click.clickpwr;
+
 
         HealthBar.fillAmount = health / StartHealth;
 
@@ -49,6 +55,7 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+
 
     public void TakeDamage(float amount)
     {

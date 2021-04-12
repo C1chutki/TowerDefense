@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
+    //private void Start()
+    //{
+    //    DamagePopup.Create(Vector3.zero, 300);
+    //}
 
-    [SerializeField] private Transform pfDamagePopup;
-
-    private void Start()
-    {
-        Transform damagePopupTransform = Instantiate(pfDamagePopup, Vector3.zero, Quaternion.identity);
-        DamagePopup damagePopup = damagePopupTransform.GetComponent<DamagePopup>();
-        damagePopup.Setup(300);
-    }
+    
 }

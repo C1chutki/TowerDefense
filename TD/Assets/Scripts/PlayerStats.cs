@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public int basicturretIndex = 0;
+
     public static float Money;
     public int startMoney = 400;
 

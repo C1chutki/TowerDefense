@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
+    <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\Scripts\Waypoints.cs" />
     <Compile Include="Assets\Scripts\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\RoundsSurvived.cs" />
+    <Compile Include="Assets\Scripts\temp.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\BGMusic.cs" />
     <Compile Include="Assets\Scripts\ScrollAndPinch.cs" />
@@ -94,8 +96,7 @@
     <Compile Include="Assets\Scripts\PurchaseFulfillment.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\GameAssets.cs" />
-    <Compile Include="Assets\Scripts\temp.cs" />
+    <Compile Include="Assets\Scripts\UnityMonetization.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -114,6 +115,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\LICENSE.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -332,6 +334,15 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity\2020.2.1f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="winrt">
+      <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookStore">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Facebook\FacebookStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Apple">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\Apple.dll</HintPath>
     </Reference>
@@ -341,23 +352,14 @@
     <Reference Include="AppleMacos">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\AppleMacos.dll</HintPath>
     </Reference>
-    <Reference Include="winrt">
-      <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
-    </Reference>
     <Reference Include="Security">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Security\live\Security.dll</HintPath>
     </Reference>
     <Reference Include="Stores">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
     </Reference>
-    <Reference Include="FacebookStore">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Facebook\FacebookStore.dll</HintPath>
-    </Reference>
     <Reference Include="AppleCore">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\AppleCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Unity\2020.2.1f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Upgrades : MonoBehaviour
 {
 
-    public int ClickPWR = 1;
+    public int ClickPWR;
     public Text clickamount;
     public Button UpgradeClickPWRButton;
     public int Gems;
@@ -14,31 +14,45 @@ public class Upgrades : MonoBehaviour
 
     public void Start()
     {
+        if (ClickPWR == 0)
+        {
+            ClickPWR = 1;
+        }
         clickamount.text = ClickPWR.ToString();
         GemsAmount.text = Gems.ToString();
         UpgradeClickPWRButton.interactable = false;
         Gems = PlayerPrefs.GetInt("Gems");
         ClickPWR = PlayerPrefs.GetInt("Click");
+
         GemsAmount.text = PlayerPrefs.GetInt("Gems").ToString();
         clickamount.text = PlayerPrefs.GetInt("Click").ToString();
 
-    }
-
-    public void Update()
-    {
-        if (Gems >= 1)
-        {
-            UpgradeClickPWRButton.interactable = true;
-        }
         if (Gems < 1)
         {
             UpgradeClickPWRButton.interactable = false;
         }
+        if (Gems >= 1)
+        {
+            UpgradeClickPWRButton.interactable = true;
+        }
+    }
+
+    public void Update()
+    {        
     }
 
     public void ClickpwrUpgrade ()
-    { 
-        if(Gems >= 1)
+    {
+        if (Gems < 1)
+        {
+            UpgradeClickPWRButton.interactable = false;
+        }
+        if (Gems >= 1)
+        {
+            UpgradeClickPWRButton.interactable = true;
+        }
+
+        if (Gems >= 1)
         {
             ClickPWR++;
             Debug.Log(ClickPWR);

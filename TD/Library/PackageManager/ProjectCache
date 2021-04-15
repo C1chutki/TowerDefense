@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637490767609711919
-    m_Hash: 1274035403
+      ticks: 637540944440608798
+    m_Hash: 1021647274
   m_LockFileStatus:
     m_FilePath: D:/Projekty/TowerDeffence3D/TD/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637529956558655787
-    m_Hash: 3790528847
+      ticks: 637540950702735571
+    m_Hash: 1965192346
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -71,12 +71,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.ads@3.6.1
+    - packageId: com.unity.ads@3.7.1
       testable: 0
       isDirectDependency: 1
-      version: 3.6.1
+      version: 3.7.1
       source: 1
-      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.ads@3.6.1
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.ads@3.7.1
       assetPath: Packages/com.unity.ads
       name: com.unity.ads
       displayName: Advertisement
@@ -130,6 +130,7 @@ m_PackageAssets:
         - 3.5.2
         - 3.6.1
         - 3.7.0
+        - 3.7.1
         compatible:
         - 0.0.3
         - 0.0.4
@@ -169,6 +170,7 @@ m_PackageAssets:
         - 3.5.2
         - 3.6.1
         - 3.7.0
+        - 3.7.1
         verified: 3.5.2
       dependencies:
       - name: com.unity.ugui
@@ -195,13 +197,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637433982320000000
+      datePublishedTicks: 637533483430000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
-        revision: aa1c5a9556a9bb62eef662153cfaa1075805106f
+        revision: 95ec369d16df431f8c9ebbb83c0f65dc4471f07e
         path: 
     - packageId: com.unity.collab-proxy@1.3.9
       testable: 0

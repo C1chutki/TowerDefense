@@ -4,14 +4,18 @@ using System.Collections;
 
 public class Clicking : MonoBehaviour
 {
-    public Upgrades upgrades;
-    public int clickpwr = 1;
+    public int clickpwr;
 
 
     public void Start()
     {
-        upgrades = FindObjectOfType<Upgrades>();
         clickpwr = PlayerPrefs.GetInt("Click");
+
+        if (clickpwr == 0)
+        {
+            clickpwr = 1;
+            PlayerPrefs.SetInt("Click", clickpwr);
+        }
     }
 
 

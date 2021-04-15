@@ -5479,6 +5479,7 @@ MonoBehaviour:
   TurretName: Laser
   fireRate: 1
   bulletPrefab: {fileID: 5750808914037204546, guid: 9a2eceea1758fea449a9efa6fc03bdbc, type: 3}
+  SHOOT: 0
   useLaser: 1
   damageOverTime: 2
   slowAmount: 0.3
@@ -5501,6 +5502,12 @@ MonoBehaviour:
   FirePoint4: {fileID: 0}
   FirePoint5: {fileID: 0}
   FirePoint6: {fileID: 0}
+  ShootEffect: {fileID: 1142229444591250543}
+  ShootEffect2: {fileID: 0}
+  ShootEffect3: {fileID: 0}
+  ShootEffect4: {fileID: 0}
+  ShootEffect5: {fileID: 0}
+  ShootEffect6: {fileID: 0}
 --- !u!120 &1694913691498044833
 LineRenderer:
   m_ObjectHideFlags: 0

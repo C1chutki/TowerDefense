@@ -22,16 +22,23 @@ public class Enemy : MonoBehaviour
     [Header("Unity Stuff")]
     public Image HealthBar;
     private Clicking click;
+    public float randomx;
+    public float randomy;
+    public float randomz;
 
     public bool isDead = false;
+
+    private void Update()
+    {
+        
+    }
 
     void Start()
     {
         speed = startSpeed;
         health = StartHealth;
         InvokeRepeating("Regenerate", 0.0f, 1.0f);
-        click = FindObjectOfType<Clicking>();
-        
+        click = FindObjectOfType<Clicking>();        
     }
 
     void Regenerate()
@@ -41,10 +48,20 @@ public class Enemy : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        randomx = Random.Range(-1f, 1f);
+        randomy = Random.Range(0f, 2f);
+        randomz = Random.Range(0f, 2f);
         Debug.Log("Clickdown!");
-        GameObject temp = Instantiate(pfDamagePopup, transform.position, Quaternion.identity);
-        temp.GetComponent<TextMeshPro>().text = click.clickpwr.ToString();
+        GameObject temp = Instantiate(pfDamagePopup, new Vector3(transform.position.x + randomx, transform.position.y + randomy, transform.position.z + randomz), Quaternion.Euler(65, 0, 0));
 
+        if (click.clickpwr > 5)
+        {
+            temp.GetComponent<TextMeshPro>().color = Color.red;
+
+        }
+
+        temp.GetComponent<TextMeshPro>().text = click.clickpwr.ToString();
+        
         health -= click.clickpwr;
 
 

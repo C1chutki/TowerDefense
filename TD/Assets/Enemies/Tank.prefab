@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 7.64}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 15.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &330448607760123930
@@ -103,17 +103,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330448607869559221}
-  m_LocalRotation: {x: 0.9063078, y: -0, z: -0, w: 0.4226182}
-  m_LocalPosition: {x: 0, y: 0, z: 1.65}
+  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.02, y: 0.020000003, z: 0.020000003}
   m_Children:
   - {fileID: 330448607760123928}
   m_Father: {fileID: 6733738549317619213}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -1.38}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 100, y: 36.1468}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &330448607869559218
@@ -278,6 +278,8 @@ GameObject:
   - component: {fileID: 2244793171867914350}
   - component: {fileID: 330448608180662225}
   - component: {fileID: 330448608180662226}
+  - component: {fileID: 5445054219704663768}
+  - component: {fileID: 8718191555972603678}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Enemy
@@ -292,8 +294,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5438489483107487488}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 67.444954, y: 0.5, z: 58.91676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_Children:
   - {fileID: 330448607869559222}
@@ -373,13 +375,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3e416afce3b946bcc5d180efdf5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 5
+  startSpeed: 1
   speed: 0
   StartHealth: 60
   health: 0
   healthRegen: 0
   worth: 25
   deathEffect: {fileID: 7517438061151200253, guid: 8bf0354edcb686a418b1511539213b88, type: 3}
+  pfDamagePopup: {fileID: 6244035946683279244, guid: 1b9ea86eaabb538419a047bff7c2ce48, type: 3}
   HealthBar: {fileID: 330448608567423354}
-  click: {fileID: 0}
+  randomx: 0
+  randomy: 0
+  randomz: 0
   isDead: 0
+--- !u!65 &5445054219704663768
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438489483107487488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1627687, y: 1.0402952, z: 0.9969942}
+  m_Center: {x: 0.09155064, y: 0.023332834, z: 0.098128706}
+--- !u!64 &8718191555972603678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438489483107487488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8156870392999314590, guid: 6cf59e843ffb4e24f8978a9403c7bf2c, type: 3}

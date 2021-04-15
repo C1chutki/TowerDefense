@@ -172,7 +172,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1964878303394238295}
   - component: {fileID: 8907707012611007888}
-  - component: {fileID: 2010126054520812155}
   m_Layer: 0
   m_Name: BasicTurretUpgraded
   m_TagString: Untagged
@@ -211,9 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c3af94fdd6e17468c078604662ae80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 13
+  range: 10
   TurretName: Upgraded Basic
-  fireRate: 1
+  fireRate: 2
   bulletPrefab: {fileID: 5750808914037204546, guid: bb567e74631b2d04a9651ffb3625d948, type: 3}
   SHOOT: 0
   useLaser: 0
@@ -238,31 +237,12 @@ MonoBehaviour:
   FirePoint4: {fileID: 0}
   FirePoint5: {fileID: 0}
   FirePoint6: {fileID: 0}
-  ShootEffect: {fileID: 102428031623780800, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
+  ShootEffect: {fileID: 8319773120821493195}
   ShootEffect2: {fileID: 6507066846263206386}
   ShootEffect3: {fileID: 5693375005531975746}
   ShootEffect4: {fileID: 0}
   ShootEffect5: {fileID: 0}
   ShootEffect6: {fileID: 0}
---- !u!95 &2010126054520812155
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157274215827625453}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43f6cb3f93e63dc4794b2003546c1a91, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1556777325230829936
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3348202624277669564}
   m_LocalRotation: {x: -0.000000029802322, y: 0.00000017881393, z: -0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0.18471159, y: 1.9341469, z: 1.0477525}
+  m_LocalPosition: {x: 0.1847116, y: 1.934147, z: 1}
   m_LocalScale: {x: 0.14858803, y: 0.14858803, z: 1.186689}
   m_Children:
   - {fileID: 6746178060190273775}
@@ -543,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4485846673429729194}
   m_LocalRotation: {x: -0.000000029802322, y: 0.00000017881393, z: -0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 2.252584, z: 1.1447908}
+  m_LocalPosition: {x: 0, y: 2.252584, z: 1.15}
   m_LocalScale: {x: 0.14858803, y: 0.14858803, z: 1.186689}
   m_Children:
   - {fileID: 5919311144611739354}
@@ -905,7 +885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7703779655481723279}
   m_LocalRotation: {x: -0.000000029802322, y: 0.00000017881393, z: -0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0.18471135, y: 1.9308949, z: 1.0399057}
+  m_LocalPosition: {x: -0.18471135, y: 1.9308949, z: 1}
   m_LocalScale: {x: 0.14858803, y: 0.14858803, z: 1.186689}
   m_Children:
   - {fileID: 370843927391393635}
@@ -1052,7 +1032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 102428031623780802, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_Name
-      value: Particle System (1)
+      value: BarrelRight
       objectReference: {fileID: 0}
     - target: {fileID: 102428031623780807, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_RootOrder
@@ -1143,7 +1123,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 102428031623780802, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_Name
-      value: Particle System (1)
+      value: BarrelLeft
       objectReference: {fileID: 0}
     - target: {fileID: 102428031623780807, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_RootOrder
@@ -1234,7 +1214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 102428031623780802, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_Name
-      value: Particle System (1)
+      value: BarrelTop
       objectReference: {fileID: 0}
     - target: {fileID: 102428031623780807, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
       propertyPath: m_RootOrder
@@ -1309,5 +1289,10 @@ PrefabInstance:
 --- !u!4 &8319773120821493196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 102428031623780807, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
+  m_PrefabInstance: {fileID: 8223045507284608011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8319773120821493195 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 102428031623780800, guid: 7fb8e5fdc3d0da448b437bde16bf2610, type: 3}
   m_PrefabInstance: {fileID: 8223045507284608011}
   m_PrefabAsset: {fileID: 0}

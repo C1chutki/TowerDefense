@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    [HideInInspector]
-    private Transform target;
+    public Transform target;
     [HideInInspector]
     private Enemy targetEnemy;
 
@@ -15,9 +14,13 @@ public class Turret : MonoBehaviour
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
-    private float fireCountDown = 0f;
     public GameObject bulletPrefab; 
     public bool SHOOT = false;
+
+    [Header("FireCountDown")]
+    private float fireCountDown = 0f;
+    private float fireCountDown2 = 0f;
+    private float fireCountDown3 = 0f;
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -62,16 +65,14 @@ public class Turret : MonoBehaviour
     [Header("Animations")]
     Animator MiniGun;
     Animator MiniGunv2;
-    Animator BarrelAnimation;
-    Animation anim;
+    //Animator BarrelAnimation;
 
     private void Start()
     {
         ShootEffect.Stop();
         MiniGun = GetComponent<Animator>();
         MiniGunv2 = GetComponent<Animator>();
-        BarrelAnimation = GetComponent<Animator>();
-        anim = GetComponent<Animation>();
+        //BarrelAnimation = GetComponent<Animator>();
         InvokeRepeating ("UpdateTarget", 0f, 0.001f);
     }
 
@@ -137,7 +138,7 @@ public class Turret : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
-                BarrelAnimation.SetBool("SetActive", true);
+                //BarrelAnimation.SetBool("SetActive", true);
                 ShootEffect.Play();
                 ShootOne();
                 fireCountDown = 1f / fireRate;
@@ -183,10 +184,10 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
-                ShootEffect2.Play();
+                ShootEffect.Play();
                 ShootTwo();
                 fireCountDown = 1f / fireRate;
-                Debug.Log(fireCountDown);
+                Debug.Log(fireCountDown2);
                 Debug.Log("Barrel2");
 
             }
@@ -194,10 +195,10 @@ public class Turret : MonoBehaviour
 
             if (fireCountDown <= 0f)
             {
-                ShootEffect3.Play();
+                ShootEffect.Play();
                 ShootThree();
                 fireCountDown = 1f / fireRate;
-                Debug.Log(fireCountDown);
+                Debug.Log(fireCountDown3);
                 Debug.Log("Barrel3");
             }
             fireCountDown -= Time.deltaTime;
@@ -370,7 +371,7 @@ public class Turret : MonoBehaviour
     }
 
     // all the shoot function for different barrels
-    void ShootOne()
+    public void ShootOne()
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
@@ -423,11 +424,5 @@ public class Turret : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
-    }
-
-
-    public void Clicked()
-    {
-        Debug.Log("Clicked");
     }
 }

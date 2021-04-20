@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\HPTarget.cs" />
     <Compile Include="Assets\Scripts\CompleteLevel.cs" />
     <Compile Include="Assets\Scripts\LivesUI.cs" />
+    <Compile Include="Assets\Scripts\UnityMonetization.cs" />
     <Compile Include="Assets\Scripts\TowerInfoPanelSlide.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraControler.cs" />
@@ -96,7 +97,8 @@
     <Compile Include="Assets\Scripts\PurchaseFulfillment.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\UnityMonetization.cs" />
+    <Compile Include="Assets\Scripts\SimpleTurretUpgrade.cs" />
+    <Compile Include="Assets\ClickUpgrades.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

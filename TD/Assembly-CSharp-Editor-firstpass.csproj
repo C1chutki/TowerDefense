@@ -318,11 +318,11 @@
     <Reference Include="Security">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Security\live\Security.dll</HintPath>
     </Reference>
-    <Reference Include="Stores">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.2.2\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="Stores">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
     </Reference>
     <Reference Include="AppleCore">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\AppleCore.dll</HintPath>

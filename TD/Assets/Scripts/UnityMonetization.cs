@@ -9,32 +9,38 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
     public bool testMode = true;
     string RewardedVideo = "rewardedVideo";
     string SkippableAd = "video";
-    public string surfacingId = "bannerPlacement";
+    //public string surfacingId = "bannerPlacement";
+
+    Upgrades upgrades;
+    ClickUpgrades clickUpgrades;
+
 
     void Start()
     {
+        upgrades = FindObjectOfType<Upgrades>();
+        clickUpgrades = FindObjectOfType<ClickUpgrades>();
+
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, testMode);
 
 
-        //Advertisement.Show(RewardedVideo);
-        StartCoroutine(ShowBannerWhenInitialized());
+        //StartCoroutine(ShowBannerWhenInitialized());
         Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);
     }
 
-    public void ShowAd(string p)
-    {
-        Advertisement.Show(p);
-    }
+    //public void ShowAd(string p)
+    //{
+    //    Advertisement.Show(p);
+    //}
 
-    IEnumerator ShowBannerWhenInitialized()
-    {
-        while (!Advertisement.isInitialized)
-        {
-            yield return new WaitForSeconds(0.5f);
-        }
-        Advertisement.Banner.Show(surfacingId);
-    }
+    //IEnumerator ShowBannerWhenInitialized()
+    //{
+    //    while (!Advertisement.isInitialized)
+    //    {
+    //        yield return new WaitForSeconds(0.5f);
+    //    }
+    //    Advertisement.Banner.Show(surfacingId);
+    //}
 
     public void DisplayInterstitialAD()
     {
@@ -55,7 +61,11 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
         {
             // Reward the user for watching the ad to completion.
             if (surfacingId == SkippableAd) { Debug.LogWarning("video ad"); }
-            if (surfacingId == RewardedVideo) { Debug.LogWarning("rewarded ad"); }
+            if (surfacingId == RewardedVideo) { 
+                Debug.LogWarning("rewarded ad");
+                upgrades.GetGems();
+                clickUpgrades.ClickpwrCheck();
+            }
         }
         else if (showResult == ShowResult.Skipped)
         {

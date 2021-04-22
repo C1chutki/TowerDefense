@@ -13,12 +13,14 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
 
     Upgrades upgrades;
     ClickUpgrades clickUpgrades;
+    SimpleTurretUpgrade simpleTurretUpgrade;
 
 
     void Start()
     {
         upgrades = FindObjectOfType<Upgrades>();
         clickUpgrades = FindObjectOfType<ClickUpgrades>();
+        simpleTurretUpgrade = FindObjectOfType<SimpleTurretUpgrade>();
 
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, testMode);
@@ -65,6 +67,7 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
                 Debug.LogWarning("rewarded ad");
                 upgrades.GetGems();
                 clickUpgrades.ClickpwrCheck();
+                simpleTurretUpgrade.upgradecheck();
             }
         }
         else if (showResult == ShowResult.Skipped)

@@ -6,22 +6,30 @@ using UnityEngine.UI;
 public class SimpleTurretUpgrade : MonoBehaviour
 {
     Upgrades upgrades;
-    
+
 
     [Header("Simple Turret Upgrade")]
     public int upgradeCost1;
     public int upgradeCost2;
     public int upgradeCost3;
-    public int bulletDMG;
-    public Text upgradeCosttxt;
-    public Text upgradeDMG;
+
+    public int UpgradeLevel;
+
     public Button UpgradeButton1;
     public Button UpgradeButton2;
     public Button UpgradeButton3;
 
     public GameObject turret;
     public GameObject bullet;
-    
+    public GameObject[] tab = new GameObject[2];
+    public SpriteRenderer arrow1;
+    public SpriteRenderer arrow2;
+    public float dmg;
+
+    public ClickUpgrades click;
+
+    //turret.GetComponent<Turret>().bulletdmg = 100;
+    //bullet.GetComponent<Bullet>().damage = 100;
 
 
     // Start is called before the first frame update
@@ -29,44 +37,164 @@ public class SimpleTurretUpgrade : MonoBehaviour
     {
         upgrades = FindObjectOfType<Upgrades>();
 
-        //turret.GetComponent<Turret>().bulletdmg = 100;
-        bullet.GetComponent<Bullet>().damage = 100;
-        
+        UpgradeLevel = PlayerPrefs.GetInt("SimpleUpgradeLevel");
+        upgrades.Gems = PlayerPrefs.GetInt("Gems");
 
-        //upgradeCost1 = PlayerPrefs.GetInt("SimpleDMGupg");
-        //bulletDMG = PlayerPrefs.GetInt("bulletDMG");
-
-        //upgradeCosttxt.text = PlayerPrefs.GetInt("SimpleDMGupg").ToString();
-        //upgradeDMG.text = PlayerPrefs.GetInt("bulletDMG").ToString();
-
-        UpgradeDMGCheck();
-        //upgradeCosttxt.text = upgradeCost1 + "G";
+        if (UpgradeLevel == 0)
+        {
+            UpgradeLevel = 1;
+            PlayerPrefs.SetInt("SimpleUpgradeLevel", UpgradeLevel);
+        }
 
 
+        if (UpgradeLevel > 1 && UpgradeLevel < 4)
+        {
+            for (int i = 0; i <= UpgradeLevel - 2; i++)
+            {
+                tab[i].GetComponent<SpriteRenderer>().color = new Color(0, 1, 0, 0.1f);
+            }
+
+        }
+        else if (UpgradeLevel >= 4)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                tab[i].GetComponent<SpriteRenderer>().color = new Color(0, 1, 0, 0.1f);
+            }
+        }
+        upgradecheck();
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
+    }
 
     //Skrypt sprawdzaj¹cy czy staæ u¿ytkownika na ulepszenie
-    public void UpgradeDMGCheck()
+    public void upgradecheck()
     {
-        //if (upgrades.Gems < upgradeCost1)
+        click.ClickpwrCheck();
+
+        UpgradeButton1.interactable = false;
+        UpgradeButton2.interactable = false;
+        UpgradeButton3.interactable = false;
+
+
+        //if (upgrades.Gems < upgradeCost1 && upgrades.Gems < upgradeCost2 && upgrades.Gems < upgradeCost3)
         //{
         //    UpgradeButton1.interactable = false;
+        //    UpgradeButton2.interactable = false;
+        //    UpgradeButton3.interactable = false;
         //}
-        //if (upgrades.Gems >= upgradeCost1)
-        //{
-        //    UpgradeButton1.interactable = true;
-        //}
+
+        if (UpgradeLevel == 1 && upgrades.Gems >= upgradeCost1)
+        {
+            UpgradeButton1.interactable = true;
+            //UpgradeButton2.interactable = false;
+            //UpgradeButton3.interactable = false;
+        }
+
+        if (UpgradeLevel == 2 && upgrades.Gems >= upgradeCost2)
+        {
+            //UpgradeButton1.interactable = false;
+            UpgradeButton2.interactable = true;
+            //UpgradeButton3.interactable = false;
+        }
+
+        if (UpgradeLevel == 3 && upgrades.Gems >= upgradeCost3)
+        {
+            //UpgradeButton1.interactable = false;
+            //UpgradeButton2.interactable = false;
+            UpgradeButton3.interactable = true;
+        }
+
+        if (UpgradeButton1.interactable == false)
+        {
+            var button1color = UpgradeButton1.colors;
+            button1color.disabledColor = new Color(1, 0, 0, 0.55f);
+            UpgradeButton1.colors = button1color;
+        }
+
+        if (UpgradeButton2.interactable == false)
+        {
+            var button2color = UpgradeButton2.colors;
+            button2color.disabledColor = new Color(1, 0, 0, 0.55f);
+            UpgradeButton2.colors = button2color;
+        }
+
+        if (UpgradeButton3.interactable == false)
+        {
+            var button3color = UpgradeButton3.colors;
+            button3color.disabledColor = new Color(1, 0, 0, 0.55f);
+            UpgradeButton3.colors = button3color;
+        }
     }
 
-    public void DMGUpgrade(TurretBlueprint turretBlueprint)
+    public void UpgradeOne()
     {
+        upgradecheck();
 
+        if (upgrades.Gems >= upgradeCost1)
+        {
+            bullet.GetComponent<Bullet>().damage = 1.5f;
+
+            upgrades.Gems -= upgradeCost1;
+            UpgradeLevel++;
+
+            upgrades.GemsAmount.text = upgrades.Gems.ToString();
+
+            PlayerPrefs.SetInt("Gems", upgrades.Gems);
+            PlayerPrefs.SetInt("SimpleUpgradeLevel", UpgradeLevel);
+
+            arrow1.color = new Color(0, 1, 0, 0.1f);
+
+            upgradecheck();
+
+        }
+    }
+
+    public void Upgradetwo()
+    {
+        upgradecheck();
+
+        if (upgrades.Gems >= upgradeCost2)
+        {
+            turret.GetComponent<Turret>().range = 12;
+
+            upgrades.Gems -= upgradeCost2;
+            UpgradeLevel++;
+
+            upgrades.GemsAmount.text = upgrades.Gems.ToString();
+
+            PlayerPrefs.SetInt("Gems", upgrades.Gems);
+            PlayerPrefs.SetInt("SimpleUpgradeLevel", UpgradeLevel);
+
+            arrow2.color = new Color(0, 1, 0, 0.1f);
+
+            upgradecheck();
+        }
+    }
+
+    public void Upgradethree()
+    {
+        upgradecheck();
+
+        if (upgrades.Gems >= upgradeCost3)
+        {
+            turret.GetComponent<Turret>().fireRate = 1.5f;
+
+            upgrades.Gems -= upgradeCost3;
+            UpgradeLevel++;
+
+            upgrades.GemsAmount.text = upgrades.Gems.ToString();
+
+            PlayerPrefs.SetInt("Gems", upgrades.Gems);
+            PlayerPrefs.SetInt("SimpleUpgradeLevel", UpgradeLevel);
+
+            upgradecheck();
+        }
     }
 }

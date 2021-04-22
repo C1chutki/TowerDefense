@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ClickUpgrades : MonoBehaviour
 {
-    Upgrades upgrades;
+    public Upgrades upgrades;
 
     [Header("Clicking")]
     public int ClickPWRCost;
@@ -13,15 +13,16 @@ public class ClickUpgrades : MonoBehaviour
     public Text clickamount;
     public Text ClickPWRCostTEXT;
     public Button UpgradeClickPWRButton;
+    public SimpleTurretUpgrade simple;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        upgrades = FindObjectOfType<Upgrades>();
-
         //Get all PlayerPrefs
         ClickPWR = PlayerPrefs.GetInt("Click");
         ClickPWRCost = PlayerPrefs.GetInt("ClickPWRCost");
+        upgrades.Gems = PlayerPrefs.GetInt("Gems");
 
         if (ClickPWRCost == 0)
         {
@@ -31,34 +32,31 @@ public class ClickUpgrades : MonoBehaviour
             Debug.Log(ClickPWRCost);
         }
 
-
         clickamount.text = ClickPWR.ToString();
 
         //Set PlayerPrefs amount to UI
         clickamount.text = PlayerPrefs.GetInt("Click").ToString();
-        ClickPWRCostTEXT.text = PlayerPrefs.GetInt("ClickPWRCost").ToString();
+        ClickPWRCostTEXT.text = PlayerPrefs.GetInt("ClickPWRCost").ToString() + "G";
 
         ClickpwrCheck();
-        ClickPWRCostTEXT.text = ClickPWRCost + "G";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     //Skrypt sprawdzaj¹cy czy staæ u¿ytkownika na ulepszenie
     public void ClickpwrCheck()
     {
+        if (upgrades.Gems >= ClickPWRCost)
+        {
+            UpgradeClickPWRButton.interactable = true;
+        }
         if (upgrades.Gems < ClickPWRCost)
         {
             UpgradeClickPWRButton.interactable = false;
             ChangeColor();
-        }
-        if (upgrades.Gems >= ClickPWRCost)
-        {
-            UpgradeClickPWRButton.interactable = true;
         }
     }
 
@@ -94,7 +92,7 @@ public class ClickUpgrades : MonoBehaviour
 
             //sprawdzanie czy po zakupie u¿ytkownika staæ na kolejne ulepszenie
             ClickpwrCheck();
+            simple.upgradecheck();
         }
-
     }
 }

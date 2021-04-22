@@ -14,9 +14,7 @@ public class Turret : MonoBehaviour
 
     [Header("Use Bullets")]
     public float fireRate = 1f;
-    public GameObject bulletPrefab; 
-    public bool SHOOT = false;
-    public float bulletdmg = 50;
+    public GameObject bulletPrefab;
 
     [Header("FireCountDown")]
     private float fireCountDown = 0f;
@@ -376,7 +374,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);
@@ -385,7 +382,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);
@@ -394,7 +390,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint3.position, FirePoint3.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);
@@ -403,7 +398,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint4.position, FirePoint4.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);
@@ -412,7 +406,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint5.position, FirePoint5.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);
@@ -421,7 +414,6 @@ public class Turret : MonoBehaviour
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, FirePoint6.position, FirePoint6.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        bullet.damage = bulletdmg;
 
         if (bullet != null)
             bullet.Seek(target);

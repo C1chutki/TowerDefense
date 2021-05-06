@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SimpleTurretUpgrade : MonoBehaviour
 {
-    Upgrades upgrades;
+    public Upgrades upgrades;
 
 
     [Header("Simple Turret Upgrade")]
@@ -24,7 +24,10 @@ public class SimpleTurretUpgrade : MonoBehaviour
     public GameObject[] tab = new GameObject[2];
     public SpriteRenderer arrow1;
     public SpriteRenderer arrow2;
-    public float dmg;
+    public float simplebulletdmg;
+    public float simplerange;
+    public float simplespeed;
+
 
     public ClickUpgrades click;
 
@@ -35,10 +38,19 @@ public class SimpleTurretUpgrade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        upgrades = FindObjectOfType<Upgrades>();
-
         UpgradeLevel = PlayerPrefs.GetInt("SimpleUpgradeLevel");
         upgrades.Gems = PlayerPrefs.GetInt("Gems");
+        simplebulletdmg = PlayerPrefs.GetFloat("simplebulletdmg");
+        simplerange = PlayerPrefs.GetFloat("simplerange");
+        simplespeed = PlayerPrefs.GetFloat("simplespeed");
+
+        if (simplebulletdmg == 0)
+        {
+            simplebulletdmg = 1;
+
+            PlayerPrefs.SetFloat("simplebulletdmg", simplebulletdmg);
+        }
+
 
         if (UpgradeLevel == 0)
         {
@@ -70,7 +82,7 @@ public class SimpleTurretUpgrade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //upgradecheck();
     }
 
     //Skrypt sprawdzaj¹cy czy staæ u¿ytkownika na ulepszenie
@@ -139,7 +151,8 @@ public class SimpleTurretUpgrade : MonoBehaviour
 
         if (upgrades.Gems >= upgradeCost1)
         {
-            bullet.GetComponent<Bullet>().damage = 1.5f;
+            simplebulletdmg = bullet.GetComponent<Bullet>().damage = 1.5f;
+            PlayerPrefs.SetFloat("simplebulletdmg", simplebulletdmg);
 
             upgrades.Gems -= upgradeCost1;
             UpgradeLevel++;
@@ -162,7 +175,8 @@ public class SimpleTurretUpgrade : MonoBehaviour
 
         if (upgrades.Gems >= upgradeCost2)
         {
-            turret.GetComponent<Turret>().range = 12;
+            simplerange = turret.GetComponent<Turret>().range = 12;
+            PlayerPrefs.SetFloat("simplerange", simplerange);
 
             upgrades.Gems -= upgradeCost2;
             UpgradeLevel++;
@@ -184,7 +198,8 @@ public class SimpleTurretUpgrade : MonoBehaviour
 
         if (upgrades.Gems >= upgradeCost3)
         {
-            turret.GetComponent<Turret>().fireRate = 1.5f;
+            simplespeed = turret.GetComponent<Turret>().fireRate = 1.5f;
+            PlayerPrefs.SetFloat("simplespeed", simplespeed);
 
             upgrades.Gems -= upgradeCost3;
             UpgradeLevel++;

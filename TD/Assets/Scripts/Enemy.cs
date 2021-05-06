@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        
+        HealthBar.fillAmount = health / StartHealth;
     }
 
     void Start()

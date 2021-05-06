@@ -14,6 +14,7 @@ public class ClickUpgrades : MonoBehaviour
     public Text ClickPWRCostTEXT;
     public Button UpgradeClickPWRButton;
     public SimpleTurretUpgrade simple;
+    public RocketTurretUpgrade Rocket;
     
 
     // Start is called before the first frame update
@@ -44,6 +45,7 @@ public class ClickUpgrades : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ClickpwrCheck();
     }
 
     //Skrypt sprawdzaj¹cy czy staæ u¿ytkownika na ulepszenie
@@ -71,7 +73,7 @@ public class ClickUpgrades : MonoBehaviour
     //Skrypt ulepszaj¹cy klik
     public void ClickpwrUpgrade()
     {
-        ClickpwrCheck();
+        //ClickpwrCheck();
 
         if (upgrades.Gems >= ClickPWRCost)
         {
@@ -93,6 +95,7 @@ public class ClickUpgrades : MonoBehaviour
             //sprawdzanie czy po zakupie u¿ytkownika staæ na kolejne ulepszenie
             ClickpwrCheck();
             simple.upgradecheck();
+            Rocket.upgradecheck();
         }
     }
 }

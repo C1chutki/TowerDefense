@@ -29,7 +29,6 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Load menu");
     } 
     
-    
     public void Quit ()
     {
         Debug.Log("Exciting...");

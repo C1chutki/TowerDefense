@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 2337191171313706307, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7c0fe54ee7da7ea40b08703c80c5288d, type: 3}
+      objectReference: {fileID: 21300000, guid: 2bec9aefde62fa9499e81d43fef629f7, type: 3}
     - target: {fileID: 2337191171313706334, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Name
       value: LaserBeamer (1)
@@ -3267,6 +3267,7 @@ GameObject:
   - component: {fileID: 770030063}
   - component: {fileID: 770030064}
   - component: {fileID: 770030065}
+  - component: {fileID: 770030066}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -3318,8 +3319,8 @@ MonoBehaviour:
     count2: 3
     rate2: 0.5
   spawnPoint: {fileID: 1765731796}
-  timeBetweenWaves: 1
-  countdown: 1
+  timeBetweenWaves: 5
+  countdown: 5
   waveCountdownText: {fileID: 440036282}
   gameManager: {fileID: 770030062}
 --- !u!4 &770030059
@@ -3385,6 +3386,7 @@ MonoBehaviour:
   ClickBullet: {fileID: 4402319349588887572, guid: d792a14ae94e6c24b935c09a61b70b42, type: 3}
   WinGame: 0
   level: 3
+  wingames: 1
 --- !u!114 &770030063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3427,6 +3429,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gems: 0
   GemsAmount: {fileID: 0}
+--- !u!114 &770030066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770030057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa782b4ad10e77243969b4b12077b5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleBullet: {fileID: 5750808914037204546, guid: 9a2eceea1758fea449a9efa6fc03bdbc, type: 3}
+  SimpleTower: {fileID: 850881713632579327, guid: bb621b1db366a9342b762ecf0c137624, type: 3}
+  SimpleBulletF: 0
+  SimpleRange: 0
+  SimpleSpeed: 0
 --- !u!1 &840578565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,7 +5207,7 @@ PrefabInstance:
     - target: {fileID: 2337191171313706307, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e11b377349023e0468f2cd52f26fcc86, type: 3}
+      objectReference: {fileID: 21300000, guid: 10a1b328f5cb6334eaf5db887232f90d, type: 3}
     - target: {fileID: 2337191171313706334, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Name
       value: MissleLuncher
@@ -6040,7 +6059,7 @@ PrefabInstance:
     - target: {fileID: 2337191171313706307, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 12e442bedd8b48940be78054c15d0b70, type: 3}
+      objectReference: {fileID: 21300000, guid: 16752f4c14c3dec41a009a017bca3173, type: 3}
     - target: {fileID: 2337191171313706334, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Name
       value: LaserBeamer
@@ -6195,7 +6214,7 @@ PrefabInstance:
     - target: {fileID: 2337191171313706307, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: df9f1f1db43f2df48bec76bf27ce92b6, type: 3}
+      objectReference: {fileID: 21300000, guid: e2955c9f6d8a8e4418b2d671a03698c0, type: 3}
     - target: {fileID: 2337191171313706334, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Name
       value: LaserBeamer (2)
@@ -7274,8 +7293,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 8073455652552677678}
   menuSceneName: MainMenu
-  nextLevel: Level02
+  nextLevel: Level05
   GemGainText: {fileID: 1784515656}
+  gemgaintext: {fileID: 0}
+  gamemanager: {fileID: 0}
 --- !u!1 &1713891261
 GameObject:
   m_ObjectHideFlags: 0
@@ -9630,6 +9651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2337191171313706307, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cbed5d9aa5f3a464aa71e08ff6615500, type: 3}
     - target: {fileID: 2337191171313706334, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Name
       value: StandardTurret

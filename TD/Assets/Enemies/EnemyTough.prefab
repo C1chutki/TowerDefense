@@ -253,7 +253,7 @@ MonoBehaviour:
   StartHealth: 25
   health: 0
   healthRegen: 0
-  worth: 5
+  worth: 3
   deathEffect: {fileID: 2562002206038251043, guid: cbdbc12a0db3a4c4bac012290b52e298, type: 3}
   pfDamagePopup: {fileID: 6244035946683279244, guid: 1b9ea86eaabb538419a047bff7c2ce48, type: 3}
   HealthBar: {fileID: 8721977899249335993}

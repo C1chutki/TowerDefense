@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject ClickBullet;
     public int WinGame;
     public int level;
+    public int wingames;
     //public Vector3 clickbulletposition;
     //public Camera camera;
     //public Turret turret;
@@ -104,14 +105,12 @@ public class GameManager : MonoBehaviour
         if (level >= WinGame)
         {
             gems = PlayerPrefs.GetInt("Gems");
-            gems++;
+            gems += wingames;
             Debug.Log("You got one Gem!");
             Debug.Log(gems);
             PlayerPrefs.SetInt("Gems", gems);
             WinGame++;
             PlayerPrefs.SetInt("WinGame", WinGame);
-            PlayerPrefs.SetInt("level", level);
-
         }
         GameIsOver = true;
         completeLevelUI.SetActive(true);

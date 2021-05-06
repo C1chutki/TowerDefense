@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d0f78cc77854284eb0975da828c7a67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10a1b328f5cb6334eaf5db887232f90d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectStandardTurret
+        m_MethodName: SelectMissleLuncher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -243,8 +243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.8366, y: -29.732182}
-  m_SizeDelta: {x: 63.3268, y: 25.5361}
+  m_AnchoredPosition: {x: 10.837, y: -30.0979}
+  m_SizeDelta: {x: 63.327, y: 24.8048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2535787783027179229
 CanvasRenderer:
@@ -287,4 +287,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 25$
+  m_Text: 15$

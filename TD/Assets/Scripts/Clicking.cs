@@ -32,35 +32,18 @@ public class Clicking : MonoBehaviour
     //{
     //    PlayerPrefs.GetInt("click", upgrades.clickpower);
     //}
+    //void Upgrade()
+    //{
+    //    ClickPWR++;
+    //}
 
+    //public static int ClickPWR = 1;
 
+    //public Button upgrade;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////void Upgrade ()
-    ////{
-    ////    ClickPWR++;
-    ////}
-
-    ////public static int ClickPWR = 1;
-
-    ////public Button upgrade;
-
-    ////void Start()
-    ////{
-    ////    Button btn = upgrade.GetComponent<Button>();
-    ////    btn.onClick.AddListener(Upgrade);
-    ////}
+    //void Start()
+    //{
+    //    Button btn = upgrade.GetComponent<Button>();
+    //    btn.onClick.AddListener(Upgrade);
+    //}
 }

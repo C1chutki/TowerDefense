@@ -14,6 +14,7 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
     Upgrades upgrades;
     ClickUpgrades clickUpgrades;
     SimpleTurretUpgrade simpleTurretUpgrade;
+    RocketTurretUpgrade RocketTurretUpgrade;
 
 
     void Start()
@@ -21,6 +22,7 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
         upgrades = FindObjectOfType<Upgrades>();
         clickUpgrades = FindObjectOfType<ClickUpgrades>();
         simpleTurretUpgrade = FindObjectOfType<SimpleTurretUpgrade>();
+        RocketTurretUpgrade = FindObjectOfType<RocketTurretUpgrade>();
 
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, testMode);
@@ -68,6 +70,7 @@ public class UnityMonetization : MonoBehaviour, IUnityAdsListener
                 upgrades.GetGems();
                 clickUpgrades.ClickpwrCheck();
                 simpleTurretUpgrade.upgradecheck();
+                RocketTurretUpgrade.upgradecheck();
             }
         }
         else if (showResult == ShowResult.Skipped)

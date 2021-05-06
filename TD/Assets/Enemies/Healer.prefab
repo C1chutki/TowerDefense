@@ -109,12 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e3e416afce3b946bcc5d180efdf5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 1
+  startSpeed: 6
   speed: 0
-  StartHealth: 20
+  StartHealth: 30
   health: 0
   healthRegen: 1
-  worth: 10
+  worth: 7
   deathEffect: {fileID: 552567934431351708, guid: 95e2a1ae28a312e45be5963397d45b83, type: 3}
   pfDamagePopup: {fileID: 6244035946683279244, guid: 1b9ea86eaabb538419a047bff7c2ce48, type: 3}
   HealthBar: {fileID: 1798792612412397443}

@@ -212,11 +212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c3af94fdd6e17468c078604662ae80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   range: 15
   TurretName: Upgraded Rocket Luncher
-  fireRate: 2
+  fireRate: 0.5
   bulletPrefab: {fileID: 2306680668602507341, guid: 4bc6acd53faec1a4c8872a641a9eb7be, type: 3}
-  SHOOT: 0
   useLaser: 0
   damageOverTime: 20
   slowAmount: 0

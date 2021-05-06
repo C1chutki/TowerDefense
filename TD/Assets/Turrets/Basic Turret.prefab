@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 37472204870538309}
   - component: {fileID: 2412291122552009425}
   - component: {fileID: -4091720464076095264}
+  - component: {fileID: 381397192413564556}
   m_Layer: 0
   m_Name: Basic Turret
   m_TagString: Untagged
@@ -101,6 +102,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &381397192413564556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850881713632579327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c793aef018c1349952cf990ac4e6f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &901839455667421642
 GameObject:
   m_ObjectHideFlags: 0

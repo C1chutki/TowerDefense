@@ -11,16 +11,12 @@ public class CompleteLevel : MonoBehaviour
     public string menuSceneName = "MainMenu";
     public string nextLevel = "Level02";
     public GameObject GemGainText;
+    public Text gemgaintext;
+    public GameManager gamemanager;
 
-    GameManager gamemanager;
     void Start()
     {
-        GemGainText.SetActive(false);
-        gamemanager = FindObjectOfType<GameManager>();
-        if (gamemanager.WinGame == 0)
-        {
-            GemGainText.SetActive(true);
-        }
+        gemgaintext.text = "+" + gamemanager.wingames.ToString() + " Gems";
     }
 
     public void Continue()

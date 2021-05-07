@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637559120561402174
-    m_Hash: 225391820
+      ticks: 637540944440608798
+    m_Hash: 1021647274
   m_LockFileStatus:
     m_FilePath: D:/Projekty/TowerDeffence3D/TD/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637559120573693566
-    m_Hash: 1293634555
+      ticks: 637540950702735571
+    m_Hash: 1965192346
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -244,7 +244,6 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
-        - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -257,7 +256,6 @@ m_PackageAssets:
         - 2.1.0-preview.6
         compatible:
         - 1.3.9
-        - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -302,12 +300,115 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: fa825106f349f996acff22f718845eab46ca2d7c
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.7
+    - packageId: com.unity.ide.rider@2.0.7
       testable: 0
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.ide.rider@2.0.7
+      assetPath: Packages/com.unity.ide.rider
+      name: com.unity.ide.rider
+      displayName: JetBrains Rider Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The JetBrains Rider Editor package provides an integration for
+        using the JetBrains Rider IDE as a code editor for Unity. It adds support
+        for generating .csproj files for code completion and auto-discovery of installations.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.0.4
+        - 3.0.5
+        compatible:
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.0.4
+        - 3.0.5
+        verified: 2.0.7
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.1
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.22
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637334461080000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
+        revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
+        path: 
+    - packageId: com.unity.ide.visualstudio@2.0.5
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.5
+      source: 1
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -350,18 +451,8 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.7
         verified: 2.0.7
-      dependencies:
-      - name: com.unity.test-framework
-        version: 1.1.9
-      resolvedDependencies:
-      - name: com.unity.test-framework
-        version: 1.1.24
-      - name: com.unity.ext.nunit
-        version: 1.0.6
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
       keywords: []
       registry:
         id: main
@@ -375,13 +466,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486638490000000
+      datePublishedTicks: 637400980850000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: dec282022c7a95fada560c36f53da9dd155a142c
+        revision: 83ca94e82bb6da515dc57e0d860b6b2224f56991
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
@@ -535,12 +626,12 @@ m_PackageAssets:
         url: git@github.com:Unity-Technologies/PostProcessing.git
         revision: e6de985c41f04a5fc7c7227dd67e3e73fac834e7
         path: 
-    - packageId: com.unity.purchasing@2.1.1
+    - packageId: com.unity.purchasing@2.2.2
       testable: 0
       isDirectDependency: 1
-      version: 2.1.1
+      version: 2.2.2
       source: 1
-      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.purchasing@2.1.1
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.purchasing@2.2.2
       assetPath: Packages/com.unity.purchasing
       name: com.unity.purchasing
       displayName: In App Purchasing
@@ -617,7 +708,6 @@ m_PackageAssets:
         - 3.0.0-pre.6
         - 3.0.1
         - 3.0.2
-        - 3.1.0
         compatible:
         - 0.0.3
         - 0.0.4
@@ -652,7 +742,6 @@ m_PackageAssets:
         - 3.0.0-pre.6
         - 3.0.1
         - 3.0.2
-        - 3.1.0
         verified: 2.1.1
       dependencies:
       - name: com.unity.ugui
@@ -680,13 +769,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637357776810000000
+      datePublishedTicks: 637469418440000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
-        revision: ab79b0c58006f61970a2136b4cba9ca76fde0edc
+        revision: ee61dd3b9b07a5b3c6d54795306661ce1d0718ad
         path: 
     - packageId: com.unity.render-pipelines.universal@10.2.2
       testable: 0
@@ -745,7 +834,6 @@ m_PackageAssets:
         - 10.3.1
         - 10.3.2
         - 10.4.0
-        - 10.5.0
         compatible:
         - 10.2.2
         verified: 10.2.2
@@ -908,7 +996,6 @@ m_PackageAssets:
         - 10.3.1
         - 10.3.2
         - 10.4.0
-        - 10.5.0
         compatible:
         - 10.2.2
         verified: 10.2.2
@@ -949,12 +1036,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/Graphics.git
         revision: a197e35ba4e93349ccbb4fddd4f3f80ba7b1c113
         path: 
-    - packageId: com.unity.test-framework@1.1.24
+    - packageId: com.unity.test-framework@1.1.22
       testable: 0
       isDirectDependency: 1
-      version: 1.1.24
+      version: 1.1.22
       source: 1
-      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.test-framework@1.1.22
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1032,20 +1119,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637505702940000000
+      datePublishedTicks: 637469345300000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: e6fe8892689398c0d9aba4587e0ba69edc3d82b8
+        revision: 56c667cbc326a1cbab8dfd7ebc693a1121d0abe1
         path: 
-    - packageId: com.unity.textmeshpro@3.0.6
+    - packageId: com.unity.textmeshpro@3.0.3
       testable: 0
       isDirectDependency: 1
-      version: 3.0.6
+      version: 3.0.3
       source: 1
-      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.textmeshpro@3.0.3
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1116,8 +1203,6 @@ m_PackageAssets:
         - 1.5.1
         - 1.5.3
         - 1.5.4
-        - 1.5.5
-        - 1.5.6
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -1137,8 +1222,6 @@ m_PackageAssets:
         - 2.1.1
         - 2.1.3
         - 2.1.4
-        - 2.1.5
-        - 2.1.6
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -1154,15 +1237,11 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        - 3.0.5
-        - 3.0.6
         compatible:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        - 3.0.5
-        - 3.0.6
-        verified: 3.0.6
+        verified: 3.0.4
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -1191,13 +1270,190 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637547111200000000
+      datePublishedTicks: 637394911680000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-        revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
+        revision: 648406226df6c4f28a0f64eaab42ddc3db70c475
+        path: 
+    - packageId: com.unity.timeline@1.4.6
+      testable: 0
+      isDirectDependency: 1
+      version: 1.4.6
+      source: 1
+      resolvedPath: D:\Projekty\TowerDeffence3D\TD\Library\PackageCache\com.unity.timeline@1.4.6
+      assetPath: Packages/com.unity.timeline
+      name: com.unity.timeline
+      displayName: Timeline
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Use Unity Timeline to create cinematic content, game-play sequences,
+        audio sequences, and complex particle effects.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.2.5
+        - 1.2.6
+        - 1.2.7
+        - 1.2.9
+        - 1.2.10
+        - 1.2.11
+        - 1.2.12
+        - 1.2.13
+        - 1.2.14
+        - 1.2.15
+        - 1.2.16
+        - 1.2.17
+        - 1.2.18
+        - 1.3.0-preview.2
+        - 1.3.0-preview.3
+        - 1.3.0-preview.5
+        - 1.3.0-preview.6
+        - 1.3.0-preview.7
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.4.0-preview.1
+        - 1.4.0-preview.2
+        - 1.4.0-preview.3
+        - 1.4.0-preview.5
+        - 1.4.0-preview.6
+        - 1.4.0-preview.7
+        - 1.4.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 1.4.7
+        - 1.5.0-pre.2
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.1-pre.1
+        - 1.5.1-pre.2
+        - 1.5.1-pre.3
+        - 1.5.2
+        - 1.5.4
+        - 1.6.0-pre.1
+        - 1.6.0-pre.3
+        compatible:
+        - 1.2.6
+        - 1.2.7
+        - 1.2.9
+        - 1.2.10
+        - 1.2.11
+        - 1.2.12
+        - 1.2.13
+        - 1.2.14
+        - 1.2.15
+        - 1.2.16
+        - 1.2.17
+        - 1.2.18
+        - 1.3.0-preview.2
+        - 1.3.0-preview.3
+        - 1.3.0-preview.5
+        - 1.3.0-preview.6
+        - 1.3.0-preview.7
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.4.0-preview.1
+        - 1.4.0-preview.2
+        - 1.4.0-preview.3
+        - 1.4.0-preview.5
+        - 1.4.0-preview.6
+        - 1.4.0-preview.7
+        - 1.4.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 1.4.7
+        - 1.5.0-pre.2
+        - 1.5.0-preview.1
+        - 1.5.0-preview.2
+        - 1.5.0-preview.3
+        - 1.5.0-preview.4
+        - 1.5.0-preview.5
+        - 1.5.1-pre.1
+        - 1.5.1-pre.2
+        - 1.5.1-pre.3
+        - 1.5.2
+        - 1.5.4
+        - 1.6.0-pre.1
+        - 1.6.0-pre.3
+        verified: 1.4.7
+      dependencies:
+      - name: com.unity.modules.director
+        version: 1.0.0
+      - name: com.unity.modules.animation
+        version: 1.0.0
+      - name: com.unity.modules.audio
+        version: 1.0.0
+      - name: com.unity.modules.particlesystem
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.director
+        version: 1.0.0
+      - name: com.unity.modules.audio
+        version: 1.0.0
+      - name: com.unity.modules.animation
+        version: 1.0.0
+      - name: com.unity.modules.particlesystem
+        version: 1.0.0
+      keywords:
+      - unity
+      - animation
+      - editor
+      - timeline
+      - tools
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637463150940000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
+        revision: 2fe55e5d14362cc4fdcc886f56dbfe518298e4a5
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
@@ -1342,7 +1598,6 @@ m_PackageAssets:
         - 10.3.1
         - 10.3.2
         - 10.4.0
-        - 10.5.0
         compatible:
         - 10.2.2
         verified: 10.2.2
@@ -3304,7 +3559,6 @@ m_PackageAssets:
         - 10.3.1
         - 10.3.2
         - 10.4.0
-        - 10.5.0
         compatible:
         - 10.2.2
         verified: 10.2.2

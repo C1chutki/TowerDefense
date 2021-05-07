@@ -2660,6 +2660,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8484db926c31f88408c0476efae9f2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Camera: {fileID: 622893482}
+  Rotate: 0
+  DecreaseCameraPanSpeed: 3
+  CameraUpperHeightBound: 10
+  CameraLowerHeightBound: 25
+  maxleft: 2
+  maxright: 65
+  maxtop: 110
+  maxbottom: 20
+  maxHorizontal: 30
+  maxVertical: 40
 --- !u!4 &699937306
 Transform:
   m_ObjectHideFlags: 0
@@ -3238,11 +3249,6 @@ MonoBehaviour:
   SimpleBulletF: 0
   SimpleRange: 0
   SimpleSpeed: 0
-  RocketBullet: {fileID: 0}
-  RocketTower: {fileID: 0}
-  RocketBulletF: 0
-  RocketRange: 0
-  RocketAOE: 0
 --- !u!1 &840578565
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,10 +8914,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1902271011}
     - target: {fileID: 2337191171313706304, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectStandardTurret
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337191171313706304, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 0}
@@ -9011,14 +9013,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandardTurret
       objectReference: {fileID: 0}
-    - target: {fileID: 5082809627086433905, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5082809627086433905, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6066840158195329190, guid: 5367e551557292a46989c43b49ac3b7b, type: 3}
       propertyPath: m_Text
       value: 10$

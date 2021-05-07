@@ -16,12 +16,19 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 43
     width: 1920
     height: 1007
+=======
+    x: 8
+    y: 51
+    width: 1904
+    height: 991
+>>>>>>> parent of 7dd4d237 (test)
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 542}
 =======
@@ -59,7 +66,7 @@ MonoBehaviour:
   m_MinSize: {x: 875, y: 300}
 >>>>>>> parent of 7343a270 (v0.8.1)
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 =======
     x: -1357
@@ -214,12 +221,16 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 648
+=======
+    x: 704
+>>>>>>> parent of 7dd4d237 (test)
     y: 0
-    width: 784
-    height: 608
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 716
+    height: 603
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
 =======
     x: 710
@@ -260,14 +271,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1432
 <<<<<<< HEAD
 <<<<<<< HEAD
     height: 608
   m_MinSize: {x: 301, y: 221}
   m_MaxSize: {x: 8001, y: 4021}
+=======
+    width: 1420
+    height: 603
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+>>>>>>> parent of 7dd4d237 (test)
   vertical: 0
-  controlID: 65
+  controlID: 191
 --- !u!114 &4
 =======
 =======
@@ -301,10 +319,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
     height: 1007
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    width: 1904
+    height: 991
+>>>>>>> parent of 7dd4d237 (test)
   m_MinSize: {x: 875, y: 542}
 =======
   m_MinSize: {x: 875, y: 300}
@@ -334,7 +357,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1904
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -358,8 +381,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 987
-    width: 1920
+    y: 971
+    width: 1904
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -382,14 +405,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 957
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+    width: 1904
+    height: 941
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 162
+=======
+  controlID: 291
+>>>>>>> parent of 7dd4d237 (test)
 --- !u!114 &8
 =======
   controlID: 21521
@@ -417,14 +444,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1432
-    height: 957
-  m_MinSize: {x: 433, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+    width: 1420
+    height: 941
+  m_MinSize: {x: 432, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 64
+=======
+  controlID: 190
+>>>>>>> parent of 7dd4d237 (test)
 --- !u!114 &9
 =======
   controlID: 21522
@@ -452,6 +483,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 648
     height: 608
 =======
@@ -462,6 +494,10 @@ MonoBehaviour:
     width: 710
     height: 613
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    width: 704
+    height: 603
+>>>>>>> parent of 7dd4d237 (test)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -489,13 +525,21 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 608
     width: 1432
     height: 349
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
+=======
+    y: 603
+    width: 1420
+    height: 338
+  m_MinSize: {x: 432, y: 271}
+  m_MaxSize: {x: 14002, y: 10021}
+>>>>>>> parent of 7dd4d237 (test)
   vertical: 0
-  controlID: 87
+  controlID: 238
 --- !u!114 &11
 =======
     y: 613
@@ -533,12 +577,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 352
 <<<<<<< HEAD
 <<<<<<< HEAD
     height: 349
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 349
+    height: 338
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 7dd4d237 (test)
   m_ActualView: {fileID: 16}
 =======
 =======
@@ -570,8 +621,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 352
+    x: 349
     y: 0
+<<<<<<< HEAD
     width: 1080
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -582,6 +634,10 @@ MonoBehaviour:
 =======
     height: 344
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    width: 1071
+    height: 338
+>>>>>>> parent of 7dd4d237 (test)
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 21}
@@ -607,10 +663,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1432
+    x: 1420
     y: 0
-    width: 488
-    height: 957
+    width: 484
+    height: 941
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 25}
@@ -1488,6 +1544,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 648
     y: 73
     width: 782
@@ -1503,6 +1560,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    x: 712
+    y: 81
+    width: 714
+    height: 582
+>>>>>>> parent of 7dd4d237 (test)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1512,6 +1575,7 @@ MonoBehaviour:
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 782, y: 440}
 =======
   m_TargetSize: {x: 720, y: 571}
@@ -1519,6 +1583,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 720, y: 571}
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+  m_TargetSize: {x: 714, y: 561}
+>>>>>>> parent of 7dd4d237 (test)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1527,12 +1594,13 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0100000000000000000000000e000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -391
@@ -1550,6 +1618,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    m_HBaseRangeMin: -357
+    m_HBaseRangeMax: 357
+    m_VBaseRangeMin: -280.5
+    m_VBaseRangeMax: 280.5
+>>>>>>> parent of 7dd4d237 (test)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1569,6 +1643,7 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 782
       height: 566
     m_Scale: {x: 1, y: 1}
@@ -1584,12 +1659,19 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+      width: 714
+      height: 561
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 357, y: 280.5}
+>>>>>>> parent of 7dd4d237 (test)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -391
@@ -1617,9 +1699,18 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 720, y: 592}
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+      x: -357
+      y: -280.5
+      width: 714
+      height: 561
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 714, y: 582}
+>>>>>>> parent of 7dd4d237 (test)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000001000000000000
+  m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &19
@@ -1644,6 +1735,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 73
     width: 647
@@ -1659,6 +1751,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    x: 8
+    y: 81
+    width: 703
+    height: 582
+>>>>>>> parent of 7dd4d237 (test)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -1666,14 +1764,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 391, y: 33.733322, z: 0}
+    m_Target: {x: 315.4929, y: -414.3806, z: 732.1417}
     speed: 2
-    m_Value: {x: 391, y: 33.733322, z: -0.00000046500887}
+    m_Value: {x: 315.4929, y: -414.3806, z: 732.1417}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1720,17 +1818,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.25018793, y: -0.1955726, z: 0.052220426, w: -0.94701296}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.2501375, y: -0.19553319, z: 0.052209903, w: -0.9468221}
   m_Size:
-    m_Target: 51.85449
+    m_Target: 460.3423
     speed: 2
-    m_Value: 51.854492
+    m_Value: 460.3423
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 2
     m_SpeedNormalized: 1
@@ -1744,7 +1842,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 0
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.08820909, y: 0.9091237, z: -0.24897626, w: 0.3220887}
+  m_LastSceneViewRotation: {x: -0.33202878, y: 0.22113097, z: -0.07968087, w: -0.91373336}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1771,6 +1869,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
@@ -1802,6 +1901,19 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    x: 8
+    y: 684
+    width: 348
+    height: 317
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e4ccffff64cdffff82ceffffb8ceffff84cfffff88cfffff22e9ffff9ee9ffff94ecffff6eedffff72edffff2afbffff
+>>>>>>> parent of 7dd4d237 (test)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1847,6 +1959,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 352
     y: 681
     width: 1078
@@ -1862,6 +1975,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    x: 357
+    y: 684
+    width: 1069
+    height: 317
+>>>>>>> parent of 7dd4d237 (test)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1878,6 +1997,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
 =======
     - Packages
@@ -1885,11 +2005,15 @@ MonoBehaviour:
 =======
     - Packages
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    - Assets/Enemies/Basic
+>>>>>>> parent of 7dd4d237 (test)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Scenes
@@ -1899,11 +2023,15 @@ MonoBehaviour:
 =======
   - Packages
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+  - Assets/Enemies/Basic
+>>>>>>> parent of 7dd4d237 (test)
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Projekty\TowerDeffence3D\TD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 32}
@@ -1921,6 +2049,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
 =======
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 30750000
+    m_LastClickedID: 30000
+    m_ExpandedIDs: 000000001050000012500000145000006a500000
+>>>>>>> parent of 7dd4d237 (test)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1950,6 +2084,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000485800004a5800004c5800004e58000050580000
 =======
     m_ExpandedIDs: 00000000005000000250000004500000
@@ -1957,6 +2092,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000005000000250000004500000
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    m_ExpandedIDs: 00000000105000001250000014500000
+>>>>>>> parent of 7dd4d237 (test)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1986,6 +2124,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c623000014800000e88000007a89f8ff383f00004a40000084550200f2550200445600007c73000084c5010078ae0000b6a60000f05200005a7500007c7c0000ec540000da520000b6780000086200001e510000cc5000005e5d0000605d00005a5d000086630000fc6400001a510000345100000000000060540000
 =======
 =======
@@ -1993,6 +2132,9 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000014800000e88000007a89f8ff383f00004a40000084550200f2550200445600007c73000084c5010078ae0000b6a60000f05200005a7500007c7c0000ec540000da520000b6780000086200001e510000cc500000000000005e5d0000605d00005a5d000086630000fc6400001a51000034510000
 >>>>>>> parent of 7343a270 (v0.8.1)
+=======
+    m_ExpandedInstanceIDs: c623000014800000e88000007a89f8ff383f00004a40000084550200f2550200445600007c73000084c5010078ae0000b6a60000f05200005a7500007c7c0000ec540000da520000b6780000086200001e510000cc500000000000005e5d0000605d00005a5d000086630000fc6400001a51000034510000
+>>>>>>> parent of 7dd4d237 (test)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2292,6 +2434,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1432
     y: 73
 =======
@@ -2304,6 +2447,12 @@ MonoBehaviour:
 >>>>>>> parent of 7343a270 (v0.8.1)
     width: 487
     height: 936
+=======
+    x: 1428
+    y: 81
+    width: 483
+    height: 920
+>>>>>>> parent of 7dd4d237 (test)
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
